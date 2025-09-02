@@ -10,8 +10,8 @@ Certification Practice Statement<br>
 <br>
 <br>
 <br>
-Version 5.03<br>
-August 28, 2025<br>
+Version 5.02<br>
+February 28, 2025<br>
 <br>
 <br>
 </p>
@@ -441,8 +441,6 @@ The OID-arcs associated with this document are **2.16.840.1.114413** and **2.16.
 |         |                    | • Updated the following sections: 1.6.1, 1.6.2, 2.2, 3.2.2.4.2, 3.2.2.4.7, 3.2.2.4.12, 3.2.2.4.18, 3.2.2.4.19, 3.2.2.4.20, 3.2.2.8, 4.9.3, 4.9.9, 4.9.9.1, 5.4.8, 6.7, 7.1.4.2.2, 8.1 |
 |         |                    | • Added the following sections: 3.2.2.9, 4.3.1.1, 4.3.1.2, 4.3.1.3, 6.1.1.1, 6.1.1.2, 6.1.1.3                                           |
 |         |                    | • Removed the following sections: 10.5.1, 10.5.2, 10.5.3, 10.5.4                                                                        |
-| 5.03	  | August 28, 2025	   | • Added GoDaddy, Starfield and GoDaddy vmark R1 root certificates																		 |
-|         |                    | • Added validation methods supporting Certainly's Issuing CA                                                                            |
 
 ## <span id="page-11-0"></span> **1.3 PKI Participants**
 
@@ -1009,15 +1007,9 @@ Starfield has implemented a Multi-Perspective Issuance Corroboration as specifie
 
 While the issuing CAs under Starfield’s direct control, do not use this method of validation, Certainly issuing CAs MAY confirm the Applicant’s control over a FQDN by validating domain control of the FQDN by negotiating a new application layer protocol using the TLS Application‐Layer Protocol Negotiation (ALPN) Extension [RFC 7301](https://www.ietf.org/rfc/rfc7301.txt)  as defined in [RFC 8737](https://www.ietf.org/rfc/rfc8737.txt) and in accordance with [BR 3.2.2.4.20].
 
-##### 3.2.2.4.21 **DNS Labeled with Account ID - ACME**
-
-While the issuing CAs under Starfield’s direct control, do not use this method of validation, Certainly issuing CAs MAY confirm the Applicant’s control over the FQDN by performing the procedure documented for a “dns-account-01” challenge in draft 00 of “Automated Certificate Management Environment (ACME) DNS Labeled With ACME Account ID Challenge,” available at https://datatracker.ietf.org/doc/draft-ietf-acme-dns-account-label/ and in accordance with [BR 3.2.2.4.21].
-
 #### <span id="page-31-0"></span> **3.2.2.5 Authentication for an IP Address**
 
-While the issuing CAs under Starfield’s direct control, do not issue TLS certificates containing IPAddress type SAN entries,  Certainly issuing CAs MAY use the following  two methods to demonstrate control of an IP Address:
-* ACME “http-01” method for IP Addresses: Confirming the Applicant’s control over the requested FQDN using the ACME HTTP Challenge method defined in section 5 of RFC 8738 and in accordance with 3.2.2.5.6 of the Baseline Requirements.
-* ACME “tls-alpn-01” method for IP Addresses: Confirming the Applicant’s control over the requested FQDN using the ACME TLS Application-Layer Protocol Negotiation Challenge method defined in section 6 of RFC 8738 and in accordance with section 3.2.2.5.7 of the Baseline Requirements.
+No IP address certificates are issued under this CPS.
 
 #### <span id="page-31-1"></span> **3.2.2.6 Wildcard Domain Validation**
 
@@ -1397,7 +1389,7 @@ For reporting suspected private key compromise, certificate misuse, or other typ
 
 Starfield validates automated revocation requests (i.e., where a shared secret is correctly provided) on receipt.  Starfield commences the validation of non-automated revocation requests within one business day of receipt.
 
-Starfield immediately processes authenticated revocation requests.  A certificate’s revoked status is reflected on a CRL and/or in an OCSP response published at intervals specified below.  Revoked certificates are listed in the CRL and in OCSP responses until the certificate expires. 
+Starfield immediately processes authenticated revocation requests.  A certificate’s revoked status is reflected on a CRL and in an OCSP response published at intervals specified below.  Revoked certificates are listed in the CRL and in OCSP responses until the certificate expires. 
 
 *Note: As of May 30, 2021, Starfield no longer issues High Assurance Code Signing Certificates. While no longer issued, any revoked Code Signing certificates which had been issued by Starfield are retained on the CRL and in OCSP responses for 10 years after the latter of the certificate revocation or expiration.*
 
@@ -1427,6 +1419,8 @@ CRLs for CAs under Starfield's direct control are issued in accordance with the 
 | Issuing CAs | Every 24 hours                                         |
 
 The value of the nextUpdate field MUST NOT be more than 365 days beyond the value of the thisUpdate field for Root CAs and 10 days for Issuing CAs.
+
+If Certainly publishes a CRL, they will do it in compliance with the CA / Browser Forum *Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates*, and their CP/CPS.
 
 ### <span id="page-44-3"></span> **4.9.8 Maximum Latency for CRLs (if applicable)**
 
@@ -1520,7 +1514,7 @@ Not applicable.
 
 ### <span id="page-46-5"></span>**4.10.1 Operational Characteristics**
 
-Starfield publishes certificate status information via CRL and/or OCSP. Revocation entries remain on the CRL and OCSP responses until after the certificate's expiration date.
+Starfield publishes certificate status information via CRL and OCSP. Revocation entries remain on the CRL and OCSP responses until after the certificate's expiration date.
 
 Starfield published both full master CRLs and partitioned CRLs. URLs to partitioned CRLs are included in the certificate and master CRLs are published on the Starfield repository.
 
@@ -2892,73 +2886,7 @@ The following certificate profile is used for the Starfield Root Certificate Aut
 | Basic Constraints (critical) | Subject Type=CA <br>Path Length Constraint=None                                                     |
 | Key Usage (critical)         | keyCertSign, cRLSign                                                                                |
 | Authority Key Identifier     | 1B:C1:8D:B1:2B:19:78:D7:FF:21:82:0C:DE:60:B8:54:0D:7A:93:CC                                         |
-| Subject Key Identifier       | 1B:C1:8D:B1:2B:19:78:D7:FF:21:82:0C:DE:60:B8:54:0D:7A:93:CC                                         | 
-
-### <span id="page-91-1"></span> **10.1.10 GoDaddy TLS Root CA - R1**
-
-The following certificate profile is used for the GoDaddy TLS Root CA - R1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | da:62:ff:9e:26:19:b1:25:7a:48:09:36:8e:e8:e3:f7                                                              |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11).                                                           |
-| Issuer            | CN=GoDaddy TLS Root CA - R1<br>O=GoDaddy.com<br>C=US                                     |
-| Valid From        | August 28, 2025 12:00:00 GMT                                                                                   |
-| Valid To          | August 24, 2040 11:59:59 GMT                                                                                   |
-| Subject           | CN=GoDaddy TLS Root CA - R1<br>O=GoDaddy.com<br>C=US                                     |
-| Subject Public Key Information | RSA (4096 bits)                                                                                  |
-
-| Extensions:       | Values                                                                                                         |
-|-------------------|-----------------------------------------------------------------------------------                             |
-| Basic Constraints (critical) | Subject Type=CA <br>Path Length Constraint=None                                                     |
-| Key Usage (critical)         | Digital Signature, Certificate Signing, CRL Signing                                                                                |
-| Authority Key Identifier     | EC:52:11:95:70:73:19:C8:DE:CA:48:43:97:4B:1C:35:24:22:43:50                                         |
-| Subject Key Identifier       | EC:52:11:95:70:73:19:C8:DE:CA:48:43:97:4B:1C:35:24:22:43:50                                         | 
-
-### <span id="page-91-2"></span> **10.1.11 Starfield TLS Root CA - R1**
-
-The following certificate profile is used for the Starfield TLS Root CA - R1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | fc:e2:8f:24:9c:bb:80:89:b5:b3:84:ec:8f:c3:3a:1e                                                               |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11).                                                           |
-| Issuer            | CN=Starfield TLS Root CA - R1<br>O=Starfield Technologies<br>C=US                         |
-| Valid From        | August 27, 2025 12:00:00 GMT                                                                                   |
-| Valid To          | August 23, 2040 11:59:59 GMT                                                                                   |
-| Subject           | CN=Starfield TLS Root CA - R1<br>O=Starfield Technologies<br>C=US                         |
-| Subject Public Key Information | RSA (4096 bits)                                                                                   |
-
-| Extensions:       | Values                                                                                                         |
-|-------------------|-----------------------------------------------------------------------------------                             |
-| Basic Constraints (critical) | Subject Type=CA <br>Path Length Constraint=None                                                     |
-| Key Usage (critical)         | Digital Signature, Certificate Signing, CRL Signing                                                                               |
-| Authority Key Identifier     | 65:79:A6:5B:CD:9B:07:16:A5:40:86:B7:49:8E:22:47:C6:0B:DE:4B                                         |
-| Subject Key Identifier       | 65:79:A6:5B:CD:9B:07:16:A5:40:86:B7:49:8E:22:47:C6:0B:DE:4B                                         |  
-
-### <span id="page-91-2"></span> **10.1.12 GoDaddy Verified Mark Root CA - VMCR1**
-
-The following certificate profile is used for the GoDaddy Verified Mark Root CA - VMCR1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | 72:de:46:28:76:fe:ad:82:d6:01:76:b3:0e:9e:11:cc                                                               |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11).                                                           |
-| Issuer            | CN=GoDaddy Verified Mark Root CA - VMCR1<br>O=GoDaddy.com<br>C=US                         |
-| Valid From        | Aug 28 12:00:00 2025 GMT                                                                                  |
-| Valid To          | Aug 24 11:59:59 2040 GMT                                                                                   |
-| Subject           | CN=GoDaddy Verified Mark Root CA - VMCR1<br>O=GoDaddy.com<br>C=US                         |
-| Subject Public Key Information | RSA (4096 bits)                                                                                   |
-
-| Extensions:       | Values                                                                                                         |
-|-------------------|-----------------------------------------------------------------------------------                             |
-| Basic Constraints (critical) | Subject Type=CA <br>Path Length Constraint=None                                                     |
-| Key Usage (critical)         | Digital Signature, Certificate Signing, CRL Signing                                                                               |
-| Authority Key Identifier     | 84:DD:B0:E9:71:D0:38:26:BC:0F:64:40:D5:50:F3:E0:FF:6C:6D:F3                                        |
-| Subject Key Identifier       | 84:DD:B0:E9:71:D0:38:26:BC:0F:64:40:D5:50:F3:E0:FF:6C:6D:F3                                         |  
+| Subject Key Identifier       | 1B:C1:8D:B1:2B:19:78:D7:FF:21:82:0C:DE:60:B8:54:0D:7A:93:CC                                         |  
 
 ## <span id="page-92-0"></span> **10.2 Issuing CAs**
 
@@ -2983,12 +2911,12 @@ The following certificate profile is used for Starfield Issuing (subordinate) CA
 |------------------------------|-----------------------------------------------------------------------------------                  |
 | Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=None                                                      |
 | Key Usage (critical)         | Digital Signature, Certificate Signing, CRL Signing                                                 |
-| Extended Key Usage           | Optional: When intended to sign SSL/TLS certificates: Server Authentication, Client Authentication or Server Authentication only |
+| Extended Key Usage           | Optional: When intended to sign SSL/TLS certificates: Server Authentication, Client Authentication  |
 | CRL Distribution Points      | Contains the URL of the corresponding root CRL                                                      |
-| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=Any Policy or a Policy Restricted Policy Identifier <br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>URI pointing to Starfield Repository |
-| Authority Information Access | URL of the appropriate OCSP responder if OCSP revocation checking is supported                      |
-| Authority Key Identifier     | The Subject Key Identifier of the Issuing CA                                            |
-| Subject Key Identifier       | SHA-1 hash of the public key contained within this certificate or the leftmost 160-bits of the SHA-256 hash of the SubjectPublicKey                                 |
+| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=All issuance policies <br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>URI pointing to Starfield Repository |
+| Authority Information Access | URL of the appropriate OCSP responder                                                               |
+| Authority Key Identifier     | SHA-1 hash of the public of the corresponding Issuing CA                                            |
+| Subject Key Identifier       | SHA-1 hash of the public key contained within this certificate                                      |
 
 ## <span id="page-93-0"></span> **10.3 Cross CA Certificates**
 
@@ -3284,179 +3212,14 @@ The following certificate profile is used for Starfield branded Subscriber Certi
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
 | Extended Validation Certificates<br>(OID: 1.3.6.1.4.1.11129.2.4.2) | One or more RFC 6962 Signed Certificate Timestamps | 
 
-### <span id="page-107-0"></span> **10.4.5 GoDaddy TLS Intermediate CA DV - R1v1: Subscriber Certificates**
-
-The following certificate profile is used for Go Daddy branded Subscriber Certificates issued from the GoDaddy TLS Intermediate CA DV - R1v1. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280.](https://tools.ietf.org/html/rfc5280)
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | Unique value with 64-bits of entropy for each certificate issued by the Issuing CA                             |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
-| Issuer            | CN = GoDaddy TLS Intermediate CA DV - R1v1<br>O = GoDaddy.com<br><br>C=US                                      |
-| Valid From        | Date and time of Certificate issuance                                                                          |
-| Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject           | CN = domain name of Subscriber's web site                                                                      |
-| Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
-
-| Extensions:                  | Values                                                                                |
-|------------------------------|-----------------------------------------------------------------------------------    |
-| Basic Constraints (critical) | Subject Type=End Entity<br>Path Length Constraint=None                                |
-| Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
-| Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
-| CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(Medium Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 (DV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.godaddy.com<br>[2]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gd_tls_issuing_dv-r1v1.crt | 
-| Authority Key Identifier     | 89:EB:E7:1D:79:C3:BE:DB:3F:DC:8E:20:B0:FB:E4:1E:7C:39:F6:2B                                          |
-| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
-| Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
-
-
-### <span id="page-107-0"></span> **10.4.6 GoDaddy TLS Intermediate CA OV - R1v1: Subscriber Certificates**
-
-The following certificate profile is used for Go Daddy branded Subscriber Certificates issued from the GoDaddy TLS Intermediate CA OV - R1v1. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280.](https://tools.ietf.org/html/rfc5280)
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | Unique value with 64-bits of entropy for each certificate issued by the Issuing CA                             |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
-| Issuer            | CN = GoDaddy TLS Intermediate CA OV - R1v1<br>O = GoDaddy.com<br><br>C=US                                      |
-| Valid From        | Date and time of Certificate issuance                                                                          |
-| Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject           | CN = domain name of Subscriber's web site<br>O = Subscriber's organization or individual name<br>L = City/town<br>S = State<br>C = Country |
-| Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
-
-| Extensions:                  | Values                                                                                |
-|------------------------------|-----------------------------------------------------------------------------------    |
-| Basic Constraints (critical) | Subject Type=End Entity<br>Path Length Constraint=None                                |
-| Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
-| Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
-| CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.godaddy.com<br>[2]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gd_tls_issuing_ov-r1v1.crt | 
-| Authority Key Identifier     | 52:6B:9B:67:56:5C:86:69:19:D0:61:CA:2B:68:CC:B8:34:09:81:C2                                          |
-| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
-| Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
-
-### <span id="page-107-0"></span> **10.4.7 GoDaddy TLS Intermediate CA EV - R1v1: Subscriber Certificates**
-
-The following certificate profile is used for Go Daddy branded Subscriber Certificates issued from the GoDaddy TLS Intermediate CA EV - R1v1. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280.](https://tools.ietf.org/html/rfc5280)
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | Unique value with 64-bits of entropy for each certificate issued by the Issuing CA                             |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
-| Issuer            | CN = GoDaddy TLS Intermediate CA EV - R1v1<br>O = GoDaddy.com<br><br>C=US                                      |
-| Valid From        | Date and time of Certificate issuance                                                                          |
-| Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject <br>(Extended Validation Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's full legal organization name. An assumed name or DBA may also be included<br>L = City/town of place of business<br>S = State of place of business<br>C = Country of place of business<br><br>serialNumber= Registration number assigned by incorporating authority or date of incorporation or registration<br>businessCategory=vetting category used to issue certificate as defined in the CA/Browser Forum Guidelines for the<br>Issuance and Management of Extended Validation Certificates<br><br>jurisdictionLocalityName= City/town of incorporation or registration (if applicable)<br>jurisdictionStateOrProvinceName= State of incorporation or registration (if applicable)<br>jurisdictionCountryName= Country of incorporation or registration |
-| Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
-
-| Extensions:                  | Values                                                                                |
-|------------------------------|-----------------------------------------------------------------------------------    |
-| Basic Constraints (critical) | Subject Type=End Entity<br>Path Length Constraint=None                                |
-| Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
-| Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
-| CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 (EV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.godaddy.com<br>[2]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gd_tls_issuing_ev-r1v1.crt | 
-| Authority Key Identifier     | 93:86:30:25:E7:2E:08:89:00:FA:42:9F:3C:2B:63:65:43:C3:43:2C                                          |
-| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
-| Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate   
-
-
-### <span id="page-108-0"></span> **10.4.8 Starfield TLS Intermediate CA DV - R1v1: Subscriber Certificates**
-
-The following certificate profile is used for Go Daddy branded Subscriber Certificates issued from the Starfield TLS Intermediate CA DV - R1v1. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280.](https://tools.ietf.org/html/rfc5280)
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | Unique value with 64-bits of entropy for each certificate issued by the Issuing CA                             |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
-| Issuer            | CN = Starfield TLS Intermediate CA DV - R1v1<br>O = Starfield Technologies<br><br>C=US                                      |
-| Valid From        | Date and time of Certificate issuance                                                                          |
-| Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject           | CN = domain name of Subscriber's web site                                                                      |
-| Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
-
-| Extensions:                  | Values                                                                                |
-|------------------------------|-----------------------------------------------------------------------------------    |
-| Basic Constraints (critical) | Subject Type=End Entity<br>Path Length Constraint=None                                |
-| Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
-| Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
-| CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(Medium Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 (DV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br>[2]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sf_tls_issuing_dv-r1v1.crt | 
-| Authority Key Identifier     | 99:B4:6D:DD:8D:0C:6D:FA:2D:A0:9F:22:21:E8:73:C2:18:BC:85:D9                                          |
-| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
-| Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
-
-
-### <span id="page-108-0"></span> **10.4.9 Starfield TLS Intermediate CA OV - R1v1: Subscriber Certificates**
-
-The following certificate profile is used for Go Daddy branded Subscriber Certificates issued from the Starfield TLS Intermediate CA OV - R1v1. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280.](https://tools.ietf.org/html/rfc5280)
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | Unique value with 64-bits of entropy for each certificate issued by the Issuing CA                             |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
-| Issuer            | CN = Starfield TLS Intermediate CA OV - R1v1<br>O = Starfield Technologies<br><br>C=US                                      |
-| Valid From        | Date and time of Certificate issuance                                                                          |
-| Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject           | CN = domain name of Subscriber's web site<br>O = Subscriber's organization or individual name<br>L = City/town<br>S = State<br>C = Country |
-| Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
-
-| Extensions:                  | Values                                                                                |
-|------------------------------|-----------------------------------------------------------------------------------    |
-| Basic Constraints (critical) | Subject Type=End Entity<br>Path Length Constraint=None                                |
-| Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
-| Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
-| CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br>[2]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sf_tls_issuing_ov-r1v1.crt | 
-| Authority Key Identifier     | 37:16:27:88:47:9E:A4:61:2A:3C:E5:3C:26:74:84:A9:50:AA:54:88                                          |
-| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
-| Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
-
-### <span id="page-108-0"></span> **10.4.10 Starfield TLS Intermediate CA EV - R1v1: Subscriber Certificates**
-
-The following certificate profile is used for Go Daddy branded Subscriber Certificates issued from the Starfield TLS Intermediate CA EV - R1v1. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280.](https://tools.ietf.org/html/rfc5280)
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | Unique value with 64-bits of entropy for each certificate issued by the Issuing CA                             |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
-| Issuer            | CN = Starfield TLS Intermediate CA EV - R1v1<br>O = Starfield Technologies<br><br>C=US                                      |
-| Valid From        | Date and time of Certificate issuance                                                                          |
-| Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject <br>(Extended Validation Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's full legal organization name. An assumed name or DBA may also be included<br>L = City/town of place of business<br>S = State of place of business<br>C = Country of place of business<br><br>serialNumber= Registration number assigned by incorporating authority or date of incorporation or registration<br>businessCategory=vetting category used to issue certificate as defined in the CA/Browser Forum Guidelines for the<br>Issuance and Management of Extended Validation Certificates<br><br>jurisdictionLocalityName= City/town of incorporation or registration (if applicable)<br>jurisdictionStateOrProvinceName= State of incorporation or registration (if applicable)<br>jurisdictionCountryName= Country of incorporation or registration |
-| Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
-
-| Extensions:                  | Values                                                                                |
-|------------------------------|-----------------------------------------------------------------------------------    |
-| Basic Constraints (critical) | Subject Type=End Entity<br>Path Length Constraint=None                                |
-| Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
-| Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
-| CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 (EV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br>[2]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sf_tls_issuing_ev-r1v1.crt | 
-| Authority Key Identifier     | 80:E5:60:C4:34:B4:67:A8:C3:37:15:86:FD:E4:F2:0A:3F:E0:85:37                                          |
-| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
-| Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate   
-
 # <span id="page-116-0"></span> **11 APPENDIX B: TEST SITES**
 
 The URL's for test sites can be found in the table below.
 
-| CA                     | Valid                                              | Revoked                                              | Expired                                              |
-|------------------------|----------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
-| GoDaddy                | https://valid.gdi.catest.godaddy.com               | https://revoked.gdi.catest.godaddy.com               | https://expired.gdi.catest.godaddy.com               |
-| GoDaddy - G2           | https://valid.gdig2.catest.godaddy.com             | https://revoked.gdig2.catest.godaddy.com             | https://expired.gdig2.catest.godaddy.com             |
-| Starfield              | https://valid.sfi.catest.starfieldtech.com         | https://revoked.sfi.catest.starfieldtech.com         | https://expired.sfi.catest.starfieldtech.com         |
-| Starfield - G2         | https://valid.sfig2.catest.starfieldtech.com       | https://revoked.sfig2.catest.starfieldtech.com       | https://expired.sfig2.catest.starfieldtech.com       |
-| Starfield Services     |                                                    |                                                      | https://expired.sfs.catest.starfieldtech.com         |
+| CA                 | Valid                                        | Revoked                                        | Expired                                        |
+|--------------------|----------------------------------------------|------------------------------------------------|------------------------------------------------|
+| GoDaddy            | https://valid.gdi.catest.godaddy.com         | https://revoked.gdi.catest.godaddy.com         | https://expired.gdi.catest.godaddy.com         |
+| GoDaddy - G2       | https://valid.gdig2.catest.godaddy.com       | https://revoked.gdig2.catest.godaddy.com       | https://expired.gdig2.catest.godaddy.com       |
+| Starfield          | https://valid.sfi.catest.starfieldtech.com   | https://revoked.sfi.catest.starfieldtech.com   | https://expired.sfi.catest.starfieldtech.com   |
+| Starfield - G2     | https://valid.sfig2.catest.starfieldtech.com | https://revoked.sfig2.catest.starfieldtech.com | https://expired.sfig2.catest.starfieldtech.com |
+| Starfield Services |                                              |                                                | https://expired.sfs.catest.starfieldtech.com   |
