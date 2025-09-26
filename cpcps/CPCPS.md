@@ -10,8 +10,8 @@ Certification Practice Statement<br>
 <br>
 <br>
 <br>
-Version 5.03<br>
-August 28, 2025<br>
+Version 5.04<br>
+September 26, 2025<br>
 <br>
 <br>
 </p>
@@ -248,7 +248,7 @@ August 28, 2025<br>
 | 8.8.2   | Publication and Notification Policies                                                                                                     | 64  |
 | 8.9     | CPS Approval Procedures                                                                                                                   | 64  |
 | 9       | OTHER BUSINESS AND LEGAL MATTERS                                                                                                          | 65  |
-| 9.1     | Fees65                                                                                                                                    | 65  |
+| 9.1     | Fees                                                                                                                                    | 65  |
 | 9.1.1   | Certificate Issuance or Renewal Fees                                                                                                      | 65  |
 | 9.1.2   | Certificate Access Fees                                                                                                                   | 65  |
 | 9.1.3   | Revocation or Status Information Access Fees                                                                                              | 65  |
@@ -317,7 +317,10 @@ August 28, 2025<br>
 | 10.1.7  | Starfield Root Certificate Authority - G5                                                                                                 | 82  |
 | 10.1.8  | GoDaddy Root Certificate Authority – G6                                                                                                   | 82  |
 | 10.1.9  | Starfield Root Certificate Authority - G6                                                                                                 | 83  |
-| 10.2    | Issuing CAs84                                                                                                                             | 84  |
+| 10.1.10  | GoDaddy TLS Root CA - R1  | 83  |
+| 10.1.11   | Starfield TLS Root CA - R1  | 83  |
+| 10.1.12   | GoDaddy Verified Mark Root CA - VMCR1  | 83  |
+| 10.2    | Issuing CAs                                                                                                                             | 84  |
 | 10.2.1  | Starfield Issuing (subordinate) CAs                                                                                                       | 84  |
 | 10.3    | Cross CA Certificates                                                                                                                     | 85  |
 | 10.3.1  | Go Daddy Root Certificate Authority - G2 + Go Daddy Class 2 Certification Authority                                                       | 85  |
@@ -326,6 +329,8 @@ August 28, 2025<br>
 | 10.3.4  | Starfield Services Root Certificate Authority - G2 + Starfield Class 2 Certification                                                      | 89  |
 | 10.3.5  | Certainly E1 + Starfield Services Root Certificate Authority - G2                                                                         | 90  |
 | 10.3.6  | Certainly R1 + Starfield Services Root Certificate Authority - G2                                                                         | 91  |
+| 10.3.7  | GoDaddy TLS Root CA - R1 + Go Daddy Root Certificate Authority - G2    | 91  |
+| 10.3.8  | Starfield TLS Root CA - R1 + Starfield Root Certificate Authority - G2  | 91  |
 | 10.4    | End Entity SSL Certificates                                                                                                               | 92  |
 | 10.4.1  | Go Daddy Issuing CA: Subscriber Certificates                                                                                              | 92  |
 | 10.4.2  | Starfield Issuing CA: Subscriber Certificates                                                                                             | 94  |
@@ -443,6 +448,9 @@ The OID-arcs associated with this document are **2.16.840.1.114413** and **2.16.
 |         |                    | • Removed the following sections: 10.5.1, 10.5.2, 10.5.3, 10.5.4                                                                        |
 | 5.03	  | August 28, 2025	   | • Added GoDaddy, Starfield and GoDaddy vmark R1 root certificates																		 |
 |         |                    | • Added validation methods supporting Certainly's Issuing CA                                                                            |
+| 5.04	  | September 26, 2025	   | • Added Details of RFC 8657 Support to Section 4.2.1	|
+|    	  | 	                   | • Added Details of R1 to G2 cross-signed certificates to Section 10.3.7 & 10.3.8 	|
+|    	  | 	                   | • Added Updates to Table of Contents	|
 
 ## <span id="page-11-0"></span> **1.3 PKI Participants**
 
@@ -1138,6 +1146,20 @@ Prior to issuing a certificate, Starfield processes [RFC 6844](https://www.ietf.
 
 - godaddy.com
 - starfieldtech.com
+
+Starfield supports the Certification Authority Authorization (CAA) Record Extensions for Account URI and ACME Method Binding, as specified in [RFC 8657](https://www.ietf.org/rfc/rfc8657.txt).
+The following values are accepted:
+
+| CAA extension | Acceptable Patterns |
+| ------------- | ------------------- |
+|`accounturi`   | https://acme.secureserver.net/v1/acme/accounts/{acmeAccountId}|
+|               | https://secureserver.net/account/{customerId} |
+|               | https://acme.godaddy.com/v1/acme/accounts/{acmeAccountId} |
+|               | https://godaddy.com/account/{customerId} |
+|`validationmethods` | Acme: `dns-01` , `http-01`|
+|                    | Non-Acme: `ca-dns`(3.2.2.4.7), `ca-http`(3.2.2.4.18), `ca-email`(3.2.2.4.4), `ca-account`(3.2.2.4.12) |
+
+
 
 Starfield will only use documents and data to verify certificate information that is in accordance with the maximum time permitted for reuse as per the Baseline Requirements (BR) and the *Guidelines for the Issuance and Management of Extended Validation Certificates.*
 
@@ -3153,6 +3175,58 @@ The following certificate profile is used for the certificate which cross certif
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.starfieldtech.com/repository/sfroot-g2.crt.cer |
 | Authority Key Identifier     | 7C:0C:32:1F:A7:D9:30:7F:C4:7D:68:A3:62:A8:A1:CE:AB:07:5B:27                                         |
 | Subject Key Identifier       | BD:97:9D:df:A1:D8:1B:25:99:E3:0C:04:06:89:64:12:D7:65:24:C7                                         |
+
+### <span id="page-99-0"></span> **10.3.7 GoDaddy TLS Root CA - R1 + Go Daddy Root Certificate Authority - G2**
+
+The following certificate profile is used for the certificate which cross certifies the GoDaddy TLS Root CA - R1 with the Go Daddy Root Certificate Authority - G2.
+
+ Field              | Description                                                                                                    |
+|-------------------|----------------------------------------------------------------------------------------------------------------|
+| Version           | V3                                                                                                             |
+| Serial Number     | 90 de 6c 7f b3 b5 0b 3c 06 17 72 4f c1 34 02 ad  |
+| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
+| Issuer            | CN=Go Daddy Root Certificate Authority - G2<br>O=GoDaddy.com, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
+| Valid From        | Sept 24, 2025 12:00:00 GMT  |
+| Valid To          | December 31, 2037 23:59:59 GMT  |
+| Subject           | CN=GoDaddy TLS Root CA - R1<br>O=GoDaddy.com<br>C=US   |
+| Subject Public Key Information | RSA (4096 bit) |
+
+| Extensions:                  | Values                                                                                              |
+|------------------------------|-----------------------------------------------------------------------------------                  |
+| Basic Constraints (critical) | Subject Type=CA                                                                                     |
+| Key Usage (critical)         | Digital Signature, Certificate Sign, CRL Sign      |
+| Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)  |
+| CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL=http://crl.godaddy.com/gdroot-g2.crl |
+| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2<br>[3]Certificate Policy:<br>Policy Identifier=2.23.140.1.1<br> |
+| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gdroot-g2.crt |
+| Authority Key Identifier     | 3A:9A:85:07:10:67:28:B6:EF:F6:BD:05:41:6E:20:C1:94:DA:0F:DE    |
+| Subject Key Identifier       | EC:52:11:95:70:73:19:C8:DE:CA:48:43:97:4B:1C:35:24:22:43:50    |
+
+### <span id="page-99-0"></span> **10.3.8 Starfield TLS Root CA - R1 + Starfield Root Certificate Authority - G2**
+
+The following certificate profile is used for the certificate which cross certifies the Starfield TLS Root CA - R1 with the Starfield Root Certificate Authority - G2.
+
+ Field              | Description                                                                                                    |
+|-------------------|----------------------------------------------------------------------------------------------------------------|
+| Version           | V3                                                                                                             |
+| Serial Number     | 46 67 02 aa 31 94 1f a2 c1 96 ef e6 d0 9b af 6c  |
+| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
+| Issuer            | CN=Starfield Root Certificate Authority - G2<br>O=Starfield Technologies, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
+| Valid From        | Sept 24, 2025 12:00:00 GMT  |
+| Valid To          | December 31, 2037 23:59:59 GMT  |
+| Subject           | CN=Starfield TLS Root CA - R1<br>O=Starfield Technologies<br>C=US   |
+| Subject Public Key Information | RSA (4096 bit) |
+
+| Extensions:                  | Values                                                                                              |
+|------------------------------|-----------------------------------------------------------------------------------                  |
+| Basic Constraints (critical) | Subject Type=CA                                                                                     |
+| Key Usage (critical)         | Digital Signature, Certificate Sign, CRL Sign      |
+| Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)  |
+| CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL=http://crl.starfieldtech.com/sfroot-g2.crl |
+| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2<br>[3]Certificate Policy:<br>Policy Identifier=2.23.140.1.1<br> |
+| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.starfieldtech.com/repository/sfroot-g2.crt |
+| Authority Key Identifier     | 7C:0C:32:1F:A7:D9:30:7F:C4:7D:68:A3:62:A8:A1:CE:AB:07:5B:27    |
+| Subject Key Identifier       | 65:79:A6:5B:CD:9B:07:16:A5:40:86:B7:49:8E:22:47:C6:0B:DE:4B    |
 
 ## <span id="page-100-0"></span> **10.4 End Entity SSL Certificates**
 
