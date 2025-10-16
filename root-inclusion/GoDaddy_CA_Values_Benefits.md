@@ -2,9 +2,9 @@
 
 ### Overview and Value Proposition
 
-GoDaddy operates a distributed, resilient Public Key Infrastructure (PKI) engineered for high availability and low-latency certificate issuance and revocation. We provide automation via ACME and a documented SSL API that supports end-to-end certificate lifecycle operations. Our scale enables consistent, standards-aligned certificate management, while our broad customer reach expands the availability of trusted TLS across diverse platforms and geographies. We continuously invest in reliability engineering, automation, and telemetry to reduce operational risk and provide a predictable, stable service to Apple users and developers.
+GoDaddy operates a distributed, resilient Public Key Infrastructure (PKI) engineered for high availability and low-latency certificate issuance and revocation. We provide automation via ACME and a documented SSL API that supports end-to-end certificate lifecycle operations. Our scale enables consistent, standards-aligned certificate management, while our broad customer reach expands the availability of trusted TLS across diverse platforms and geographies. We continuously invest in reliability engineering, automation, and telemetry to reduce operational risk and provide a predictable, stable service to internet users and developers.
 
-These new Root certificates are designed to replace existing Roots in the Apple root store program, signaling GoDaddy’s transition toward Single-Use PKI Root hierarchies. By adopting single-use roots, GoDaddy is aligning with evolving industry best practices and simplifying root management for greater transparency and agility in supporting Apple users and developers.
+These new Root certificates are designed to replace existing Roots in the Browser Root Store Programs, signaling GoDaddy’s transition toward Single-Use PKI Root hierarchies. By adopting single-use roots, GoDaddy is aligning with evolving industry best practices and simplifying root management for greater transparency and agility in supporting internet users and developers.
 
 ### Security, Compliance, and Transparency
 
