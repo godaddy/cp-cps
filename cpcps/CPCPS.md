@@ -451,7 +451,7 @@ The OID-arcs associated with this document are **2.16.840.1.114413** and **2.16.
 | 5.04	  | September 26, 2025	   | • Added Details of RFC 8657 Support to Section 4.2.1	|
 |    	  | 	                   | • Added Details of R1 to G2 cross-signed certificates to Section 10.3.7 & 10.3.8 	|
 |    	  | 	                   | • Added Updates to Table of Contents	|
-| 5.05	  | November 21, 2025	   | • Added Mass Revocation requirements to section 5.7.1	|
+| 5.05	  | November 28, 2025	   | • Added Mass Revocation requirements to section 5.7.1	|
 
 ## <span id="page-11-0"></span> **1.3 PKI Participants**
 
