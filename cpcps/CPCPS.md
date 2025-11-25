@@ -10,8 +10,8 @@ Certification Practice Statement<br>
 <br>
 <br>
 <br>
-Version 5.04<br>
-September 26, 2025<br>
+Version 5.05<br>
+November 28, 2025<br>
 <br>
 <br>
 </p>
@@ -451,6 +451,7 @@ The OID-arcs associated with this document are **2.16.840.1.114413** and **2.16.
 | 5.04	  | September 26, 2025	   | • Added Details of RFC 8657 Support to Section 4.2.1	|
 |    	  | 	                   | • Added Details of R1 to G2 cross-signed certificates to Section 10.3.7 & 10.3.8 	|
 |    	  | 	                   | • Added Updates to Table of Contents	|
+| 5.05	  | November 21, 2025	   | • Added Mass Revocation requirements to section 5.7.1	|
 
 ## <span id="page-11-0"></span> **1.3 PKI Participants**
 
@@ -1848,6 +1849,8 @@ Starfield CAs will stop issuing certificates and will be re-keyed or terminated 
 
 Starfield has documented business continuity and disaster recovery procedures designed to notify and reasonably protect Application Software Suppliers, Subscribers, and Relying Parties in the event of a disaster, security compromise, or business failure. Starfield performs tests, reviews, and updates to these procedures at least annually. These procedures meet the requirements in [BR 5.7.1].
 
+Starfield maintains a comprehensive and actionable plan for mass revocation events, performs annual testing of the mass revocation plan, and incorporates lessons learned into such plan in order to continually improve preparedness for mass revocation events over time.
+
 ### <span id="page-55-7"></span> **5.7.2 Computing Resources, Software, and/or Data are Corrupted**
 
 Starfield performs regular system backups that can be utilized to recover in the case of resource, software, or data corruption. Starfield also keeps copies of CA private keys in a secure off-site location.
@@ -2716,7 +2719,7 @@ Starfield shall not be responsible for any breach of warranty, delay, or failure
 
 Not applicable.
 
-# <span id="page-86-0"></span> **10APPENDIX A – CERTIFICATE PROFILES**
+# <span id="page-86-0"></span> **10 APPENDIX A – CERTIFICATE PROFILES**
 
 ## <span id="page-86-1"></span> **10.1 Root CAs**
 
