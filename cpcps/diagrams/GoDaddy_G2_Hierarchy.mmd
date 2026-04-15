@@ -1,0 +1,20 @@
+%%{init: {'flowchart': {'nodeSpacing': 50, 'rankSpacing': 72, 'diagramPadding': 20}}}%%
+flowchart TD
+
+    subgraph GD_G2["GoDaddy G2 hierarchy"]
+        direction TB
+        GD2_A[Go Daddy Root Certificate Authority G2]
+        GD2_B[Cross signs GoDaddy TLS Root CA R1]
+        GD2_C[Go Daddy Secure Certificate Authority G2]
+        GD2_D[Go Daddy Code Signing Certificate Authority G2]
+        GD2_E[Go Daddy EV Code Signing Certificate Authority G2]
+        GD2_A --> GD2_B
+        GD2_A --> GD2_C
+        GD2_A --> GD2_D
+        GD2_A --> GD2_E
+    end
+
+    style GD_G2 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px
+
+    classDef crossSigned fill:#eff6ff,stroke:#3b82f6,stroke-width:2px,color:#1e293b
+    class GD2_B crossSigned

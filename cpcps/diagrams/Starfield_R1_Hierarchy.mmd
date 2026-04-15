@@ -1,0 +1,15 @@
+%%{init: {'flowchart': {'nodeSpacing': 50, 'rankSpacing': 72, 'diagramPadding': 20}}}%%
+flowchart TD
+
+    subgraph SF_R1["Starfield R1 hierarchy"]
+        direction TB
+        SFR_A[Starfield TLS Root CA R1]
+        SFR_B[Starfield TLS Intermediate DV R1v1]
+        SFR_C[Starfield TLS Intermediate EV R1v1]
+        SFR_D[Starfield TLS Intermediate OV R1v1]
+        SFR_A --> SFR_B
+        SFR_A --> SFR_C
+        SFR_A --> SFR_D
+    end
+
+    style SF_R1 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px

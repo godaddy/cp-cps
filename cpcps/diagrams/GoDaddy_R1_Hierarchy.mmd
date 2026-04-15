@@ -1,0 +1,15 @@
+%%{init: {'flowchart': {'nodeSpacing': 50, 'rankSpacing': 72, 'diagramPadding': 20}}}%%
+flowchart TD
+
+    subgraph GD_R1["GoDaddy R1 hierarchy"]
+        direction TB
+        GDR_A[GoDaddy TLS Root CA R1]
+        GDR_B[GoDaddy TLS Intermediate DV R1v1]
+        GDR_C[GoDaddy TLS Intermediate EV R1v1]
+        GDR_D[GoDaddy TLS Intermediate OV R1v1]
+        GDR_A --> GDR_B
+        GDR_A --> GDR_C
+        GDR_A --> GDR_D
+    end
+
+    style GD_R1 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px
