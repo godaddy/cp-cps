@@ -1,0 +1,25 @@
+%%{init: {'flowchart': {'nodeSpacing': 50, 'rankSpacing': 72, 'diagramPadding': 20}}}%%
+flowchart TD
+
+    subgraph SF_G2["Starfield G2 hierarchy"]
+        direction TB
+        SF2_A[Starfield Root Certificate Authority G2]
+        SF2_G[Cross Signs Certainly Intermediate R1]
+        SF2_B["Cross Signs Certainly Intermediate E1"]
+        SF2_C[Starfield Secure CA G2]
+        SF2_D[Starfield Code Signing CA G2]
+        SF2_E[Starfield EV Code Signing CA G2]
+        SF2_F["Cross Signs Starfield TLS Root CA R1"]
+
+        SF2_A --> SF2_B
+        SF2_A --> SF2_C
+        SF2_A --> SF2_D
+        SF2_A --> SF2_E
+        SF2_A --> SF2_F
+        SF2_A --> SF2_G
+    end
+
+    style SF_G2 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px
+
+    classDef crossSigned fill:#eff6ff,stroke:#3b82f6,stroke-width:2px,color:#1e293b
+    class SF2_B,SF2_F,SF2_G crossSigned

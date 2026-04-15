@@ -1,0 +1,21 @@
+%%{init: {'flowchart': {'nodeSpacing': 50, 'rankSpacing': 72, 'diagramPadding': 20}}}%%
+flowchart TD
+
+    subgraph SF_C2["Starfield Class 2 hierarchy"]
+        direction TB
+        SF_C2_A["Starfield Class 2 Certification Authority (SHA-1)"]
+        SF_C2_B["Starfield Secure Certification Authority (SHA-1)"]
+        SF_C2_C["Cross-signs Starfield Root Certificate Authority - G2"]
+        SF_C2_D["Cross-signs Starfield Services Root Certificate Authority - G2 (operated by Amazon)"]
+        SF_SVC_SHA1["Starfield Services Root<br/>Certificate Authority (SHA-1)"]
+
+        SF_C2_A --> SF_C2_B
+        SF_C2_A --> SF_C2_C
+        SF_C2_A --> SF_C2_D
+        SF_SVC_SHA1 --> SF_C2_D
+    end
+
+    style SF_C2 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px
+
+    classDef crossSigned fill:#eff6ff,stroke:#3b82f6,stroke-width:2px,color:#1e293b
+    class SF_C2_C,SF_C2_D crossSigned
