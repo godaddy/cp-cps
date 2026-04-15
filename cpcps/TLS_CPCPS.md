@@ -6,7 +6,7 @@ Public TLS<br>
 Certificate Policy and<br>
 Certification Practice Statement (CP/CPS)</h1>
 
-**Version 5.6**  
+**Version 5.06**  
 **Date: April 15, 2026**
 </div>
 
