@@ -41,12 +41,13 @@ Active G2 roots use RSA. Successor R1 roots use RSA-4096. All R1 root and interm
 
 The G2 to R1 transition is planned for approximately four months. This rotation removes the ClientAuth EKU from subscriber certificates, and we are operationalizing transitions to accelerate future rotations.
 
-### Submission to Browser Root Program
+### Submission to Apple Root Program
 
 New roots are submitted at the earliest opportunity after Root Generation Audit (RGA) reports are finalized to allow sufficient review and distribution lead time.
 
 ### Removal of Deprecated Roots
 
-Deprecated roots can be removed after subscriber transitions are complete. We will coordinate timing with Browsers to minimize ecosystem impact and ensure timely removal.
+Deprecated roots can be removed after subscriber transitions are complete. We will coordinate timing with Apple to minimize ecosystem impact and ensure timely removal.
+
 
 
