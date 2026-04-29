@@ -1,0 +1,11 @@
+%%{init: {'flowchart': {'nodeSpacing': 50, 'rankSpacing': 72, 'diagramPadding': 20}}}%%
+flowchart TD
+
+    subgraph GD_VM["GoDaddy Verified Mark hierarchy (VMCR1)"]
+        direction TB
+        GD_VM_R["GoDaddy Verified Mark Root CA - VMCR1"]
+        GD_VM_I["GoDaddy Verified Mark Intermediate CA - VMCR1V1"]
+        GD_VM_R --> GD_VM_I
+    end
+
+    style GD_VM fill:#f8fafc,stroke:#94a3b8,stroke-width:1px
