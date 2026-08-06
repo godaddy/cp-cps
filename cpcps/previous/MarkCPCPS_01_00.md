@@ -6,8 +6,8 @@ Mark Certificate<br>
 Certificate Policy and<br>
 Certification Practice Statement (CP/CPS)</h1>
 
-**Version 1.1**  
-**Date: July 31, 2026**
+**Version 1.0**  
+**Date: April 28, 2026**
 </div>
 
 ## Table of Contents
@@ -30,8 +30,8 @@ Certification Practice Statement (CP/CPS)</h1>
 | 1.5 | Policy Administration |
 | 1.5.1 | Organization Administering the Document |
 | 1.5.2 | Contact Person |
-| 1.5.3 | Person Determining CP/CPS Suitability for the Policy |
-| 1.5.4 | CP/CPS Approval Procedure |
+| 1.5.3 | Person Determining CPS Suitability for the Policy |
+| 1.5.4 | CPS Approval Procedure |
 | 1.6 | Definitions, Acronyms, and References |
 | 1.6.1 | Definitions and Acronyms |
 | 1.6.2 | References |
@@ -238,7 +238,7 @@ Certification Practice Statement (CP/CPS)</h1>
 | 8.8 | Specification Administration |
 | 8.8.1 | Specification Change Procedures |
 | 8.8.2 | Publication and Notification Policies |
-| 8.9 | CP/CPS Approval Procedures |
+| 8.9 | CPS Approval Procedures |
 | 9 | OTHER BUSINESS AND LEGAL MATTERS |
 | 9.1 | Fees |
 | 9.1.1 | Certificate Issuance or Renewal Fees |
@@ -340,7 +340,6 @@ The OID-arcs associated with this document is **2.16.840.1.114413.1.7.23.4**.
 | Version | Effective Date | Change Summary |
 | --- | --- | --- |
 | 1.0 | 2026-04-28 | Initial Draft |
-| 1.1 | 2026-07-31 | Updated the following sections: 3.2.2.7.1.2, 9  |
 
 ### 1.3 PKI Participants
 
@@ -461,11 +460,11 @@ Obligations of the Starfield GPC include:
 - Resolving or causing resolution of disputes related to this CP/CPS
 - Remaining current regarding security threats and ensuring that appropriate actions are taken to counteract significant threats.
 
-#### 1.5.3 Person Determining CP/CPS Suitability for the Policy
+#### 1.5.3 Person Determining CPS Suitability for the Policy
 
-The Starfield GPC determines the suitability of a CP/CPS for the policy based on the results of independent audits.
+The Starfield GPC determines the suitability of a CPS for the policy based on the results of independent audits.
 
-#### 1.5.4 CP/CPS Approval Procedure
+#### 1.5.4 CPS Approval Procedure
 
 All changes to this document are approved by a quorum of The Starfield GPC.
 
@@ -802,7 +801,7 @@ Once the FQDN has been validated using this method, Starfield MAY also issue Cer
 
 ###### 3.2.2.3.8 IP Address
 
-No IP address certificates are issued under this CP/CPS.
+No IP address certificates are issued under this CPS.
 
 ###### 3.2.2.3.9 Test Certificate
 
@@ -1035,7 +1034,7 @@ Starfield SHALL confirm that the owner of the Registered Mark identified in the 
 
 ###### 3.2.2.7.1.2 Confirmation of Mark Representation
 
-Starfield SHALL verify that the Mark submitted by the Applicant matches the Registered Mark on record. This verification will be documented by comparing the Mark with the official database of the relevant Trademark Office or the WIPO Global Brand Database.
+Starfield SHALL verify that the Mark submitted by the Applicant exactly matches the Registered Mark on record. This verification will be documented by comparing the Mark with the official database of the relevant Trademark Office or the WIPO Global Brand Database.
 
 ###### 3.2.2.7.1.3 Color Restrictions
 
@@ -2440,7 +2439,7 @@ Modifications to this CP/CPS are approved by the Starfield Governance and Policy
 
 This CP/CPS and subsequent revisions are published in the Starfield repository in accordance with Section 2 Publication and Repository Responsibilities Starfield may change this document at any time without prior notice.
 
-### 8.9 CP/CPS Approval Procedures
+### 8.9 CPS Approval Procedures
 
 See Section 8.8.1 Specification Change Procedures.
 
@@ -2462,7 +2461,7 @@ Starfield does not charge a fee as a condition of making the CRLs required in a 
 
 #### 9.1.4 Fees for Other Services
 
-**Starfield licenses this CP/CPS under the Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) license.**
+**Starfield licenses this CPS under the Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) license.**
 
 #### 9.1.5 Refund Policy
 
@@ -2556,7 +2555,7 @@ The Intellectual Property Rights pertaining to the Certificates of CAs and revoc
 
 #### 9.5.2 Property Rights in the Agreement
 
-Starfield PKI Participants acknowledge that Starfield retains all Intellectual Property Rights in and to this CP/CPS.
+Starfield PKI Participants acknowledge that Starfield retains all Intellectual Property Rights in and to this CPS.
 
 #### 9.5.3 Property Rights to Names
 
@@ -2568,7 +2567,7 @@ All Key Pairs corresponding to Certificates of CAs and end-user Subscribers are 
 
 The following are the property of Starfield:
 
-- This CP/CPS
+- This CPS
 - Starfield-specified Certificate Policies
 - Policies and procedures supporting the operation of the Starfield PKI
 - Starfield-specified Object Identifiers (OIDs)
@@ -2616,7 +2615,7 @@ Subscribers are obligated by Starfield's Subscriber Agreements to warrant that, 
 - No unauthorized users have had access to the Subscriber's private key,
 - All representations in the Certificate Application by the Subscriber are true,
 - The information from the Subscriber in the Certificate is true,
-- Any usage of the Certificate is for authorized and lawful reasons only, consistent with this CP/CPS,
+- Any usage of the Certificate is for authorized and lawful reasons only, consistent with this CPS,
 - The Subscriber is not a CA but is an end-user Subscriber and is not using the private key corresponding to any public key listed in the Certificate for purposes of digitally signing any Certificate (or any other format of certified public key) or CRL, as a CA or otherwise (with the exception of signing code with a Code Signing Certificate), and
 - The Subscriber is not using the Certificate Service in any way that infringes upon the rights of third parties.
 
@@ -2627,7 +2626,8 @@ These requirements shall be in other Subscriber Agreements.
 You warrant and represent that:  
 (a) the Certificate is being used lawfully by You and with authorization;  
 (b) You are using the Certificate in a Relying Party capacity;  
-(c) You disclaim any fiduciary relationship between Starfield and any non-Starfield Certification Authorities, and between You and any Subscriber;
+(c) You disclaim any fiduciary relationship between Starfield and any non-Starfield Certification Authorities, and between You and any Subscriber; and  
+(d) You understand that a Starfield Subscriber is solely responsible for the generation and security of the Private Key corresponding to the Public Key contained in the Subscriber's Certificate, and that the Subscriber may have failed to keep the Certificate secure and if so, the Private Key may have become compromised.
 
 #### 9.6.5 Representations and Warranties of Other Participants
 
@@ -2643,7 +2643,7 @@ Starfield is not the agent, fiduciary, trustee, or other representative of Subsc
 
 ### 9.8 Limitations of Liability
 
-STARFIELD SHALL NOT BE LIABLE FOR ANY LOSS OF CERTIFICATE SERVICES UNLESS DUE TO A FAILURE OF STARFIELD’S DIGITAL SIGNATURE.
+STARFIELD SHALL NOT BE LIABLE FOR ANY LOSS OF CERTIFICATE SERVICES UNLESS DUE TO A FAILURE OR BREACH OF THE CERTIFICATE ENCRYPTION.
 
 THE TOTAL CUMULATIVE LIABILITY OF STARFIELD, ANY INDEPENDENT THIRD-PARTY RA OPERATING UNDER A STARFIELD CA, ANY RESELLERS, OR CO-MARKETERS, OR ANY SUBCONTRACTORS, DISTRIBUTORS, AGENTS, SUPPLIERS, EMPLOYEES, OR DIRECTORS OF ANY OF THE FOREGOING TO ANY APPLICANT, SUBSCRIBER, RELYING PARTY OR ANY OTHER PERSON, ENTITY, OR ORGANIZATION ARISING OUT OF OR RELATING TO ANY STARFIELD CERTIFICATE OR ANY SERVICES PROVIDED IN RESPECT TO STARFIELD CERTIFICATES, INCLUDING ANY USE OR RELIANCE ON ANY STARFIELD CERTIFICATE, SHALL NOT EXCEED (A) $25,000.00 USD FOR EACH COMMON MARK CERTIFICATE ("COMMON MARK CUMULATIVE DAMAGE LIMIT"); OR (B) $50,000.00 USD FOR EACH VERIFIED MARK CERTIFICATE ("VERIFIED MARK CUMULATIVE DAMAGE LIMIT") (COLLECTIVELY, "CUMULATIVE DAMAGE LIMITS"). THESE CUMULATIVE DAMAGE LIMITS SHALL APPLY PER STARFIELD CERTIFICATE REGARDLESS OF THE NUMBER OF TRANSACTIONS OR CAUSES OF ACTION ARISING OUT OF OR RELATED TO SUCH STARFIELD CERTIFICATE OR ANY SERVICES PROVIDED IN RESPECT TO SUCH STARFIELD CERTIFICATE. THE FOREGOING LIMITATIONS SHALL APPLY TO ANY LIABILITY WHETHER BASED IN CONTRACT (INCLUDING FUNDAMENTAL BREACH), TORT (INCLUDING NEGLIGENCE), LEGISLATION OR ANY OTHER THEORY OF LIABILITY, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, STATUTORY, PUNITIVE, EXEMPLARY, CONSEQUENTIAL, RELIANCE, OR INCIDENTAL DAMAGES.
 
@@ -2655,7 +2655,7 @@ STARFIELD, INDEPENDENT THIRD-PARTY RAs OPERATING UNDER A STARFIELD CERTIFICATION
 
 THESE LIMITATIONS SHALL APPLY NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY STATED HEREIN AND EVEN IF STARFIELD OR ANY INDEPENDENT THIRD-PARTY OPERATING UNDER A STARFIELD CERTIFICATION AUTHORITY, OR ANY RESELLERS, CO-MARKETERS, OR ANY SUBCONTRACTORS, DISTRIBUTORS, AGENTS, SUPPLIERS, EMPLOYEES, OR DIRECTORS OF ANY OF THE FOREGOING HAVE BEEN ADVISED OF THE POSSIBILITY OF THOSE DAMAGES.
 
-SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THESE LIMITATIONS SET FORTH ABOVE MAY NOT APPLY TO CERTAIN APPLICANTS, SUBSCRIBERS, RELYING PARTIES, OR OTHER PERSONS, ENTITIES, OR ORGANIZATIONS. THE DISCLAIMERS OF REPRESENTATIONS, WARRANTIES, AND CONDITIONS AND THE LIMITATIONS OF LIABILITY IN THIS STARFIELD CERTIFICATION PRACTICE STATEMENT CONSTITUTE AN ESSENTIAL PART OF THE STARFIELD CP/CPS, ANY SUBSCRIPTION AGREEMENTS, AND ANY RELYING PARTY AGREEMENTS. ALL APPLICANTS, SUBSCRIBERS, RELYING PARTIES, AND OTHER PERSONS, ENTITIES, AND ORGANIZATIONS ACKNOWLEDGE THAT BUT FOR THESE DISCLAIMERS OF REPRESENTATIONS, WARRANTIES, AND CONDITIONS AND LIMITATIONS OF LIABILITY, STARFIELD WOULD NOT ISSUE STARFIELD CERTIFICATES TO SUBSCRIBERS AND NEITHER STARFIELD NOR ANY INDEPENDENT THIRD-PARTY REGISTRATION AUTHORITIES OPERATING UNDER A STARFIELD CERTIFICATION AUTHORITY, NOR ANY RESELLERS, CO-MARKETERS, OR ANY SUBCONTRACTORS, DISTRIBUTORS, AGENTS, SUPPLIERS, EMPLOYEES, OR DIRECTORS OF ANY OF THE FOREGOING WOULD PROVIDE SERVICES IN RESPECT TO STARFIELD CERTIFICATES AND THAT THESE PROVISIONS PROVIDE FOR A REASONABLE ALLOCATION OF RISK.
+SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THESE LIMITATIONS SET FORTH ABOVE MAY NOT APPLY TO CERTAIN APPLICANTS, SUBSCRIBERS, RELYING PARTIES, OR OTHER PERSONS, ENTITIES, OR ORGANIZATIONS. THE DISCLAIMERS OF REPRESENTATIONS, WARRANTIES, AND CONDITIONS AND THE LIMITATIONS OF LIABILITY IN THIS STARFIELD CERTIFICATION PRACTICE STATEMENT CONSTITUTE AN ESSENTIAL PART OF THE STARFIELD CPS, ANY SUBSCRIPTION AGREEMENTS, AND ANY RELYING PARTY AGREEMENTS. ALL APPLICANTS, SUBSCRIBERS, RELYING PARTIES, AND OTHER PERSONS, ENTITIES, AND ORGANIZATIONS ACKNOWLEDGE THAT BUT FOR THESE DISCLAIMERS OF REPRESENTATIONS, WARRANTIES, AND CONDITIONS AND LIMITATIONS OF LIABILITY, STARFIELD WOULD NOT ISSUE STARFIELD CERTIFICATES TO SUBSCRIBERS AND NEITHER STARFIELD NOR ANY INDEPENDENT THIRD-PARTY REGISTRATION AUTHORITIES OPERATING UNDER A STARFIELD CERTIFICATION AUTHORITY, NOR ANY RESELLERS, CO-MARKETERS, OR ANY SUBCONTRACTORS, DISTRIBUTORS, AGENTS, SUPPLIERS, EMPLOYEES, OR DIRECTORS OF ANY OF THE FOREGOING WOULD PROVIDE SERVICES IN RESPECT TO STARFIELD CERTIFICATES AND THAT THESE PROVISIONS PROVIDE FOR A REASONABLE ALLOCATION OF RISK.
 
 #### 9.8.1.1 Hazardous Activities
 
@@ -2668,9 +2668,9 @@ Without limitation, neither Starfield nor any independent third-party RAs operat
 (i) the Starfield Certificate was issued as a result of errors, misrepresentations, or other acts or omissions of a Subscriber or of any other person, entity, or organization;  
 (ii) the Starfield Certificate has expired or has been revoked;  
 (iii) the Starfield Certificate has been modified or otherwise altered;  
-(iv) a Subscriber breached the Starfield MC CP/CPS or the Subscriber's Subscription Agreement, or a Relying Party breached the Starfield CP/CPS or the Relying Party's Relying Party Agreement;  
+(iv) a Subscriber breached the Starfield CPS or the Subscriber's Subscription Agreement, or a Relying Party breached the Starfield CPS or the Relying Party's Relying Party Agreement;  
 (v) the Private Key associated with the Starfield Certificate has been Compromised; or  
-(vi) the Starfield Certificate is used other than as permitted by the Starfield CP/CPS or is used in contravention of applicable law.
+(vi) the Starfield Certificate is used other than as permitted by the Starfield CPS or is used in contravention of applicable law.
 
 ### 9.9 Indemnities
 
@@ -2684,7 +2684,7 @@ Starfield's Subscriber Agreement and other Subscriber Agreements shall require S
 
 - Any false statement, omission or misrepresentation of fact that the Subscriber has put on the Subscriber's Certificate Application,
 - Any modification made by the Subscriber to the information contained in a Starfield Certificate,
-- The use of a Starfield Certificate other than as permitted by the Starfield CP/CPS, the Subscription agreement, any Relying Party agreement, and applicable law,
+- The use of a Starfield Certificate other than as permitted by the Starfield CPS, the Subscription agreement, any Relying Party agreement, and applicable law,
 - The Subscriber's failure to use a secure system, protect the Subscriber's private key, or to otherwise take the precautions necessary to prevent the compromise, loss, disclosure, modification, or unauthorized use of the Subscriber's private key, or
 - The Subscriber's use of a name (including without limitation within a common name, domain name, or e-mail address) that infringes upon the Intellectual Property Rights of a third party.
 
@@ -2694,7 +2694,7 @@ Starfield's Subscriber Agreements and Relying Party Agreements shall require Rel
 
 - Any failure by the Relying Party to perform the obligations of a Relying Party,
 - Lack of proper validation of a Starfield Certificate by a Relying Party,
-- Use of a Starfield Certificate other than as permitted by the Starfield CP/CPS, the Subscription agreement, any Relying Party agreement, and applicable law,
+- Use of a Starfield Certificate other than as permitted by the Starfield CPS, the Subscription agreement, any Relying Party agreement, and applicable law,
 - Failure by a Relying Party to exercise reasonable judgment in the circumstances in relying on a Starfield Certificate.
 - Reliance by a Relying Party on a Certificate that is not reasonable under the circumstances, or
 - The failure of a Relying Party to check the status of such Certificate to determine if it is expired or revoked.
@@ -2715,7 +2715,7 @@ This CP/CPS shall be binding on all successors of the parties.
 
 If any provision of this CP/CPS is found to be unenforceable, the remaining provisions shall be interpreted to best carry out the reasonable intent of the parties. It is expressly agreed that every provision of this CP/CPS that provides for a limitation of liability or exclusion of damages, disclaimer or limitation of any warranties, promises or other obligations, is intended to be severable and independent of any other provision and is to be enforced as such.
 
-This CP/CPS shall be interpreted consistently with what is commercially reasonable in good faith under the circumstances and considering its international scope and uniform application. Failure by any person to enforce a provision of this CP/CPS will not be deemed a waiver of future enforcement of that or any other provision.
+This CPS shall be interpreted consistently with what is commercially reasonable in good faith under the circumstances and considering its international scope and uniform application. Failure by any person to enforce a provision of this CP/CPS will not be deemed a waiver of future enforcement of that or any other provision.
 
 ### 9.11 Individual Notices and Communications with Participants
 
@@ -2741,11 +2741,11 @@ In the event of any dispute involving the services or provisions covered by this
 
 ### 9.14 Governing Law
 
-The laws of the state of Arizona, USA, shall govern the enforceability, construction, interpretation, and validity of this CP/CPS, subject to any limits appearing in applicable law, and regardless of contract or other choice of law provisions and without the requirement to establish a commercial nexus in Arizona, USA. The choice of law is made to create uniform procedures and interpretation for all Starfield PKI participants, no matter where they are located.
+The laws of the state of Arizona, USA, shall govern the enforceability, construction, interpretation, and validity of this CPS, subject to any limits appearing in applicable law, and regardless of contract or other choice of law provisions and without the requirement to establish a commercial nexus in Arizona, USA. The choice of law is made to create uniform procedures and interpretation for all Starfield PKI participants, no matter where they are located.
 
-This governing law provision applies only to this CP/CPS. Agreements incorporating the CP/CPS by reference may have their own governing law provisions, provided that this CP/CPS governs the enforceability, construction, interpretation, and validity of the terms of the CP/CPS separate and apart from the remaining provisions of any such agreements, subject to any limitations appearing in applicable law.
+This governing law provision applies only to this CPS. Agreements incorporating the CPS by reference may have their own governing law provisions, provided that this CPS governs the enforceability, construction, interpretation, and validity of the terms of the CPS separate and apart from the remaining provisions of any such agreements, subject to any limitations appearing in applicable law.
 
-Any applicable national, state, local and foreign laws, rules, regulations, ordinances, decrees, and orders including, but not limited to, restrictions on exporting or importing software, hardware, or technical information shall apply to this CP/CPS.
+Any applicable national, state, local and foreign laws, rules, regulations, ordinances, decrees, and orders including, but not limited to, restrictions on exporting or importing software, hardware, or technical information shall apply to this CPS.
 
 ### 9.15 Compliance with Applicable Law
 
