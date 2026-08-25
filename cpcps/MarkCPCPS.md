@@ -6,8 +6,8 @@ Mark Certificate<br>
 Certificate Policy and<br>
 Certification Practice Statement (CP/CPS)</h1>
 
-**Version 1.1**  
-**Date: July 31, 2026**
+**Version 1.2**  
+**Date: August 26, 2026**
 </div>
 
 ## Table of Contents
@@ -316,7 +316,7 @@ The Starfield Public Key Infrastructure ("Starfield PKI") has been established t
 
 This Certificate Policy and Certification Practice Statement (CP/CPS) is the authoritative document describing Starfield’s PKI practices for the issuance and management of Mark Certificates.
 
-Starfield’s practices for the issuance and management of Mark Certificates are governed in accordance with the Minimum Security Requirements for Issuance of Mark Certificates ("MC Requirements"). These requirements are available at <https://bimigroup.org/supporting-documents/>. Users can find the MC Terms of Use ("MC Terms") in Section 9.6.3 of this document.
+Starfield’s practices for the issuance and management of Mark Certificates are governed in accordance with the Minimum Security Guidelines for Issuance of Mark Certificates ("MC Requirements"). These requirements are available at <https://bimigroup.org/supporting-documents/>. Users can find the MC Terms of Use ("MC Terms") in Section 9.6.3 of this document.
 
 The Starfield PKI conforms to the current version of the Minimum Security Requirements for Issuance of Mark Certificates for the Issuance and Management of Mark Certificates. In the event of any inconsistency between this document and those Requirements, those Requirements take precedence over this document.
 
@@ -341,6 +341,7 @@ The OID-arcs associated with this document is **2.16.840.1.114413.1.7.23.4**.
 | --- | --- | --- |
 | 1.0 | 2026-04-28 | Initial Draft |
 | 1.1 | 2026-07-31 | Updated the following sections: 3.2.2.7.1.2, 9  |
+| 1.2 | 2026-08-26 | Updated the Definitions, Acronyms, and References section to include definitions for BIMI and Mark Certificate Guidelines  |
 
 ### 1.3 PKI Participants
 
@@ -487,6 +488,7 @@ All changes to this document are approved by a quorum of The Starfield GPC.
 | Authorization Domain Name | ADN | The FQDN used to obtain authorization for a given FQDN to be included in a Certificate. The CA may use the FQDN returned from a DNS CNAME lookup as the FQDN for the purposes of domain validation. If a Wildcard Domain Name is to be included in a Certificate, then the CA MUST remove “*.” from the left-most portion of the Wildcard Domain Name to yield the corresponding FQDN. The CA may prune zero or more Domain Labels of the FQDN from left to right until encountering a Base Domain Name and may use any one of the values that were yielded by pruning (including the Base Domain Name itself) for the purpose of domain validation. |
 | Authorized Port |  | One of the following ports: 80 (http), 443 (http), 115 (sftp), 25 (smtp), 22 (ssh). |
 | Base Domain Name |  | The portion of an applied‐for FQDN that is the first Domain Name node left of a registry-controlled or public suffix plus the registry‐controlled or public suffix. (e.g. "example.co.uk" or "example.com"). For FQDNs where the right‐most Domain Name node is a gTLD having ICANN Specification 13 in its registry agreement, the gTLD itself may be used as the Base Domain Name. |
+| BIMI (Brand Indicators for Message Identification) | BIMI | An email standard specified by the AuthIndicators Working Group (AuthIndicators WG) that enables participating email services to display a brand-controlled logo in association with authenticated email messages. |
 | Certificate Authority Authorization | CAA | From RFC 8659: “The Certification Authority Authorization (CAA) DNS Resource Record allows a DNS domain name holder to specify one or more Certification Authorities (CAs) authorized to issue certificates for that domain name. CAA Resource Records allow a public CA to implement additional controls to reduce the risk of unintended certificate mis-issue.” |
 | CA Key Pair |  | A Key Pair where the Public Key appears as the Subject Public Key Info in one or more Root CA Certificate(s) and/or Subordinate CA Certificate(s). |
 | Certificate |  | An electronic document that uses a digital signature to bind a public key and an identity. |
@@ -546,6 +548,7 @@ All changes to this document are approved by a quorum of The Starfield GPC.
 | Legal Entity |  | An association, corporation, partnership, proprietorship, trust, government entity or other entity with legal standing in a country's legal system. |
 | Linting |  | A process in which the content of digitally signed data such as a Precertificate RFC 6962, Certificate, Certificate Revocation List, or OCSP response, or data-to-be-signed object such as a tbsCertificate (as described in RFC 5280, Section 4.1.1.1) is checked for conformance with the profiles and requirements defined in these Requirements. |
 | Mark Certificate | MC | A certificate that contains subject information and extensions specified in the MC Requirements and that has been verified and issued by a Mark Verifying Authority in accordance with the MC Requirements. |
+| Mark Certificate Guidelines (MC Requirements) |  | The requirements established by the AuthIndicators Working Group governing the issuance and management of Mark Certificates used in connection with BIMI, as published in the [Minimum Security Requirements for Issuance of Mark Certificates](https://bimigroup.org/resources/VMC_Requirements_latest.pdf). |
 | Mark Verifying Authority |  | The authority who issues a Verified Mark Certificate or Common Mark Certificate. |
 | Multi-Perspective Issuance Corroboration | MPIC | A process by which the determinations made during domain validation and CAA checking by the Primary Network Perspective are corroborated by other Network Perspectives before Certificate issuance. |
 | National Institute of Standards and Technology | NIST | US Government Department of Commerce agency for advancing measurements, science, and technology. |
@@ -667,7 +670,7 @@ The Starfield Repository is located at https://certs.starfieldtech.com/repositor
 
 ### 2.2 Publication of Certification Information
 
-The Starfield repository shall contain the current and historical versions of this CP/CPS, a fingerprint of the Starfield Root CAs, current CRLs for the Starfield CAs, and other information relevant to Subscribers and Relying Parties. This CP/CPS is structured in accordance with RFC 3647 in alignment with the most recent published version of the Mark Certificate Requirements published at https://bimigroup.org.
+The Starfield repository shall contain the current and historical versions of this CP/CPS, a fingerprint of the Starfield Root CAs, current CRLs for the Starfield CAs, and other information relevant to Subscribers and Relying Parties. This CP/CPS is structured in accordance with RFC 3647 in alignment with the most recent published version of the MC Requirements published at https://bimigroup.org.
 
 ### 2.3 Time or Frequency of Publication
 
@@ -983,7 +986,7 @@ This type of Mark Certificate is appropriate for Common Marks that are not Regis
 
 The Applicant will provide Starfield with the Mark Representation in SVG format that the Applicant wishes to include in the Mark Certificate. Starfield SHALL verify that:
 
-1. a Mark that matches the Mark Representation is currently displayed on a website. The Applicant’s control of the Domain Name of the website MUST be verified using at least one method specified in Section 3.2.14 of the MC Guidelines, and
+1. a Mark that matches the Mark Representation is currently displayed on a website. The Applicant’s control of the Domain Name of the website MUST be verified using at least one method specified in Section 3.2.14 of the MC Requirements, and
 2. a Mark that matches the Mark Representation was historically displayed at least 12 months earlier than the date of Mark verification on the same Domain Name that was verified as being controlled by the Applicant in (1). The historical display MUST be verified via one of the Archive Webpage Sources allowed by these Requirements.
 
 Starfield SHALL also retain a screenshot or other record of the Mark Representation provided by the Applicant and all Mark images found during the verification process stated in the previous paragraph.
