@@ -6,8 +6,8 @@ Public TLS<br>
 Certificate Policy and<br>
 Certification Practice Statement (CP/CPS)</h1>
 
-**Version 6.0**  
-**Date: October 7, 2026**
+**Version 5.06**  
+**Date: April 15, 2026**
 </div>
 
 ## Table of Contents
@@ -49,7 +49,7 @@ Certification Practice Statement (CP/CPS)</h1>
 | 3.1.4 | Rules for Interpreting Various Name Forms |
 | 3.1.5 | Uniqueness of Names |
 | 3.1.6 | Recognition, Authentication and Role of Trademarks |
-| 3.2 | Initial Identity Validation |
+| 3.2 | Initial Identity Validation18 |
 | 3.2.1 | Method to Prove Possession of Private Key |
 | 3.2.2 | Authentication of Organization and Domain Identity |
 | 3.2.3 | Authentication of Individual Identity |
@@ -295,7 +295,7 @@ Certification Practice Statement (CP/CPS)</h1>
 | 9.13 | Dispute Resolution Provisions |
 | 9.14 | Governing Law |
 | 9.15 | Compliance with Applicable Law |
-| 9.16 | Miscellaneous Provisions |
+| 9.16 | Miscellaneous Provisions77 |
 | 9.16.1 | Entire Agreement |
 | 9.16.2 | Assignment |
 | 9.16.3 | Severability |
@@ -311,21 +311,12 @@ Certification Practice Statement (CP/CPS)</h1>
 | 10.1.5 | Starfield Services Root Certification Authority |
 | 10.1.6 | GoDaddy Root Certificate Authority - G5 |
 | 10.1.7 | Starfield Root Certificate Authority - G5 |
-| 10.1.8 | GoDaddy Root Certificate Authority – G6 (Historical) |
-| 10.1.9 | Starfield Root Certificate Authority - G6 (Historical) |
+| 10.1.8 | GoDaddy Root Certificate Authority – G6 |
+| 10.1.9 | Starfield Root Certificate Authority - G6 |
 | 10.1.10 | GoDaddy TLS Root CA - R1 |
 | 10.1.11 | Starfield TLS Root CA - R1 |
 | 10.2 | Issuing CAs |
-| 10.2.1 | Starfield Issuing (subordinate) CAs (Historical) |
-| 10.2.2 | Starfield Issuing CA - G2 |
-| 10.2.3 | Starfield TLS Issuing CA DV - R1v1 |
-| 10.2.4 | Starfield TLS Issuing CA OV - R1v1 |
-| 10.2.5 | Starfield TLS Issuing CA EV - R1v1 |
-| 10.2.6 | GoDaddy Issuing CA - G1 (Historical) |
-| 10.2.7 | GoDaddy Issuing CA - G2 |
-| 10.2.8 | GoDaddy TLS Issuing CA DV - R1v1 |
-| 10.2.9 | GoDaddy TLS Issuing CA OV - R1v1 |
-| 10.2.10 | GoDaddy TLS Issuing CA EV - R1v1 |
+| 10.2.1 | Starfield Issuing (subordinate) CAs |
 | 10.3 | Cross CA Certificates |
 | 10.3.1 | Go Daddy Root Certificate Authority - G2 + Go Daddy Class 2 Certification Authority |
 | 10.3.2 | Starfield Root Certificate Authority - G2 + Starfield Class 2 Certification Authority |
@@ -336,10 +327,9 @@ Certification Practice Statement (CP/CPS)</h1>
 | 10.3.7 | GoDaddy TLS Root CA - R1 + Go Daddy Root Certificate Authority - G2 |
 | 10.3.8 | Starfield TLS Root CA - R1 + Starfield Root Certificate Authority - G2 |
 | 10.4 | End Entity SSL Certificates |
-| 10.4.1 | Go Daddy Issuing CA: Subscriber Certificates (Historical) |
-| 10.4.2 | Starfield Issuing CA: Subscriber Certificates (Historical) |
-| 10.4.3 | Go Daddy Issuing CA – G2: Subscriber Certificates (Historical) |
-| 10.4.4 | Starfield Issuing CA – G2: Subscriber Certificates (Historical) |
+| 10.4.1 | Go Daddy Issuing CA: Subscriber Certificates |
+| 10.4.2 | Starfield Issuing CA: Subscriber Certificates |
+| 10.4.3 | Go Daddy Issuing CA – G2: Subscriber Certificates |
 | 10.4.5 | GoDaddy TLS Intermediate CA DV - R1v1: Subscriber Certificates |
 | 10.4.6 | GoDaddy TLS Intermediate CA OV - R1v1: Subscriber Certificates |
 | 10.4.7 | GoDaddy TLS Intermediate CA EV - R1v1: Subscriber Certificates |
@@ -358,7 +348,7 @@ The Starfield Public Key Infrastructure ("Starfield PKI") has been established t
 
 This Certificate Policy and Certification Practice Statement (CP/CPS) describes the practices of the Starfield PKI and applies to all Certification Authorities (CAs) within the Starfield PKI hierarchy. This CP/CPS is applicable to all entities with relationships with the Starfield PKI, including Policy Authorities (PAs), Certification Authorities (CAs), Registration Authorities (RAs), Subscribers, and Relying Parties.
 
-The Starfield PKI conforms to the current version of the *Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates* as well as *Guidelines for Issuance and Management of Extended Validation Certificates* and *Network and Certificate System Security Requirements* published at https://www.cabforum.org. In the event of any inconsistency between this document and those Requirements, those Requirements take precedence over this document. The following policy identifiers are managed in accordance with these requirements: **2.23.140.1.2.1**, **2.23.140.1.2.2**, and **2.23.140.1.1**
+The Starfield PKI conforms to the current version of the *Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates* as well as *Guidelines for Issuance and Management of Extended Validation Certificates* and *Network and Certificate System Security Requirements* published at https://www.cabforum.org. In the event of any inconsistency between this document and those Requirements, those Requirements take precedence over this document. The following policy identifiers are managed in accordance with these requirements: **2.23.140.1.2.1**, **2.23.140.1.2.2**, **2.23.140.1.2.3**, and **2.23.140.1.1**
 
 *Note: References to Baseline Requirements sections are denoted in short form using the section number. For example [BR 3.2.2.1] denotes section 3.2.2.1 of the current revision of the Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates.*
 
@@ -424,7 +414,7 @@ The OID-arcs associated with this document are **2.16.840.1.114413** and **2.16.
 |         |                    | 	o Updated applicable sections under 3.2.2.4 to replace instances of label(s) with Domain Label(s)                                    |
 |         |                    | • Added subsections to 7.1.4 Name Forms: 7.1.4.1, 7.1.4.2, 7.1.4.2.1, 7.1.4.2.2, 7.1.4.3, 7.1.4.3.1.                                    |
 |         |                    | • Added 3.2.2.5 Authentication for an IP Address, and 3.2.2.6 Wildcard Domain Validation.  Re-numbered Data Source Accuracy to 3.2.2.7. |
-| 4.14    | October 15, 2021   | • Updated sections 4.9.7, 4.9.10, 7.2.2.1, and 7.2.2.2 regarding OCSP and CRL timeframes.                                               |
+| 4.14    | October 15, 2021   | • Updated sections 4.9.7, 4.9.10, 7.2.2.1, and 7.2.2.2 regarding OSCP and CRL timeframes.                                               |
 | 4.15    | November 29, 2021  | • Updated sections 3.2.2.4.18 and 3.2.2.4.19 regarding redirects and Wildcard Domain Names                                              |
 | 4.16    | March 9, 2022      | • Updated sections 3.2.2.4.20, 3.4, 4.2.1, 4.2.3, 4,9.2, 4.9.3, 4.9.7, 4.9.10, and 9.1.5 to account for Certainly CPS alignment.        |
 |         |                    | • Cleaned up formatting in sections 1.5.3, 1.6, and 8.6.                                                                                |
@@ -479,11 +469,6 @@ The OID-arcs associated with this document are **2.16.840.1.114413** and **2.16.
 |         |                    | • Updated the following sections: 1.3.1, 1.6, 1.6.1, 1.6.2, 2.3, 3.2.2.4, 3.2.2.4.4, 3.2.2.8.1, 3.2.2.9, 3.2.2.10, 4.2.1, 4.2.2, 4.10.2, 5.4.1, 5.4.3, 6.1.5.1, 6.1.5.2, 6.1.5.3, 6.1.6, 6.3.2, 7.1.1, 7.1.3, 7.1.4.1, 7.1.4.2.1, 7.2.2.1, 7.2.2.2, 7.3.1, 8.4, 8.6, 10.2.1, 10.4.3, 10.4.4, 10.4.5, 10.4.6, 10.4.7, 10.4.8, 10.4.9, 10.4.10 |
 |         |                    | • Added the following sections: 3.2.2.8.1, 3.2.2.9.1, 3.2.2.9.2                                         |
 |         |                    | • Removed the following sections: 10.1.12                                                                      |
-| 6.0	  | October 7, 2026  | • Updated section 1.3.2 to distinguish automated and manual processes for validation |
-|         |                    | • Updated section 3.2 to clarify EV Roles |
-|         |                    | • Updated section 4.2.1 EV data-reuse table to include "certificate requester" |
-|         |                    | • Added definition of "Verified Method of Communication" |
-|         |                    | • Updated the following sections: 1.3.2, 2.2, 3.1.1, 3.1.2, 3.1.3, 3.2, 3.2.2.4, 3.2.2.4.7, 3.2.2.4.12, 3.2.2.4.20, 3.2.2.4.21, 3.2.2.6, 3.2.2.8, 4.2.1, 4.2.2.1, 3.2.2.9, 3.2.3, 4.3.1.2, 4.6.3, 4.7.1, 4.7.3, 4.8.3, 4.9.1.1, 4.9.2, 4.9.3, 4.9.4, 4.9.5, 4.9.9, 4.9.10, 4.9.12, 4.10.2, 5, 5.2, 5.3.2, 5.4.2, 5.4.4, 5.5.6, 5.5.7, 5.7, 6.1.1.1, 6.1.5, 6.2.4, 6.2.5, 6.3.2, 6.5.1, 6.7, 7.1.4, 7.1.4.1, 7.1.4.2, 7.1.4.2.1, 7.1.4.3, 7.1.6, 7.1.8, 7.2.2, 8.1, 8.2, 8.3, 8.4, 8.5, 8.8, 8.9, 9.1.3, 9.3.1, 9, 10.2.1, 10.4 |
 ## <span id="page-11-0"></span> **1.3 PKI Participants**
 
 This CP/CPS is applicable to all certificates issued by Starfield CAs within the Starfield PKI. This document defines the specific communities for which a specific class or type of certificate is applicable, specific Starfield PKI practices and requirements for the issuance and management of such certificates, and the intended purposes and uses of such certificates.
@@ -558,26 +543,19 @@ source: [diagrams/GoDaddy_R1_Hierarchy.mmd](diagrams/GoDaddy_R1_Hierarchy.mmd)
 
 ### <span id="page-14-0"></span> **1.3.2 Registration Authorities**
 
-Registration Authorities (RAs) evaluate and either approve or reject Subscriber certificate management transactions (including certificate requests, renewal and re-key requests, and revocation requests). Starfield serves as the sole RA for the Starfield PKI; Starfield does not delegate RA authority to unaffiliated third parties, but MAY rely on Delegated Third Parties for limited, well-defined functions as described below.
+Registration Authorities (RAs) evaluate and either approve or reject Subscriber certificate management transactions (including certificate requests, renewal and re-key requests, and revocation requests). Starfield serves as the sole RA for the Starfield PKI.
 
-Root CAs. For Starfield Root CAs, the Subscribers are Subordinate CAs under Starfield's control. The RA function for these certificates is performed entirely manually by authorized Starfield PKI personnel, and certificate issuance additionally requires a deliberate, multi-person authorized command (see Section 4.3.1.1).
+Obligations of the Registration Authorities (RAs) within the Starfield PKI include:
 
-Issuing CAs. For Starfield Issuing CAs, the RA function combines automated and manual processing, varying by certificate type and risk profile:
+- Obtaining a public-key from the Subscriber
+- Identifying and authenticating Subscribers in accordance with this CP/CPS
+- Verifying that the Subscriber possesses the asymmetric private key corresponding to the public-key submitted for certification
+- Receiving, authenticating and processing certificate revocation requests
+- Providing suitable training to personnel performing RA functions.
 
-- Domain Validated (DV) Certificates: Domain authorization/control validation (Section 3.2.2.4), CAA processing (Section 4.2.2.1), and Multi-Perspective Issuance Corroboration (Section 3.2.2.9) are fully automated. Automation in this context performs substantive validation determinations (i.e., pass/fail decisions on domain control and CAA permission), not merely workflow routing. Certificate requests flagged as high-risk by internal or third-party fraud/phishing data sources (Section 3.2.2.12.1) are automatically routed for mandatory manual review before issuance.
-- Organization Validated (OV) Certificates: Domain control validation is automated as above. Organization identity, address, and DBA/tradename verification (Sections 3.2.2.1–3.2.2.2) and validation of the Applicant Representative's authority (Section 3.2.5) are performed manually by trained Validation Specialists, using automated tooling to query Reliable Data Sources but requiring human review and sign-off of the results.
-- Extended Validation (EV) Certificates: All EV-specific verification and approval steps (Section 3.2, EV bullets) are performed manually by trained Validation Specialists. Consistent with Section 5.2.4, approval of an EV Certificate request must be performed by a person other than the person who performed the underlying verification (separation of duties); this approval can never be automated.
+For the Starfield Root CAs the Subscribers are Subordinate CAs that are under the control of Starfield. Accordingly, the RA function for these CAs is performed manually by authorized Starfield PKI personnel.
 
-Functions that always require human approval, regardless of certificate type:
-
-- Approval of any certificate request flagged as high-risk, suspicious, or previously rejected/revoked for fraud (Section 3.2.2.12.1);
-- All EV verification and approval steps (separation of duties per Section 5.2.4);
-- Root CA certificate issuance (Section 4.3.1.1);
-- Any manual override of an automated validation failure.
-
-**Role of automation** - Automated systems perform domain control and CAA validation determinations, generate and check Random Values/Request Tokens, run Multi-Perspective Issuance Corroboration, and lint each to-be-signed certificate for technical conformance with the Baseline Requirements prior to signing (Sections 4.3.1.2–4.3.1.3). Automation is not limited to workflow routing — for DV issuance, the automated validation result is itself the basis for issuance authorization, subject to linting and CAA gating controls that can block issuance even after validation passes.
-
-**Delegated Third Parties** - Where a Delegated Third Party (as defined in Section 1.6.1) participates in the Certificate Management Process — for example, providing or hosting a Random Value used in DNS Change domain validation (Section 3.2.2.4.7) — Starfield remains fully responsible for the resulting validation and issuance decision. Starfield authorizes Delegated Third Parties only under a written agreement that obligates them to comply with the applicable requirements of this CP/CPS and the Baseline Requirements, and Starfield does not treat any output from a Delegated Third Party as a substitute for Starfield's own validation, approval, or issuance-authorization functions. 
+For the Starfield Issuing CAs, the RA function is performed by Starfield using a combination of automated and manual processes.
 
 ### <span id="page-14-1"></span> **1.3.3 Subscribers**
 
@@ -611,11 +589,16 @@ Not applicable.
 Certificates issued under this CP/CPS are intended for the trust purpose of TLS server authentication.
 
 Starfield offers TLS Certificates in the following levels of assurance:
-- Domain Validation (DV)
-- Organization Validation (OV)
-- Extended Validation (EV)
+
+| _Assurance Level_ | _Certificate Validation Type_ |
+|---|---|
+| _Basic and Medium Assurance_ | Domain Validation (DV) |
+| _High Assurance_ | Organization and Individual Validation (OV) |
+| _Extended Validation_ | Extended Validation (EV) |
 
 Subscriber certificates issued under this CP/CPS require the Extended Key Usage value **id-kp-serverAuth (1.3.6.1.5.5.7.3.1)**. Certain certificate profiles issued under this CP/CPS may also include **id-kp-clientAuth (1.3.6.1.5.5.7.3.2)**, as specified in the applicable certificate profile.
+
+_Note: As of May 30, 2021, Starfield no longer issues High Assurance Code Signing Certificates and will no longer update this CP/CPS for Code Signing related changes to the Baseline Requirements. Code Signing references were removed in v4.12. Refer to Certificate Policy and Certification Practice Statement v4.11 in Starfield's Repository for the most recent policy containing Code Signing references._
 
 ### <span id="page-15-2"></span> **1.4.1 Appropriate Certificate Uses**
 
@@ -639,11 +622,7 @@ Tempe, AZ 85281<br>
 Phone: 480-505-8800<br>
 E-mail: [practices@starfieldtech.com](mailto:practices@starfieldtech.com)<br>
   
-To submit a Certificate Problem Report concerning a compromised key, a misissued Certificate, or any other suspicious activity involving a Certificate, please contact Starfield using one of the following methods:
-- Phone: (480) 505-8852
-- Email: [practices@starfieldtech.com](mailto:practices@starfieldtech.com)
-- GoDaddy Certificate Problem Report: [https://sec.godaddy.com/report-certificate](https://sec.godaddy.com/report-certificate)
-- Starfield Certificate Problem Report: [https://sec.secureserver.net/report-certificate](https://sec.secureserver.net/report-certificate)
+In case of a Certificate Problem Report, that concerns a key compromised certificate, a misissued certificate, or any other type of suspicious activity with a certificate, contact us at (480) 505-8852, or practices@starfieldtech.com.  
 
 The Starfield Governance and Policy Committee consists of representatives from executive management, corporate security, PKI operations, and legal.  
   
@@ -661,7 +640,7 @@ The Starfield GPC determines the suitability of a CPS for the policy based on th
 
 ### <span id="page-16-1"></span> **1.5.4 CPS Approval Procedure**
 
-All changes to this document are approved by a quorum of the Starfield GPC.
+All changes to this document are approved by a quorum of The Starfield GPC.
 
 ## <span id="page-16-2"></span> **1.6 Definitions, Acronyms, and References**
 
@@ -669,7 +648,7 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 
 | Term                                               | Acronym   | Definition                                                                                                                                                                                                             |
 |----------------------------------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Affiliate                                          |           | A corporation, partnership, joint venture or other entity controlling, controlled by, or under common control with another entity, or an agency, department, political subdivision, or any entity operating under the direct control of a Government Entity. |
+| Affiliate                                          |           | A corporation, partnership, joint venture or other entity controlling, controlled by, or >under common control with another entity, or an agency, department, political subdivision, or any entity operating under the direct control of a Government Entity. |
 | American Institute of Certified Public Accountants | AICPA     | American Institute of Certified Public Accountants                                                                                                                                                                     |
 | Applicant                                          |           | The natural person or legal entity that applies for (or seeks renewal of) a Certificate. Once the Certificate issues, the Applicant is referred to as the Subscriber.                                                  |
 | Applicant Representative                           |           | A natural person or human sponsor who is either the Applicant, employed by the Applicant, or an authorized agent who has express authority to represent the Applicant:<br>I.	who signs and submits, or approves a certificate request on behalf of the Applicant, and/or<br>II.	who signs and submits a Subscriber Agreement on behalf of the Applicant, and/or<br>III.	who acknowledges the Terms of Use on behalf of the Applicant when the Applicant is an Affiliate of the CA or is the CA. |
@@ -681,6 +660,7 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 | Authorization Domain Name                          | ADN       | The FQDN used to obtain authorization for a given FQDN to be included in a Certificate. The CA may use the FQDN returned from a DNS CNAME lookup as the FQDN for the purposes of domain validation. If a Wildcard Domain Name is to be included in a Certificate, then the CA MUST remove “*.” from the left-most portion of the Wildcard Domain Name to yield the corresponding FQDN. The CA may prune zero or more Domain Labels of the FQDN from left to right until encountering a Base Domain Name and may use any one of the values that were yielded by pruning (including the Base Domain Name itself) for the purpose of domain validation. |
 | Authorized Port                                    |           | One of the following ports: 80 (http), 443 (http), 115 (sftp), 25 (smtp), 22 (ssh).                                                                                                                                    |
 | Base Domain Name                                   |           | The portion of an applied‐for FQDN that is the first Domain Name node left of a registry-controlled or public suffix plus the registry‐controlled or public suffix. (e.g. "example.co.uk" or "example.com"). For FQDNs where the right‐most Domain Name node is a gTLD having ICANN Specification 13 in its registry agreement, the gTLD itself may be used as the Base Domain Name. |
+| Basic Assurance                                    |           | Starfield's vetting process that verifies an Applicant's access to the domain.                                                                                                                                         |
 | Baseline Requirements                              | BR<br>[BR X.X] | **Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates** published by the [CA/Browser Forum](https://www.cabforum.org).<br><br>References to Baseline Requirements sections are denoted in short form using the section number. For example [BR 3.2.2.1] denotes section 3.2.2.1 of the current revision of the **Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates**.  |
 | Certificate Authority Authorization                | CAA       | From [RFC 8659](https://tools.ietf.org/html/rfc8659): “The Certification Authority Authorization (CAA) DNS Resource Record allows a DNS domain name holder to specify one or more Certification Authorities (CAs) authorized to issue certificates for that domain name. CAA Resource Records allow a public CA to implement additional controls to reduce the risk of unintended certificate mis-issue.” |
 | CA Key Pair                                        |           | A Key Pair where the Public Key appears as the Subject Public Key Info in one or more Root CA Certificate(s) and/or Subordinate CA Certificate(s).                                                                     |
@@ -695,15 +675,17 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 | Certification Authority                            | CA        | Certificate Issuing entity defined further in [Section 1.3.1 Certificate Authorities](#page-11-1) of this document.                                                                                                    |
 | Certification Practice Statement                   | CPS       | One of several documents forming the governance framework in which Certificates are created, issued, managed, and used.                                                                                                |
 | Canonical Name                                     | CNAME     | A DNS resource record to provide the canonical name associated with an alias name further defined in [RFC 2181 Section 10.1](https://tools.ietf.org/html/rfc2181).                                                     |
+| Code Signing Certificate                           |           | A certificate issued to an organization for the purpose of digitally signing software.                                                                                                                                 |
 | Compromise                                         |           | A loss, theft, disclosure, modification, unauthorized use, or other breach of security related to a Private Key.                                                                                                       |
 | Country                                            |           | Either a member of the United Nations OR a geographic region recognized as a Sovereign State by at least two UN member nations.                                                                                        |
 | Country code top-level domain                      | ccTLD     | An internet top level domain reserved for a country or dependent territory.                                                                                                                                            |
 | Cross Certificate                                  |           | A certificate that is used to establish a trust relationship between two Root CAs.                                                                                                                                     |
+| Custom Certificate                                 |           | A certificate profile defined for a specific, non-standard usage.                                                                                                                                                      |
 | Delegated Third Party                              |           | A natural person or Legal Entity that is not the CA but is authorized by the CA, and whose activities are not within the scope of the appropriate CA audits, to assist in the Certificate Management Process by performing or fulfilling one or more of the CA requirements found herein. |
 | Distinguished Name                                 | DN        | A globally unique identifier representing a Subscriber.                                                                                                                                                                |
 | Doing Business As                                  | DBA       | An entity name or trade name used for Subject Identity Information                                                                                                                                                     |
 | Domain Authorization Document                      |           | Documentation provided by, or a CA's documentation of a communication with, a Domain Name Registrar attesting to the authority of an Applicant to request a Certificate for a specific domain namespace.               |
-| Domain Contact                                     |           | The Domain Name Registrant, technical contact, or administrative contact (or the equivalent under a ccTLD) as listed in the WHOIS record of the Base Domain Name or in a DNS SOA record, or as obtained through direct contact with the Domain Name Registrar. |
+| Domain Contact                                     |           | The Domain Name Registrant, technical contact, or administrative contract (or the equivalent under a ccTLD) as listed in the WHOIS record of the Base Domain Name or in a DNS SOA record, or as obtained through direct contact with the Domain Name Registrar. |
 | Domain Label                                       |           | From [RFC 8499](https://datatracker.ietf.org/doc/html/rfc8499): "An ordered list of zero or more octets that makes up a portion of a domain name. Using graph theory, a label identifies one node in a portion of the graph of all possible domain names." |
 | Domain Name                                        |           | An ordered list of one or more Domain Labels assigned to a node in the Domain Name System.                                                                                                                             |
 | Domain Namespace                                   |           | The set of all possible Domain Names that are subordinate to a single node in the Domain Name System.                                                                                                                  |
@@ -717,6 +699,7 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 | Government Entity                                  |           | A government-operated legal entity, agency, department, ministry, branch, or similar element of the government of a country, or political subdivision within such country (such as a state, province, city, county, etc.). |
 | Governance and Policy Committee                    | GPC       | The Starfield committee which creates and maintains the policies related to the Starfield Public Key Infrastructure.                                                                                                   |
 | Hardware Security Module                           | HSM       | A specialized computer hardware system designed to securely store encryption keys.                                                                                                                                     |
+| High Assurance                                     |           | Starfield's vetting process that verifies the identity of the individual or organization that requested the certificate and access to the domain.                                                                      |
 | Internal Name                                      |           | A string of characters (not an IP address) in a Common Name or Subject Alternative Name field of a Certificate that cannot be verified as globally unique within the public DNS at the time of certificate issuance because it does not end with a Top Level Domain registered in IANA's Root Zone Database. |
 | International Organization for Standardization     | ISO       | An independent, non-governmental international organization which sets and oversees standards.                                                                                                                         |
 | Internationalized Domain Name                      | IDN       | An Internet domain name that contains at least one label displayed in software applications, in whole or in part, in non-latin script or alphabet.                                                                     |
@@ -735,6 +718,7 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 | LDH Label                                          |           | From [RFC 5890](https://datatracker.ietf.org/doc/html/rfc5890): "A string consisting of ASCII letters, digits, and the hyphen with the further restriction that the hyphen cannot appear at the beginning or end of the string. Like all DNS labels, its total length must not exceed 63 octets." |
 | Legal Entity                                       |           | An association, corporation, partnership, proprietorship, trust, government entity or other entity with legal standing in a country's legal system.                                                                    |
 | Linting                                            |           | A process in which the content of digitally signed data such as a Precertificate [RFC 6962 (https://datatracker.ietf.org/doc/html/rfc6962), Certificate, Certificate Revocation List, or OCSP response, or data-to-be-signed object such as a `tbsCertificate` (as described in [RFC 5280, Section 4.1.1.1](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.1.1)) is checked for conformance with the profiles and requirements defined in these Requirements. |
+| Medium Assurance                                   |           | Starfield's vetting process that verifies access to the domain.                                                                                                                                                        |
 | Multi-Perspective Issuance Corroboration           | MPIC      | A process by which the determinations made during domain validation and CAA checking by the Primary Network Perspective are corroborated by other Network Perspectives before Certificate issuance.                    |
 | National Institute of Standards and Technology     | NIST      | US Government Department of Commerce agency for advancing measurements, science, and technology.                                                                                                                       |
 | Network Perspective                                |           | Related to Multi-Perspective Issuance Corroboration. A system (e.g., a cloud-hosted server instance) or collection of network components (e.g., a VPN and corresponding infrastructure) for sending outbound Internet traffic associated with a domain control validation method and/or CAA check. The location of a Network Perspective is determined by the point where unencapsulated outbound Internet traffic is typically first handed off to the network infrastructure providing Internet connectivity to that perspective. |
@@ -742,7 +726,7 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 | Object Identifier                                  | OID       | A unique alphanumeric or numeric identifier registered under the International Organization for Standardization’s applicable standard for a specific object or object class.                                           |
 | Onion Domain Name                                  |           | A Fully Qualified Domain Name ending with the [RFC 7686](https://datatracker.ietf.org/doc/html/rfc7686) ".onion" Special-Use Domain Name.                                                                                        |
 | Online Certificate Status Protocol                 | OCSP      | A standardized query/response protocol whereby a client can request the status of a given Certificate and be given a response that will indicate whether the Certificate is valid or revoked.                          |
-| OCSP Responder                                     |           | An online server operated under the authority of the CA and connected to its Repository for processing Certificate status requests.                                                                                    |
+| OSCP Responder                                     |           | An online server operated under the authority of the CA and connected to its Repository for processing Certificate status requests.                                                                                    |
 | P-Label                                            |           | A XN-Label that contains valid output of the Punycode algorithm as defined in [RFC 3492 Section 6.3](https://tools.ietf.org/html/rfc3492) from the fifth and subsequent positions.                                     |
 | Place of Business                                  |           | The location of any facility (such as a factory, retail store, warehouse, etc.) where the Applicant's business is conducted.                                                                                           |
 | Policy Authority                                   | PA        | The entity responsible for identifying and maintaining requirements for a Public Key Infrastructure                                                                                                                    |
@@ -754,7 +738,7 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 | Public Key Infrastructure                          | PKI       | A set of hardware, software, people, procedures, rules, policies, and obligations used to facilitate the trustworthy creation, issuance, management, and use of Certificates and keys based on Public Key Cryptography. |
 | Public Suffix List                                 | PSL       | A list of usable domain suffixes as defined by ICANN.                                                                                                                                                                  |
 | Publicly-Trusted Certificate                       |           | A Certificate that is trusted by virtue of the fact that its corresponding Root Certificate is distributed as a trust anchor in widely-available application software.                                                 |
-| Qualified Auditor                                  |           | A natural person or Legal Entity that meets the requirements of [Section 8.2 Identity/Qualifications of Assessor](#page-71-1).                                                                                                   |
+| Qualified Auditor                                  |           | A natural person or Legal Entity that meets the requirements of [Section 8.2 Identity/Qualifications of Assessor]().                                                                                                   |
 | Random Value                                       |           | A value specified by a CA to the Applicant that exhibits at least 112 bits of entropy.                                                                                                                                 |
 | Registered Domain Name                             |           | A Domain Name that has been registered with a Domain Name Registrar.                                                                                                                                                   |
 | Registration Authority                             | RA        | Any Legal Entity that is responsible for identification and authentication of subjects of Certificates, but is not a CA, and hence does not sign or issue Certificates. An RA may assist in the certificate application process or revocation process or both. When "RA" is used as an adjective to describe a role or function, it does not necessarily imply a separate body, but can be part of the CA. | 
@@ -791,7 +775,6 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 | Valid Certificate                                  |           | A Certificate that passes the validation procedure specified in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280).                                                                                                      |
 | Validation Specialist                              |           | Someone who performs the information verification duties specified by the BRs.                                                                                                                                         |
 | Validity Period                                    |           | From [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280): "The period of time from notBefore through notAfter, inclusive."                                                                                                 |
-| Verified Method of Communication | | The use of a telephone number, a fax number, an email address, or postal delivery address, confirmed by the CA in accordance with Section 3.2.2.1 as a reliable way of communicating with the Applicant. |
 | WHOIS                                              |           | Information retrieved directly from the Domain Name Registrar or registry operator via the protocol defined in [RFC 3912](https://datatracker.ietf.org/doc/html/rfc3912), the Registry Data Access Protocol defined in [RFC 7482](https://datatracker.ietf.org/doc/html/rfc7482), or an HTTPS website. |
 | Wildcard Certificate                               |           | A Certificate containing at least one Wildcard Domain Name in the Subject Alternative Names in the Certificate.                                                                                                        |
 | Wildcard Domain Name                               |           | A string starting with "\*." (U+002A ASTERISK, U+002E FULL STOP) immediately followed by a Fully-Qualified Domain Name.                                                                                                |
@@ -803,13 +786,14 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 |-------------------|--------------------------------------------------------------------------------|------------------|
 | FIPS 140-2        | Federal Information Processing Standards Publication - Security Requirements For Cryptographic Modules, Information Technology Laboratory, National Institute of Standards and Technology | May 25, 2001 |
 | FIPS 140-3        | Federal Information Processing Standards Publication - Security Requirements For Cryptographic Modules, Information Technology Laboratory, National Institute of Standards and Technology | March 22, 2019 |
-| FIPS 186-5        | Federal Information Processing Standards Publication - Digital Signature Standard (DSS), Information Technology Laboratory, National Institute of Standards and Technology | February 2023 |
+| FIPS 186-5        | Federal Information Processing Standards Publication - Digital Signature Standard (DSS), Information Technology Laboratory, National Institute of Standards and Technology. Network and Certificate System Security Requirements, available at https://cabforum.org/network-security-requirements/ | February 2023 |
 | NIST SP 800-89    | Recommendation for Obtaining Assurances for Digital Signature Applications [11-2006](http://csrc.nist.gov/publications/nistpubs/800-89/SP-800-89_November2006.pdf) | 2006 |
 | RFC2119           | Request for Comments: 2119, Key words for use in RFCs to Indicate Requirement Levels. S. Bradner | March 1997 |
 | RFC3492           | Request for Comments: 3492, Punycode: A Bootstring encoding of Unicode for Internationalized Domain Names in Applications (IDNA). A. Costello | March 2003 |
 | RFC3647           | Request for Comments: 3647, Internet X.509 Public Key Infrastructure: Certificate Policy and Certification Practices Framework. S. Chokhani, et al | November 2003 |
 | RFC3912           | Request for Comments: 3912, WHOIS Protocol Specification. L. Daigle | September 2004 |
 | RFC3986           | Request for Comments: 3986, Uniform Resource Identifier (URI): Generic Syntax. T. Berners-Lee, et al | January 2005 |
+| RFC4366           | Request for Comments: 4366, Transport Layer Security (TLS) Extensions, Blake-Wilson, et al | April 2006 |
 | RFC5019           | Request for Comments: 5019, The Lightweight Online Certificate Status Protocol (OCSP) Profile for High-Volume Environments. A. Deacon, et al | September 2007 |
 | RFC5280           | Request for Comments: 5280, Internet X.509 Public Key Infrastructure: Certificate and Certificate Revocation List (CRL) Profile. D. Cooper, et al | May 2008 |
 | RFC5890           | Request for Comments: 5890, Internationalized Domain Names for Applications (IDNA): Definitions and Document Framework. J. Klensin | August 2010 |
@@ -820,8 +804,6 @@ All changes to this document are approved by a quorum of the Starfield GPC.
 | RFC7482           | Request for Comments: 7482, Registration Data Access Protocol (RDAP) Query Format. A. Newton, et al | March 2015 |
 | RFC7538           | Request For Comments: 7538, The Hypertext Transfer Protocol Status Code 308 (Permanent Redirect). J. Reschke | April 2015 |
 | RFC8499           | Request for Comments: 8499, DNS Terminology. P. Hoffman, et al | January 2019 |
-| RFC8555 | Request for Comments: 8555, Automatic Certificate Management Environment (ACME). R. Barnes, et al | March 2019 |
-| RFC8657 | Request for Comments: 8657, Certification Authority Authorization (CAA) Record Extensions for Account URI and Automatic Certificate Management Environment (ACME) Method Binding. H. Landau | November 2019 |
 | RFC8659           | Request for Comments: 8659, DNS Certification Authority Authorization (CAA) Resource Record. P. Hallam-Baker, et al | November 2019 |
 | RFC8738           | Request for Comments: 8738, Automated Certificate Management Environment (ACME) IP Identifier Validation Extension. R.B.Shoemaker, Ed | February 2020 |
 | RFC8954           | Request for Comments: 8954, Online Certificate Status Protocol (OCSP) Nonce Extension. M. Sahni, Ed | November 2020 |
@@ -855,9 +837,11 @@ In providing Repository services, obligations of the Starfield PKI include:
 - Storing and distributing this CP/CPS and subsequent updates.
 - Storing and distributing the Relying Party and Subscriber agreements.
 
+The Starfield Repository is located at [https://certs.starfieldtech.com/repository](https://certs.starfieldtech.com/repository)
+
 ## <span id="page-24-2"></span> **2.2 Publication of Certification Information**
 
-The Starfield repository shall contain the current and historical versions of this CP/CPS, a fingerprint of the Starfield Root CAs, current CRLs for the Starfield CAs, and other information relevant to Subscribers and Relying Parties. The Starfield Repository is located at [https://certs.starfieldtech.com/repository](https://certs.starfieldtech.com/repository) and is available on a 24x7 basis. <br><br>This CP/CPS is structured in accordance with [RFC 3647](https://tools.ietf.org/html/rfc3647) in alignment with the most recent published version of the CA/B Forum *Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates* published at <https://www.cabforum.org>.
+The Starfield repository shall contain the current and historical versions of this CP/CPS, a fingerprint of the Starfield Root CAs, current CRLs for the Starfield CAs, and other information relevant to Subscribers and Relying Parties. This CP/CPS is structured in accordance with [RFC 3647](https://tools.ietf.org/html/rfc3647) in alignment with the most recent published version of the CA/B Forum *Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates* published at <https://www.cabforum.org>.
 
 ## <span id="page-24-3"></span>**2.3 Time or Frequency of Publication**
 
@@ -877,13 +861,13 @@ Read access to the Starfield repository is unrestricted. Write access to the rep
 
 ### <span id="page-25-2"></span> **3.1.1 Types of Names**
 
-Subscriber Certificates contain a Subject Alternative Name extension with at least one Subject Alternative Name in accordance with the applicable requirements. They may also contain a Distinguished Name in the Subject field that is in compliance with the X.500 standard for Distinguished Names. In the case where subject identity information is contained solely in the Subject Alternative Name extension, the Subject field of the Certificate shall be empty. 
+All certificate holders require either a Distinguished Name in the Subject field that is in compliance with the X.500 standard for Distinguished Names, or a set of Subject Alternative Name values in the Subject Alternative Name extension. In the case where subject identity information is contained solely in the Subject Alternative Name extension, the Subject field of the certificate shall be empty. The Starfield PKI approves naming conventions for the creation of distinguished names and Subject Alternative Name values for certificate applicants.
 
 The Issuer and Subject Distinguished Name fields for Certificates issued by Starfield are populated in accordance with [Section 7.1 Certificate Profile.](#page-63-1)
 
 ### <span id="page-25-3"></span> **3.1.2 Need for Names to be Meaningful**
 
-Distinguished Names, if present in a certificate,  shall be meaningful. For Subscriber Certificates, the Subject Alternative Name extension contains validated Fully-Qualified Domain Names or Wildcard Domain Names.
+For Starfield PKI certificates that contain a Distinguished Name in the Subject field, said Distinguished Names shall be meaningful. For Starfield PKI certificates with an empty Subject field, any information contained in the Subject Alternative Name extension may or may not be meaningful depending on the type and intended use of the certificate.
 
 ### <span id="page-25-4"></span> **3.1.3 Anonymity or Pseudonymity of Subscribers**
 
@@ -903,33 +887,26 @@ Certificate Applicants are prohibited from using names in their Certificate Appl
 
 ## <span id="page-26-0"></span> **3.2 Initial Identity Validation**
 
-For DV SSL Server Certificate Subscribers, Starfield verifies the following:
+For Basic and Medium Assurance Domain Validated SSL Server Certificate Subscribers, Starfield verifies the following:
 
-- the individual requesting the certificate has control over the domain name(s) that are specified in the certificate application using the methods described in [Section 3.2.2.4 Validation of Domain Authorization or Control.](#page-27-0)
+- the individual requesting the certificate has access to the domain name(s) that are specified in the certificate application using the methods described in [Section 3.2.2.4 Validation of Domain Authorization or Control.](#page-27-0)
 
-For OV SSL Server Certificate Subscribers, Starfield verifies the following:
+For High Assurance Organizational Validated SSL Server Certificate Subscribers, Starfield verifies the following:
 
-- the individual requesting the certificate has control over the domain name(s) that are specified in the certificate application using the methods described in [Section 3.2.2.4 Validation of Domain Authorization or Control.](#page-27-0)
+- the individual requesting the certificate has access to the domain name(s) that are specified in the certificate application using the methods described in [Section 3.2.2.4 Validation of Domain Authorization or Control.](#page-27-0)
 - the individual requesting the certificate is authorized to do so by the organization named in the certificate using the methods described in [Section 3.2.5 Validation of Authority](#page-33-2)
 - the organization name represents an organization validated using the methods described in [Section 3.2.2 Authentication of Organization and Domain Identity.](#page-26-2)
 
 For Extended Validation SSL Server Certificate Subscribers, Starfield verifies:
 
-- Legal Existence and Identity;
-- Assumed name, when applicable;
-- Physical existence and business presence;
-- Operational existence, when required;
-- A Verified Method of Communication with the Applicant;
-- Control of the domain name(s) included in the Certificate;
-- The name, title, and authority of the Contract Signer, Certificate Approver, and Certificate Requester, as applicable;
-- Authorization of the Subscriber Agreement; and
-- Approval of the EV Certificate Request.
+- Legal Existence and Identity
+- Assumed Name (optional)
+- Physical Existence (business presence at a physical location)
+- Operational Existence (if records indicate that the organization is less than three years old)
+- Domain ownership or exclusive right to use
+- Name, title, and authority of contract signer, and certificate approver
 
-Starfield verifies Applicant organization information using applicable authoritative or independent sources, as described in Sections 3.2.2.1 through 3.2.2.3. As part of verifying the authority of individuals acting in EV roles, Starfield contacts the Applicant using a verified telephone number and confirms the individual's authority to act on behalf of the Applicant in the applicable role.
-
-Starfield verifies that the Contract Signer is authorized to enter into the Subscriber Agreement on behalf of the Applicant, that the Certificate Approver is authorized to approve EV Certificate Requests, and that Certificate Requesters are authorized to submit EV Certificate Requests on behalf of the Applicant. The applicable validations and approvals must be completed prior to issuance, and — consistent with Section 5.2.4 — approval of the EV Certificate Request must be performed by a person other than the Validation Specialist who verified the underlying information.
-
-*Note: Before using an incorporating or registration agency for validation of an Extended Validation Certificate, that agency is disclosed publicly via <https://ssltools.godaddy.com/compliance/Approved_Incorporating_and_Registration_Agencies.xlsx>. This document, Approved Incorporating and Registration Agencies, contains the name of the agency, jurisdiction(s) and website information as well as a document history including version numbers and publication dates for all edits.* 
+*Note: Effective as of 1 October 2020, before using an incorporating or registration agency for validation of an Extended Validation Certificate, that agency is disclosed publicly via <https://ssltools.godaddy.com/compliance/Approved_Incorporating_and_Registration_Agencies.xlsx>. This document, Approved Incorporating and Registration Agencies, contains the name of the agency, jurisdiction(s) and website information as well as a document history including version numbers and publication dates for all edits.* 
 
 ### <span id="page-26-1"></span> **3.2.1 Method to Prove Possession of Private Key**
 
@@ -1008,11 +985,10 @@ This method of domain validation is not used.
 
 ##### 3.2.2.4.4 **Constructed Email to Domain Contact**
 
-GoDaddy currently supports this method and uses it for non-ACME issuance workflows.
-
 Communicating with the Domain's administrator by (i) using an email address created by pre-pending 'admin', 'administrator', 'webmaster', 'hostmaster', or 'postmaster' in the local part, followed by the at-sign ("@"), followed by an Authorization Domain Name, (ii) including a Random Value in the email, and (iii) receiving a confirming response utilizing the Random Value.
 
 Effective March 15, 2028:
+
 Starfield MUST NOT rely on this method.
 Prior validations using this method and validation data gathered according to this method MUST NOT be used to issue Subscriber Certificates.
 
@@ -1026,9 +1002,7 @@ This method of domain validation is not used. Starfield does use method Agreed-U
 
 ##### 3.2.2.4.7 **DNS Change**
 
-GoDaddy currently supports this method and uses it for certain issuance workflows.
-
-Having the Applicant demonstrate practical control over the FQDN by confirming the presence of a Random Value generated by Starfield in a DNS TXT record for an Authorization Domain Name or an Authorization Domain Name that is prefixed with a Domain Label that begins with an underscore character.  Starfield does not currently support CNAME or CAA records for this purpose.
+Having the Applicant demonstrate practical control over the FQDN by confirming the presence of a Random Value generated by Starfield in a DNS TXT or CAA record for an Authorization Domain Name or an Authorization Domain Name that is prefixed with a Domain Label that begins with an underscore character. 
 
 If a Random Value is used, Starfield or Delegated Third Party SHALL provide a Random Value unique to the certificate request and SHALL not use the Random Value after (i) 30 days or (ii) if the Applicant submitted the certificate request, the timeframe permitted for reuse of validated information relevant to the certificate.
 
@@ -1054,11 +1028,16 @@ This method of domain validation is not used.
 
 ##### 3.2.2.4.12 **Validating Applicant as a Domain Contact**
 
-GoDaddy currently supports this method and uses it for certain issuance workflows.
-
-Confirming the Applicant is the Domain Name Contact directly with GoDaddy, an affiliate of the Starfield CA, and determining that the registered domain and SSL certificate request both originate from the same Domain Contact.  
+Confirming the Applicant is the Domain Name Contact directly with the Domain Name Registrar by determining that the domain was registered using the same account as the certificate. 
 
 Once the FQDN has been validated using this method, Starfield MAY also issue Certificates for other FQDNs that end with all the Domain Labels of the validated FQDN. This method is suitable for validating Wildcard Domain Names.
+
+Effective January 15, 2025:
+- When issuing Subscriber Certificates, Starfield MUST NOT rely on Domain Contact information obtained using an HTTPS website, regardless of whether previously obtained information is within the allowed reuse period.
+- When obtaining Domain Contact information for a requested Domain Name, Starfield:
+	- if using the WHOIS protocol (RFC 3912), MUST query IANA's WHOIS server and follow referrals to the appropriate WHOIS server.
+	- if using the Registry Data Access Protocol (RFC 7482), MUST utilize IANA's bootstrap file to identify and query the correct RDAP server for the domain.
+	- MUST NOT rely on cached 1) WHOIS server information that is more than 48 hours old, or 2) RDAP bootstrap data from IANA that is more than 48 hours old, to ensure that it relies upon up-to-date and accurate information.
 
 ##### 3.2.2.4.13 **Email to DNS CAA Contact**
 
@@ -1081,8 +1060,6 @@ This method of domain validation is not used.
 This method of domain validation is not used.
 
 ##### 3.2.2.4.18 **Agreed-Upon Change to Website v2**
-
-GoDaddy currently supports this method and uses it for certain issuance workflows.
 
 Confirming the Applicant's control over the FQDN by verifying that the Request Token or Random Value is contained in the contents of a file.
 
@@ -1116,8 +1093,6 @@ Starfield has implemented a Multi-Perspective Issuance Corroboration as specifie
 
 ##### 3.2.2.4.19 **Agreed-Upon Change to Website - ACME**
 
-GoDaddy currently supports this method and uses it for certain issuance workflows.
-
 Confirming the Applicant's control over a FQDN by validating domain control of the FQDN using the ACME HTTP Challenge method defined in [Section 8.3 of RFC 8555](https://www.ietf.org/rfc/rfc8555.txt).
 
 Additionally, Starfield MUST receive a successful HTTP response from the request (meaning a 2xx HTTP status code must be received).
@@ -1139,11 +1114,11 @@ Starfield has implemented a Multi-Perspective Issuance Corroboration as specifie
 
 ##### 3.2.2.4.20 **TLS Using ALPN**
 
-This method of domain validation is not used. 
+While the issuing CAs under Starfield’s direct control, Certainly issuing CAs MAY confirm the Applicant’s control over an FQDN by validating domain control using the TLS ALPN challenge method. Under this method, the Applicant provisions the required challenge response on the target server, the CA connects to the server over TLS using the specified ALPN value, and the CA verifies the expected challenge content before issuance. This method is intended to comply with BR 3.2.2.4.20.
 
 ##### 3.2.2.4.21 **DNS Labeled with Account ID - ACME**
 
-This method of domain validation is not used.
+While the issuing CAs under Starfield’s direct control, do not use this method of validation, Certainly issuing CAs MAY confirm the Applicant’s control over the FQDN by verifying the presence of the required DNS challenge value at the DNS location associated with the Applicant’s ACME account identifier. The challenge value must be unique to the certificate request and validated prior to issuance. This method is intended to comply with BR 3.2.2.4.21.
 
 #### <span id="page-31-0"></span> **3.2.2.5 Authentication for an IP Address**
 
@@ -1151,15 +1126,13 @@ While the issuing CAs under Starfield’s direct control, do not issue TLS certi
 
 #### <span id="page-31-1"></span> **3.2.2.6 Wildcard Domain Validation**
 
-Before issuing a Wildcard Certificate, Starfield  determines the FQDN portion of any Wildcard Domain Name in the Certificate is "registry‐controlled" or is a "public suffix" (e.g. "*.com", "*.co.uk", see [RFC 6454 Section 8.2](https://www.ietf.org/rfc/rfc6454.txt) for further explanation).  This is done by parsing the FQDN and comparing it against known TLD lists, which are scanned at least daily:
-* Public Suffix List (PSL) https://publicsuffix.org/list/public_suffix_list.dat
-* IANA: http://data.iana.org/TLD/tlds-alpha-by-domain.txt
-* ICANN: https://www.icann.org/resources/registries/gtlds/v1/newgtlds.csv 
+Before issuing a Wildcard Certificate, Starfield MUST establish and follow a documented procedure that determines if the FQDN portion of any Wildcard Domain Name in the Certificate is "registry‐controlled" or is a "public suffix" (e.g. "*.com", "*.co.uk", see [RFC 6454 Section 8.2](https://www.ietf.org/rfc/rfc6454.txt) for further explanation).
 
-Starfield does not have an established process for demonstration control of an entire Domain Namespace and thus does not support that issuance case. 
+If the FQDN portion of any Wildcard Domain Name is "registry‐controlled" or is a "public suffix", Starfield MUST refuse issuance unless the Applicant proves its rightful control of the entire Domain Namespace. (e.g. Starfield MUST NOT issue "*.co.uk" or "*.local", but MAY issue "*.example.com" to Example Co.).
 
-Starfield chooses to use both the ICANN DOMAINS and PRIVATE DOMAINS sections of the PSL to further limit the possibility of issuing to an entire Domain Namespace.
+Determination of what is "registry‐controlled" versus the registerable portion of a Country Code Top‐Level Domain Namespace is not standardized at the time of writing and is not a property of the DNS itself. Current best practice is to consult a "public suffix list" such as the Public Suffix List (PSL), and to retrieve a fresh copy regularly.
 
+If using the PSL, a CA SHOULD consult the "ICANN DOMAINS" section only, not the "PRIVATE DOMAINS" section. The PSL is updated regularly to contain new gTLDs delegated by ICANN, which are listed in the "ICANN DOMAINS" section. A CA is not prohibited from issuing a Wildcard Certificate to the Registrant of an entire gTLD, provided that control of the entire namespace is demonstrated in an appropriate way.
 
 #### **3.2.2.7 Data Source Accuracy**
 
@@ -1175,13 +1148,58 @@ Databases maintained by Starfield, its owner, or its affiliated companies do not
 
 #### **3.2.2.8 CAA Records**
 
-Refer to Section 4.2.2.1 CAA Record Processing for CAA record processing requirements.
+As part of certificate issuance, Starfield retrieves and processes CAA records for each applicable dNSName in the subjectAltName extension. Starfield evaluates the issue, issuewild, and iodef property tags, respects the critical flag, and will not issue a certificate where CAA processing indicates issuance is not permitted. These procedures are intended to comply with RFC 8659.
 
-##### 3.2.2.8.1 DNSSEC Validation of CAA Records
+Some methods relied upon for validating the Applicant's ownership or control of the subject domain(s) require CAA records to be retrieved and processed from additional remote Network Perspectives before Certificate issuance. 
 
-Refer to Section 4.2.2.2 DNSSEC Validation Requirements for DNSSEC validation of CAA record processing requirements.
+To corroborate the Primary Network Perspective, a remote Network Perspective's CAA check response MUST be interpreted as permission to issue, regardless of whether the responses from both Perspectives are byte-for-byte identical. Additionally, Starfield MAY consider the response from a remote Network Perspective as corroborating if one or both of the Perspectives experience an acceptable CAA record lookup failure.
 
-#### **3.2.2.9 Multi-Perspective Issuance Corroboration**
+Starfield may check CAA records at any other time.
+
+When processing CAA records, Starfield MUST process the issue, issuewild, and iodef property tags as specified in [RFC 8659](https://www.ietf.org/rfc/rfc8659.txt) as described in Section 4.2.1 of this CP/CPS., although they are not required to act on the contents of the iodef property tag. Additional property tags MAY be supported, but MUST NOT conflict with or supersede the mandatory property tags set out in this document. Starfield MUST respect the critical flag and not issue a certificate if they encounter an unrecognized property tag with this flag set.
+
+If Starfield issues a certificate after processing a CAA record, it MUST do so within the TTL of the CAA record, or 8 hours, whichever is greater.
+
+[RFC 8659](https://www.ietf.org/rfc/rfc8659.txt) requires that Starfield “MUST NOT issue a certificate unless the CA determines that either (1) the certificate request is consistent with the applicable CAA RRset or (2) an exception specified in this CP/CPS applies.”
+
+Starfield MUST document potential issuances that were prevented by a CAA record in sufficient detail to provide feedback to the CA/Browser Forum on the circumstances, and SHOULD dispatch reports of such issuance requests to the contact(s) stipulated in the CAA iodef record(s), if present. Starfield may not support URL schemes in the iodef record other than mailto: or https:.
+
+*Note: Starfield does not issue certificates for Onion Domain Names*
+
+###### 3.2.2.8.1 DNSSEC Validation of CAA Records
+
+Effective March 15th, 2026: DNSSEC validation back to the IANA DNSSEC root trust anchor MUST be performed on all DNS queries associated with CAA record lookups performed by the Primary Network Perspective. The DNS resolver used for all DNS queries associated with CAA record lookups performed by the Primary Network Perspective MUST: perform DNSSEC validation using the algorithm defined in RFC 4035 Section 5; and support NSEC3 as defined in RFC 5155; and support SHA-2 as defined in RFC 4509 and RFC 5702; and properly handle the security concerns enumerated in RFC 6840 Section 4.
+
+Effective March 15th, 2026: Starfield MUST NOT use local policy to disable DNSSEC validation on any DNS query associated CAA record lookups.
+
+Effective March 15th, 2026: DNSSEC-validation errors observed by the Primary Network Perspective (e.g., SERVFAIL) MUST NOT be treated as permission to issue.
+
+DNSSEC validation back to the IANA DNSSEC root trust anchor MAY be performed on all DNS queries associated with CAA record lookups performed by Remote Network Perspectives as part of Multi-Perspective Issuance Corroboration.
+
+DNSSEC validation back to the IANA DNSSEC root trust anchor is considered outside the scope of self-audits performed to fulfill the requirements in Section 8.7.
+
+##### 3.2.2.9 Other Verification Requirements
+
+###### 3.2.2.9.1 Denied Lists and Other Legal Block Lists
+
+Starfield MUST verify whether the Applicant, the Contract Signer, the Certificate Approver, the Applicant’s Jurisdiction of Incorporation, Registration, or Place of Business:
+
+1. Is identified on any government denied list, list of prohibited persons, or other list that prohibits doing business with such organization or person under the laws of the country of the CA’s jurisdiction(s) of operation, as per Section 3.2.2.12.2 of the EV Guidelines; or
+2. Has its Jurisdiction of Incorporation, Registration, or Place of Business in any country with which the laws of the CA’s jurisdiction prohibit doing business.
+
+Starfield MUST NOT issue any EV Certificate to the Applicant if either the Applicant, the Contract Signer, or Certificate Approver or if the Applicant’s Jurisdiction of Incorporation or Registration or Place of Business is on any such list.
+
+###### 3.2.2.9.2 Parent/Subsidiary/Affiliate Relationship
+
+When verifying an Applicant using information of the Applicant’s Parent, Subsidiary, or Affiliate, Starfield MUST verify an Applicant using information of the Applicant’s Parent, Subsidiary, or Affiliate. Acceptable methods of verifying the Applicant’s relationship to the Parent, Subsidiary, or Affiliate include the following, as per Section 3.2.2.12.3 of the EV Guidelines:
+
+1. QIIS or QGIS
+2. Independent Confirmation from the Parent, Subsidiary, or Affiliate
+3. Contract between CA and Parent, Subsidiary, or Affiliate
+4. Verified Professional Letter
+5. Corporate Resolution
+
+#### **3.2.2.10 Multi-Perspective Issuance Corroboration**
 Starfield has implemented Multi-Perspective Issuance Corroboration using at least five (5) remote Network Perspectives that fall within at least two (2) distinct Regional Internet Registries. Starfield ensure that the requirements defined in Quorum Requirements Table below are satisfied and the remote Network Perspectives that corroborate the Primary Network Perspective fall within the service
 regions of at least two (2) distinct Regional Internet Registries in order to proceed with issuance of the Certificate.
 
@@ -1195,7 +1213,7 @@ Starfield MAY use either the same set, or different sets of Network Perspectives
 The set of responses from the relied upon Network Perspectives MUST provide Starfield with the necessary information to allow it to affirmatively assess:
 
 a. the presence of the expected 1) Random Value, 2) Request Token, 3) IP Address, or 4) Contact Address; and  
-b. the CA's authority to issue to the requested domain(s),
+b. b) the CA's authority to issue to the requested domain(s),
 
 Results or information obtained from one Network Perspective MUST NOT be reused or cached when performing validation through subsequent Network Perspectives (e.g., different Network Perspectives cannot rely on a shared DNS cache to prevent an adversary with control of traffic from one Network Perspective from poisoning the DNS cache used by other Network Perspectives). The network infrastructure providing Internet connectivity to a Network Perspective MAY be administered by the same organization providing the computational services required to operate the Network Perspective.
 
@@ -1207,97 +1225,16 @@ Starfield does not rely on corroborations from previous attempts. There is no st
 
 Starfield MAY reuse corroborating evidence for CAA record quorum compliance for a maximum of 398 days. After issuing a Certificate to a domain, remote Network Perspectives may omit retrieving and processing CAA records for the same domain or its subdomains in subsequent Certificate requests from the same Applicant for up to a maximum of 398 days.
 
-#### 3.2.2.11 Verification of Certain Information Sources
-
-Starfield complies with the verification requirements of Section 3.2.2.11 of the CA/Browser Forum EV Guidelines for each type of information source relied upon when validating EV Certificate Requests, as described below.
-
-##### 3.2.2.11.1 Verified Legal Opinion
-
-Starfield accepts Verified Legal Opinions as an information source and follows the verification requirements and acceptable methods of verification set forth in Section 3.2.2.11.1 of the EV Guidelines without deviation, including:
-
-- Verifying the professional status (license/registration) of the authoring Legal Practitioner directly with the applicable licensing or registering authority;
-- Confirming that the opinion states it is issued on behalf of the Applicant and is based on the Legal Practitioner's familiarity with the relevant facts; and
-- Confirming authenticity of the opinion via telephone call or return of a copy to the Legal Practitioner at their address of record with the licensing authority, unless the opinion is digitally signed in a manner that already establishes authenticity and signer identity.
-
-##### 3.2.2.11.2 Verified Accountant Letter
-
-Starfield accepts Verified Accountant Letters as an information source and follows the verification requirements and acceptable methods of verification set forth in Section 3.2.2.11.2 of the EV Guidelines without deviation, including:
-
-- Verifying the professional status (license/registration) of the authoring Accounting Practitioner directly with the applicable licensing or member organization in a jurisdiction whose accounting standards body holds full membership with the International Federation of Accountants;
-- Confirming that the letter states it is issued on behalf of the Applicant and is based on the Accounting Practitioner's familiarity with the relevant facts; and
-- Confirming authenticity via telephone call or return of a copy to the Accounting Practitioner at their address of record with the licensing authority, unless the letter is digitally signed in a manner that already establishes authenticity and signer identity.
-
-##### 3.2.2.11.3 Face-to-Face Validation
-
-Starfield accepts face-to-face validation performed by a qualified Third-Party Validator (Latin Notary, Notary, Lawyer, or Accountant). Starfield:
-
-- Independently verifies that the Third-Party Validator is legally qualified to act in that capacity by confirming their license/registration with the applicable authority in their jurisdiction of residency – using the same verification process Starfield applies to Legal Practitioners and Accounting Practitioners under Sections 3.2.2.11.1 and 3.2.2.11.2 above;
-- Obtains a statement from the Third-Party Validator attesting that the Vetting Documents were obtained during a face-to-face meeting with the individual being validated; and
-- Where the Third-Party Validator is not a Latin Notary, confirms authenticity of the attestation and Vetting Documents by telephone call with the Third-Party Validator (or their assistant) to confirm the signature/seal, unless the attestation is digitally signed in a manner that already establishes authenticity and signer identity.
-
-##### 3.2.2.11.4 Independent Confirmation From Applicant
-
-Starfield MAY obtain an Independent Confirmation from the Applicant as an acceptable verification method under Section 3.2.2.11.4 of the EV Guidelines. If used, Starfield will follow the full Confirmation Request/Response process defined in the EV Guidelines, including:
-
-- Directing the Confirmation Request to a qualified Confirming Person (e.g., an officer identified in a current QGIS/QIIS/QTIS/Verified Legal Opinion/Verified Accountant Letter, the Applicant's Registered Agent/Office, or a verified individual in the Applicant's management chain via Human Resources);
-- Delivering the Confirmation Request via an acceptable out-of-band channel (paper mail, email, telephone, or facsimile) directed to the Confirming Person at a verified address, number, or domain; and
-- Receiving and reliably verifying a Confirmation Response from the Confirming Person before relying on the confirmed fact.
-
-##### 3.2.2.11.5 Qualified Independent Information Source (QIIS)
-
-Starfield relies on one or more Qualified Independent Information Sources to verify Applicant information. The specific sources used vary and are maintained internally. Starfield applies a vetting process to confirm that each candidate source meets the QIIS definition in the EV Guidelines before use, including confirmation that:
-
-- The source is relied upon by industries outside the certificate industry for accurate location, contact, or other information;
-- The source is updated at least annually;
-- The source's data is not self-reported without independent verification by the source itself; and
-- Neither Starfield, its owners/affiliates, nor any outsourced Registration Authority or subcontractor (or their owners/affiliates) holds a controlling or beneficial interest in the source.
-
-##### 3.2.2.11.6 Qualified Government Information Source (QGIS)
-
-Starfield relies on one or more Qualified Government Information Sources to verify Applicant information. The specific sources used vary and are maintained internally. Starfield applies a vetting process to confirm that each candidate source meets the QGIS definition in the EV Guidelines before use, including confirmation that:
-
-- The source is a regularly-updated and current, publicly available, database designed for the purpose of accurately providing the information for which it is consulted;
-- Is generally recognized as a dependable source of such information provided that it is maintained by a Government Entity;
-- The reporting of data is required by law, and false or misleading reporting is punishable with criminal or civil penalties.
-
-Starfield MAY rely on third-party vendors to obtain the information from the Government Entity provided that the third party obtains the information directly from the Government Entity.
-
-##### 3.2.2.11.7 Qualified Government Tax Information Source (QTIS)
-
-Starfield relies on one or more Qualified Government Tax Information Sources to verify Applicant tax information. The specific sources used vary and are maintained internally, with the exception of sources that also serve as Incorporating or Registration Agencies, which are publicly disclosed in Starfield's Repository.
-
-Starfield applies a vetting process to confirm that each candidate source meets the definition of a Qualified Government Tax Information Source (i.e., a QTIS specifically containing tax information relating to Private Organizations, Business Entities, or Individuals) before use.
-
-#### 3.2.2.12 Other Verification Requirements
-##### 3.2.2.12.1 High Risk Status
-
-Starfield relies on internal and 3rd party data to identify High Risk Certificate requests prior to the Certificate's approval and denies these requests and/or subjects them to additional verification procedures.
-
-
-##### 3.2.2.12.2 Denied Lists and Other Legal Block Lists
-
-Starfield screens the Applicant, the Contract Signer, the Certificate Approver, the Applicant’s Jurisdiction of Incorporation, Registration, or Place of Business against the following lists:
-
-
-i. BIS Denied Persons List<br>
-ii. BIS Denied Entities List<br>
-iii. US Treasury Department List of Specially Designated Nationals and Blocked Persons<br>
-iv. US Government export regulations.
-
-These checks are primarily performed via API calls to the International Trade Administration's [Consolidated Screening List API](https://developer.trade.gov/api-details?_gl=1*1ekss0u*_ga*MTIwODkzNjA5NC4xNzg5MDY3NjQx*_ga_L884J52XQ5*czE3ODkwNjc2NDAkbzEkZzEkdDE3ODkwNjgzNTYkajU3JGwwJGgw*_ga_6D3N6M4S6H*czE3ODkwNjc2NDAkbzEkZzEkdDE3ODkwNjgzNTYkajU3JGwwJGgw#api=consolidated-screening-list&operation=search). The data sources backing this list (ex. BIS, OFAC SDN) are updated at least daily.  If a potential match is detected, the RA will perform additional checks to see if the match is legitimate.  If it is, Starfield SHALL NOT issue the certificate.
-
-##### 3.2.2.12.3 Parent/Subsidiary/Affiliate Relationship
-
-Starfield verifies a Parent, Subsidiary, or Affiliate relationship using a Qualified Independent Information Source (QIIS), Qualified Government Information Source (QGIS), or a Verified Professional Letter.
-
-Once the relationship has been verified, Starfield may rely on information associated with the Parent, Subsidiary, or Affiliate to establish the Applicant's Place of Business, or Verified Method of Communication, where the information is applicable to the Applicant and remains valid for use. Starfield independently performs all other validation required for the Applicant.
-
-Starfield documents the verified relationship, the source used to establish the relationship, and the information relied upon as part of the Applicant's validation record.
-
-
 ### <span id="page-33-0"></span> **3.2.3 Authentication of Individual Identity**
 
-Starfield does not currently issue Individual Identity Certificates.
+For High Assurance Individual Subscribers, Starfield verifies the following:
+
+- the individual requesting the certificate has access to the domain name(s) that are specified in the certificate application using the methods described in [Section 3.2.2.4 Validation of Domain Authorization or Control.](#page-27-0)
+- the identity of the individual named in the certificate application using the following methods:
+	- Starfield verifies the Applicant's name using a legible copy, which discernibly shows the Applicant's face, of at least one currently valid government‐issued photo ID (passport, drivers license, military ID, national ID, or equivalent document type).
+	- Starfield verifies the Applicant's address using a form of identification that the CA determines to be reliable, such as a government ID, utility bill, or bank or credit card statement.
+	- Starfield verifies the certificate request with the Applicant using a Reliable Method of Communication.
+
 ### <span id="page-33-1"></span> **3.2.4 Non-verified Subscriber Information**
 
 Not applicable.
@@ -1348,11 +1285,31 @@ Enrollment requires a completed certificate request, acceptance or execution of 
 
 ### <span id="page-35-5"></span> **4.2.1 Performing Identification and Authentication Functions**
 
-When a certificate application is received, Starfield performs the validation required for the type of certificate in question as described in Section 3.2 Initial Identity Validation.
+When a certificate application is received, Starfield performs the validation required for the type of certificate in question as described in [Section 3.2 Initial Identity Validation.](#page-26-0)
+
+Prior to issuing a certificate, Starfield processes [RFC 6844](https://www.ietf.org/rfc/rfc6844.txt) Certificate Authority Authorization (CAA) records for each FQDN in the certificate according to the requirements defined in the Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates. Starfield recognizes the following set of issuer domain names in CAA "issue" or "issuewild" records as permitting certificate issuance:
+
+- godaddy.com
+- starfieldtech.com
+
+Starfield supports the Certification Authority Authorization (CAA) Record Extensions for Account URI and ACME Method Binding, as specified in [RFC 8657](https://www.ietf.org/rfc/rfc8657.txt).
+The following values are accepted:
+
+| CAA extension | Acceptable Patterns |
+| ------------- | ------------------- |
+|`accounturi`   | https://acme.secureserver.net/v1/acme/accounts/{acmeAccountId}|
+|               | https://secureserver.net/account/{customerId} |
+|               | https://acme.godaddy.com/v1/acme/accounts/{acmeAccountId} |
+|               | https://godaddy.com/account/{customerId} |
+|`validationmethods` | Acme: `dns-01` , `http-01`|
+|                    | Non-Acme: `ca-dns`(3.2.2.4.7), `ca-http`(3.2.2.4.18), `ca-email`(3.2.2.4.4), `ca-account`(3.2.2.4.12) |
+
+
+Starfield relies on internal and 3rd party data to identify high risk Certificate requests prior to the Certificate's approval and denies these requests and/or subjects them to additional verification procedures.
 
 Internationalized Domain Names (IDNs) containing mixed character sets within a label may be subjected to additional verification procedures.
 
-In cases where the certificate request does not contain all the necessary information about the Applicant, Starfield shall obtain the remaining information from the Applicant or, having obtained it from a reliable, independent, third-party data source, confirm it with the Applicant.
+In cases where the certificate request does not contain all the necessary information about the Applicant, the Starfield shall obtain the remaining information from the Applicant or, having obtained it from a reliable, independent, third-party data source, confirm it with the Applicant.
 
 Starfield MAY use the documents and data provided in Section 3.2 to verify certificate information, or may reuse previous validations themselves, provided that Starfield obtained the data or document from a source specified under Section 3.2 or completed the validation itself within the maximum number of days prior to issuing the Certificate, as defined in the following table:
 
@@ -1365,7 +1322,7 @@ Starfield MAY use the documents and data provided in Section 3.2 to verify certi
 
 For validation of Domain Names according to Section 3.2.2.4, any data, document, or completed validation used MUST be obtained within the maximum number of days prior to issuing the Certificate, as defined in the following table:
 
-**Domain Validation - Domain Name validation data reuse periods**
+**Domain Validation - Domain Name and IP Address validation data reuse periods**
 
 | **Certificate issued on or after** | **Certificate issued before** | **Maximum data reuse period** |
 |---|---|---|
@@ -1387,68 +1344,20 @@ The age of all data used to support issuance of an EV Certificate (before revali
 - Assumed Name – 398 days
 - Physical Existence – 398 days
 - Operational Existence – 398 days
-- Domain ownership or exclusive right to use – the maximum data reuse period specified for Domain Names in Section 4.2.1 of the Baseline Requirements
-- Name, title, and authority of contract signer, certificate approver, and certificate requester – 398 days, unless a contract between Starfield and the Applicant specifies a different term, in which case, the term specified in such contract controls.
+- Domain ownership or exclusive right to use – 398 days
+- Name, title, and authority of contract signer, and certificate approver – 398 days, unless a contract between Starfield and the Applicant specifies a different term, in which case, the term specified in such contract controls.
 
-Each period set forth above SHALL begin to run on the date the relevant information was collected by Starfield.
+The 398-day period set forth above SHALL begin to run on the date the information was collected by Starfield.
 
 Starfield may reuse a previously submitted EV Request, Subscriber Agreement, or Terms of Use, including use of a single EV Certificate Request in support of multiple EV Certificates containing the same Subject to the extent permitted under the relevant agreement.
 
 ### <span id="page-36-0"></span> **4.2.2 Approval or Rejection of Certificate Applications**
 
-Starfield SHALL NOT issue Certificates containing Internal Names or Reserved IP Addresses.
+Starfield will reject any Certificate application that cannot be verified. Starfield may also reject a certificate application if Starfield believes that issuing the Certificate could damage or diminish Starfield's reputation or business.
 
-Starfield SHALL NOT issue Certificates containing Domain Names that end in an IP Reverse Zone Suffix.
+Starfield enforces separation of validation duties to ensure that no one person can single-handedly validate and authorize the issuance of EV Certificates.
 
-#### **4.2.2.1 CAA Record Processing**
-
-As part of the Certificate issuance process, Starfield retrieves and processes CAA records in accordance with RFC 8659 for each `dNSName` in the `subjectAltName` extension. Starfield does not issue Certificates for Onion Domain Names.
-
-Starfield recognizes the following Issuer Domain Names in CAA `issue` or `issuewild` records as permitting Certificate issuance:
-
-- `godaddy.com`
-- `starfieldtech.com`
-
-Starfield processes the `issue`, `issuewild`, and `iodef` property tags in accordance with RFC 8659. Starfield also processes the `accounturi` and `validationmethods` parameters associated with the `issue` and `issuewild` property tags in accordance with RFC 8657, as described in Section 4.2.2.1.2. When either parameter is present on an applicable CAA record, Starfield validates the Certificate request against the specified account or validation method before permitting issuance. If Starfield encounters an unrecognized property tag without the critical flag set, the unrecognized property tag is ignored; Certificate issuance remains subject to all other applicable CAA records and issuance requirements. If Starfield encounters an unrecognized property tag with the critical flag set, Certificate issuance is prohibited for the applicable Domain Name.
-
-Starfield supports the `mailto:` URL scheme for reporting through the `iodef` property tag. Starfield recognizes `https:` as a valid `iodef` URL scheme but does not currently deliver reports using the `https:` scheme. When CAA processing determines that issuance is not permitted and the CAA record set contains a supported `iodef` record, Starfield sends a notification to the contact specified in the `iodef` record. Starfield does not send `iodef` notifications for CAA retrieval failures or lookup errors.
-
-If Starfield issues a Certificate after processing a CAA record, it MUST do so within the TTL of the CAA record, or 8 hours, whichever is greater.
-
-Starfield relies on the CAA exception for Certificates for which a Certificate Transparency Precertificate was created and logged in at least two public logs and for which CAA was checked at the time of Precertificate issuance.
-
-Starfield does not treat a CAA record lookup failure as permission to issue. If Starfield cannot successfully complete the required CAA record lookup, Certificate issuance does not proceed.
-
-Starfield documents potential issuances that were prevented by a CAA record in sufficient detail to provide feedback to the CA/Browser Forum on the circumstances.
-
-DNSSEC validation is performed in accordance with Section 4.2.2.2 on all DNS queries associated with CAA record lookups performed by the Primary Network Perspective.
-
-##### **4.2.2.1.1 CAA Multi-Perspective Issuance Corroboration**
-
-Where Multi-Perspective Issuance Corroboration is required, Starfield retrieves and processes CAA records from remote Network Perspectives in accordance with Section 3.2.2.9 before Certificate issuance.
-
-To corroborate the Primary Network Perspective, a remote Network Perspective's CAA check response MUST be interpreted as permission to issue, regardless of whether the responses from the Primary and remote Network Perspectives are byte-for-byte identical.
-
-Starfield does not treat a CAA record lookup failure observed by the Primary Network Perspective or a remote Network Perspective as permission to issue.
-
-##### **4.2.2.1.2 CAA Parameters**
-
-Starfield supports the Certification Authority Authorization (CAA) Record Extensions for Account URI and ACME Method Binding as specified in RFC 8657.
-
-The following values are accepted:
-
-| **CAA Parameter** | **Accepted Values** |
-| --- | --- |
-| `accounturi` | `https://acme.secureserver.net/v1/acme/accounts/{acmeAccountId}` |
-|  | `https://secureserver.net/account/{customerId}` |
-|  | `https://acme.godaddy.com/v1/acme/accounts/{acmeAccountId}` |
-|  | `https://godaddy.com/account/{customerId}` |
-| `validationmethods` | ACME: `dns-01`, `http-01` |
-|  | Non-ACME: `ca-dns` (3.2.2.4.7), `ca-http` (3.2.2.4.18), `ca-email` (3.2.2.4.4), `ca-account` (3.2.2.4.12) |
-
-Effective March 15, 2027, Starfield MUST process the `accounturi` and `validationmethods` parameters as specified in RFC 8657.
-
-Effective March 15, 2027, for domain validation methods supported by Starfield that are not registered in the IANA ACME Validation Methods registry, Starfield MUST interpret and process `validationmethods` labels formed by concatenating `ca-tbr-` with the applicable Baseline Requirements Section 3.2.2.4 subsection number.
+Effective 2026-03-15, Starfield SHALL NOT issue Certificates containing Domain Names that end in an IP Reverse Zone Suffix.
 
 ### <span id="page-36-1"></span> **4.2.3 Time to Process Certificate Applications**
 
@@ -1466,7 +1375,7 @@ Certificate issuance by any Starfield Root CA requires an individual authorized 
 
 #### <span id="page-36-5"></span> **4.3.1.2 Linting of to-be-signed Certificate content**
 
-Starfield has implemented a Linting process to test the technical conformity with the BRs of each to-be-signed artifact prior to signing it. Issuance is automatically prevented when pre-issuance linting identifies an error that would result in non-compliance with applicable requirements. Starfield uses a combination of industry-recognized linting tools and custom lints, and maintains the linting process as part of its Certificate issuance controls.
+Starfield has implemented a Linting process to test the technical conformity with the BRs of each to-be-signed artifact prior to signing it. 
 
 #### <span id="page-36-6"></span> **4.3.1.3 Linting of issued Certificates**
 
@@ -1521,11 +1430,7 @@ Starfield maintains an internal database of all previously revoked Certificates 
 
 ### <span id="page-37-8"></span> **4.6.3 Processing Certificate Renewal Requests**
 
-Subscribers are permitted to reuse a previous certificate request to replace an expiring or expired Certificate.
-
-Where the Subscriber holds a Certificate, Starfield may use a shared secret to authenticate the Subscriber or authorized Certificate Requestor submitting the renewal request. Authentication using a shared secret does not replace any domain, identity, or other validation required for issuance of the new Certificate. Prior validation information may only be reused within the applicable reuse periods and requirements of the Baseline Requirements and, where applicable, the Guidelines for the Issuance and Management of Extended Validation Certificates.
-
-Starfield will require re-verification if Starfield believes that the information has become inaccurate.
+Subscribers are permitted to reuse a previous certificate request to replace an expiring or expired Certificate. Where the Subscriber holds a Certificate and the initial Subscriber identification and authentication process (as described in [Section 3.2 Initial Identity Validation)](#page-26-0) has been performed within the maximum time permitted for reuse as per the Baseline Requirements (BR) and the *Guidelines for the Issuance and Management of Extended Validation Certificates*, Starfield may authenticate a renewal certificate request using a shared secret. Starfield will require re‐verification if Starfield believes that the information has become inaccurate.
 
 ### <span id="page-38-0"></span>**4.6.4 Notification of New Certificate Issuance to Subscriber**
 
@@ -1547,7 +1452,7 @@ No Stipulation.
 
 ### <span id="page-38-5"></span> **4.7.1 Circumstance for Certificate Re-key**
 
-Subscribers are permitted to submit an unlimited number of requests to re-key any valid Certificate during the validity period of the Certificate. When re-keying is performed for replacement of an otherwise-valid Certificate, Starfield will generally revoke the replaced Certificate as part of standard business processing after the replacement is issued. If re-keying results from circumstances requiring revocation under Section 4.9.1.1, the Certificate is revoked within the applicable timeframe specified in Section 4.9.1.1.
+Subscribers are permitted to submit an unlimited number of requests to re-key any valid Certificate during the validity period of the Certificate. After re‐keying a Certificate, Starfield may revoke the old Certificate in up to 72 hours.
 
 ### <span id="page-38-6"></span> **4.7.2 Who May Request Certification of a New Public Key**
 
@@ -1555,8 +1460,7 @@ Starfield, the Applicant, or an authorized Certificate Requestor may submit re-k
 
 ### <span id="page-38-7"></span> **4.7.3 Processing Certificate Re-keying Requests**
 
-Re-key requests follow the process used for renewals (as described in [Section 4.6.3 Processing Certificate Renewal Requests)](#page-37-10).
-The Re-keyed Certificate is verified in accordance with [Section 4.2.1 Performing Identification and Authentication Functions](#page-35-5) and [Section 3.2 Initial Identity Validation.](#page-26-0)
+Re-key requests generally follow the process used for renewals (as described in [Section 4.6.3 Processing Certificate Renewal Requests)](#page-37-10).
 
 ### <span id="page-38-8"></span> **4.7.4 Notification of New Certificate Issuance to Subscriber**
 
@@ -1588,8 +1492,7 @@ Starfield, the Subscriber, or an authorized Certificate Requestor may request mo
 
 ### <span id="page-39-4"></span> **4.8.3 Processing Certificate Modification Requests**
 
-Modification requests follow the process used for renewals (as described in [Section 4.6.3 Processing Certificate Renewal Requests)](#page-37-10).
- The Modified Certificate is verified in accordance with [Section 4.2.1 Performing Identification and Authentication Functions](#page-35-5) and [Section 3.2 Initial Identity Validation.](#page-26-0)
+Modification requests generally follow the process used for renewals (as described in [Section 4.6.3 Processing Certificate Renewal Requests)](#page-37-10).
 
 ### <span id="page-39-5"></span> **4.8.4 Notification of New Certificate Issuance to Subscriber**
 
@@ -1620,22 +1523,26 @@ Starfield SHALL revoke a Certificate within 24 hours and using the corresponding
 1. The Subscriber requests in writing that Starfield, without specifying a reason, revoke the Certificate (CRLReason "**unspecified** (0)" which results in no ReasonCode extension being provided);
 2. The Subscriber notifies Starfield that the original certificate request was not authorized and does not retroactively grant authorization (CRLReason 9, **privilegeWithdrawn**);
 3. Starfield obtains evidence that the Subscriber's Private Key corresponding to the Public Key in the Certificate suffered a Key Compromise (CRLReason 1, **keyCompromise**);
-4. Starfield is made aware of a demonstrated or proven method that can easily compute the Subscriber's Private Key based on the Public Key in the Certificate,  including but not limited to those identified in [Section 6.1.1.3(5)](#6.1.1.3-Subscriber-Key-Pair-Generation)(CRLReason 1, **keyCompromise**);
-5. Starfield obtains evidence that the validation of domain authorization or control for any Fully‐Qualified Domain Name in the Certificate should not be relied upon, including cases where the CA failed to perform CAA checking correctly or where issuance was not permitted according to 4.2.2.1 CAA Record Processing  (CRLReason 4, **superseded**);.
+4. Starfield is made aware of a demonstrated or proven method that can easily compute the Subscriber's Private Key based on the Public Key in the Certificate, such as a Debian weak key, see [https://wiki.debian.org/SSLkeys](https://wiki.debian.org/SSLkeys)(CRLReason 1, **keyCompromise**);
+5. Starfield obtains evidence that the validation of domain authorization or control for any Fully‐Qualified Domain Name or IP address in the Certificate should not be relied upon (CRLReason 4, **superseded**);.
 
-Starfield will revoke a Certificate and apply the corresponding CRLReason if one or more of the following circumstances occur. Starfield determines the appropriate revocation timeframe based on factors including the nature and severity of the issue, the potential consequences of revocation, the number and source of Certificate Problem Reports received, and any applicable legal requirements. In all cases, Starfield will revoke the Certificate within five days.
+Starfield may revoke a certificate within 24 hours and will revoke a Certificate within 5 days and use the corresponding CRLReason if one or more of the following occurs:
 
-6. The Certificate no longer complies with the requirements of [Section 6.1.5 Key Sizes](#page-57-6) and [Section 6.1.6 Public Key Parameters Generation and Quality Checking](#page-59-0) of this CP/CPS (CRLReason 4, **superseded**);
-7. Starfield obtains evidence that the Certificate was misused (CRLReason 9, **privilegeWithdrawn**);
-8. Starfield is made aware that a Subscriber has violated one or more of its material obligations under the Subscriber Agreement or Terms of Use (CRLReason 9, **privilegeWithdrawn**);
-9. Starfield is made aware of any circumstance indicating that use of a Fully‐Qualified Domain Name in the Certificate is no longer legally permitted (e.g. a court or arbitrator has revoked a Domain Name Registrant's right to use the Domain Name, a relevant licensing or services agreement between the Domain Name Registrant and the Applicant has terminated, or the Domain Name Registrant has failed to renew the Domain Name) (CRLReason 5, **cessationOfOperation**);
-10. Starfield is made aware that a Wildcard Certificate has been used to authenticate a fraudulently misleading subordinate Fully‐Qualified Domain Name (CRLReason 9, **privilegeWithdrawn**);
-11. Starfield is made aware of a material change in the information contained in the Certificate (CRLReason 9, **privilegeWithdrawn**);
-12. Starfield is made aware that the Certificate was not issued in accordance with these Requirements or this CP/CPS (CRLReason 4, **superseded**);
-13. Starfield determines or is made aware that any of the information appearing in the Certificate is inaccurate (CRLReason 9, **privilegeWithdrawn**);
-14. Starfield's right to issue Certificates under these Requirements expires or is revoked or terminated, unless Starfield has made arrangements to continue maintaining the CRL/OCSP Repository (CRLReason "**unspecified** (0)" which results in no reasonCode extension being provided in the CRL);
-15. Revocation is required by this CP/CPS for a reason that is not otherwise required to be specified by this section (CRLReason "**unspecified** (0)" which results in no reasonCode extension being provided in the CRL); or
-16. Starfield is made aware of a demonstrated or proven method that exposes the Subscriber's Private Key to compromise or if there is clear evidence that the specific method used to generate the Private Key was flawed (CRLReason #1, **keyCompromise**).
+1. The Certificate no longer complies with the requirements of [Section 6.1.5 Key Sizes](#page-57-6) and [Section 6.1.6 Public Key Parameters Generation and Quality Checking](#page-59-0) of this CP/CPS (CRLReason 4, **superseded**);
+2. Starfield obtains evidence that the Certificate was misused (CRLReason 9, **privilegeWithdrawn**);
+3. Starfield is made aware that a Subscriber has violated one or more of its material obligations under the Subscriber Agreement or Terms of Use (CRLReason 9, **privilegeWithdrawn**);
+4. Starfield is made aware of any circumstance indicating that use of a Fully‐Qualified Domain Name or IP address in the Certificate is no longer legally permitted (e.g. a court or arbitrator has revoked a Domain Name Registrant's right to use the Domain Name, a relevant licensing or services agreement between the Domain Name Registrant and the Applicant has terminated, or the Domain Name Registrant has failed to renew the Domain Name) (CRLReason 5, **cessationOfOperation**);
+5. Starfield is made aware that a Wildcard Certificate has been used to authenticate a fraudulently misleading subordinate Fully‐Qualified Domain Name (CRLReason 9, **privilegeWithdrawn**);
+6. Starfield is made aware of a material change in the information contained in the Certificate (CRLReason 9, **privilegeWithdrawn**);
+7. Starfield is made aware that the Certificate was not issued in accordance with these Requirements or this CP/CPS (CRLReason 4, **superseded**);
+8. Starfield determines or is made aware that any of the information appearing in the Certificate is inaccurate (CRLReason 9, **privilegeWithdrawn**);
+9. Starfield's right to issue Certificates under these Requirements expires or is revoked or terminated, unless Starfield has made arrangements to continue maintaining the CRL/OCSP Repository (CRLReason "**unspecified** (0)" which results in no reasonCode extension being provided in the CRL);
+10. Revocation is required by this CP/CPS for a reason that is not otherwise required to be specified by this section (CRLReason "**unspecified** (0)" which results in no reasonCode extension being provided in the CRL); or
+11. Starfield is made aware of a demonstrated or proven method that exposes the Subscriber's Private Key to compromise or if there is clear evidence that the specific method used to generate the Private Key was flawed (CRLReason #1, **keyCompromise**).
+
+If a CRL entry is for a Certificate not subject to these Requirements and was either issued onor-after 2020-09-30 or has a **notBefore** on-or-after 2020-09-30, the CRLReason MUST NOT be **certificateHold** (6). If a CRL entry is for a Certificate subject to these Requirements, the CRLReason MUST NOT be **certificateHold** (6).
+
+If a **reasonCode** CRL entry extension is present, the CRLReason MUST indicate the most appropriate reason for revocation of the Certificate.
 
 CRLReason MUST be included in the **reasonCode** extension of the CRL entry corresponding to a Subscriber Certificate that is revoked after July 15, 2023, unless the CRLReason is "**unspecified** (0)". Revocation reason code entries for Subscriber Certificates revoked prior to July 15, 2023, do NOT need to be added or changed.
 
@@ -1645,60 +1552,60 @@ Only the following CRLReasons MAY be present in the CRL **reasonCode** extension
 
 **affiliationChanged** [(RFC 5280](https://www.ietf.org/rfc/rfc5280.txt) CRLReason #3): Indicates that the Subject's name or other Subject Identity Information in the Certificate has changed, but there is no cause to suspect that the Certificate's Private Key has been compromised;
 
-**superseded** [(RFC 5280](https://www.ietf.org/rfc/rfc5280.txt) CRLReason #4): Indicates that the Certificate is being replaced because: the Subscriber has requested a new Certificate, the CA has reasonable evidence that the validation of domain authorization or control for any fully‐qualified domain name in the Certificate should not be relied upon, or the CA has revoked the Certificate for compliance reasons such as the Certificate does not comply with the Baseline Requirements or this CP/CPS;
+**superseded** [(RFC 5280](https://www.ietf.org/rfc/rfc5280.txt) CRLReason #4): Indicates that the Certificate is being replaced because: the Subscriber has requested a new Certificate, the CA has reasonable evidence that the validation of domain authorization or control for any fully‐qualified domain name or IP address in the Certificate should not be relied upon, or the CA has revoked the Certificate for compliance reasons such as the Certificate does not comply with the Baseline Requirements or this CP/CPS;
 
 **cessationOfOperation** [(RFC 5280](https://www.ietf.org/rfc/rfc5280.txt) CRLReason #5): Indicates that the website with the Certificate is shut down prior to the expiration of the Certificate, or if the Subscriber no longer owns or controls the Domain Name in the Certificate prior to the expiration of the Certificate; or
 
 **privilegeWithdrawn** [(RFC 5280](https://www.ietf.org/rfc/rfc5280.txt) CRLReason #9): Indicates that there has been a subscriberside infraction that has not resulted in keyCompromise, such as the Certificate Subscriber provided misleading information in their Certificate Request or has not upheld their material obligations under the Subscriber Agreement or Terms of Use.
 
+The Subscriber Agreement, or an online resource referenced therein, MUST inform Subscribers about the revocation reason options listed above and provide explanation about when to choose each option. Tools that the CA provides to the Subscriber MUST allow for these options to be easily specified when the Subscriber requests revocation of their Certificate, with the default value being that no revocation reason is provided (i.e. the default corresponds to the CRLReason "**unspecified** (0)" which results in no reasonCode extension being provided in the CRL).
+
 The **privilegeWithdrawn** reasonCode SHOULD NOT be made available to the Subscriber as a revocation reason option, because the use of this reasonCode is determined by the CA and not the Subscriber.
+
+When a CA obtains verifiable evidence of Key Compromise for a Certificate whose CRL entry does not contain a **reasonCode** extension or has a reasonCode extension with a nonkeyCompromise reason, the CA SHOULD update the CRL entry to enter **keyCompromise** as the CRLReason in the **reasonCode** extension. Additionally, the CA SHOULD update the revocation date in a CRL entry when it is determined that the private key of the certificate was compromised prior to the revocation date that is indicated in the CRL entry for that certificate.
+
+*Note: Backdating the revocationDate field is an exception to best practice described in* [RFC 5280](https://www.ietf.org/rfc/rfc5280.txt)  [section 5.3.2](https://www.ietf.org/rfc/rfc5280.txt); however, these requirements specify the use of the revocationDate field to support TLS implementations that process the revocationDate field as the date when the Certificate is first considered to be compromised.*
 
 ### **4.9.1.2 Reasons for Revoking a Subordinate CA Certificate**
 
 Starfield will revoke a Subordinate CA Certificate within seven (7) days if one or more of the following occurs:
 
-1. The Subordinate CA requests revocation in writing;
+1. The Subordinate CA requests revocation in writing(CRLReason "**unspecified** (0)" which results in no reasonCode extension being provided in the CRL);;
 2. The Subordinate CA notifies Starfield that the original certificate request was not authorized and does not retroactively grant authorization (CRLReason 9, **privilegeWithdrawn**);
 3. Starfield obtains evidence that the Subordinate CA's Private Key corresponding to the Public Key in the Certificate suffered a Key Compromise or no longer complies with the requirements of [Section 6.1.5 Key Sizes](#page-57-6) and [Section 6.1.6 Public Key Parameters Generation and Quality Checking](#page-59-0) of this CP/CPS (CRLReason 1, **keyCompromise**);
 4. Starfield obtains evidence that the Certificate was misused(CRLReason 9, **privilegeWithdrawn**);
 5. Starfield is made aware that the Certificate was not issued in accordance with or that Subordinate CA has not complied with this document or the applicable Certificate Policy or Certification Practice Statement(CRLReason 9, **privilegeWithdrawn**);
 6. Starfield determines that any of the information appearing in the Certificate is inaccurate or misleading(CRLReason 9, **privilegeWithdrawn**);
 7. Starfield or the Subordinate CA ceases operations for any reason and has not made arrangements for another CA to provide revocation support for the Certificate(CRLReason 5, **cessationOfOperation**);
-8. Starfield's or the Subordinate CA's right to issue Certificates under these Requirements expires or is revoked or terminated, unless Starfield has made arrangements to continue maintaining the CRL/OCSP Repository; or
-9. Revocation is required by Starfield's CP/CPS.
-
-A CRLReason Code MUST be present in the CRL reasonCode extension for Subordinate CA Certificates. In cases where a CRLReason Code is not explicitly assigned to a circumstance, Starfield will use the CRLReason Code that most appropriately reflects the circumstances requiring revocation.
+8. Starfield's or the Subordinate CA's right to issue Certificates under these Requirements expires or is revoked or terminated, unless Starfield has made arrangements to continue maintaining the CRL/OCSP Repository(CRLReason "**unspecified** (0)" which results in no reasonCode extension being provided in the CRL); or
+9. Revocation is required by Starfield's CP/CPS(CRLReason "**unspecified** (0)" which results in no reasonCode extension being provided in the CRL).
 
 ### <span id="page-43-0"></span> **4.9.2 Who Can Request Revocation**
 
-Subscriber Certificate revocation can be initiated by the Subscriber, Starfield, the Issuing CA, or an authorized Reseller. An authorized Reseller may initiate revocation of a Subscriber Certificate issued through the Reseller's account. Starfield authenticates the Reseller through its authorized account credentials and verifies that the Certificate is associated with the Reseller's account before permitting the revocation request.
-
-Additionally, revocation requests can be initiated by anyone who:
-
-* accesses the ACME API endpoint and completes the revocation procedures described in Section 4.9.3, Procedure for Revocation Request
-*   emails practices@starfieldtech.com requesting revocation with a valid reason and is able to demonstrate domain control or key compromise for the certificate.
-* submits a request for revocation via https://sec.godaddy.com/report-certificate or https://sec.secureserver.net/report-certificate and is able to demonstrate domain control or key compromise for the certificate. 
+Subscriber certificate revocation can be initiated by the Subscriber, Starfield, the Issuing CA, or authorized Resellers. Additionally, revocation requests can be initiated by anyone who can access the ACME API endpoint that can complete the revocation procedures in [Section 4.9.3 Procedure for Revocation Request.](#page-43-1)
 
 ### <span id="page-43-1"></span> **4.9.3 Procedure for Revocation Request**
 
-Starfield maintains a continuous 24x7 ability to accept and respond to revocation requests and Certificate Problem Reports.
+Starfield maintains a continuous 24x7 ability to accept and respond to revocation requests and related inquiries. 
 
 Revocations may be requested:
-- by Subscribers via their online account, which are authenticated using a shared secret. The shared secret is a unique value provided to the Subscriber and used to demonstrate control for purposes of authenticating the revocation request; 
+- by Subscribers via their online account, which are authenticated using a shared secret; 
 - by Subscribers using the appropriate ACME API endpoint, if they can sign the revocation request with the associated account private key; 
 - by anyone who can access the appropriate ACME API endpoint and sign a revocation request with the private key associated with the certificate; or 
 - by anyone who can access appropriate ACME API endpoint and demonstrate control over all domains in the Subject; or
 - by any individual via email to the practices@starfieldtech.com who has reason to believe there is a certificate problem which may require revocation
 
-If the revocation request cannot be authenticated using a shared secret or through the ACME endpoint, the RA verifies the identity and authority of the requestor using information associated with the Certificate or Subscriber account and other appropriate verification procedures before processing the revocation request.
+If the revocation request cannot be authenticated using a shared secret or through the ACME endpoint, the RA must perform sufficient procedures to authenticate the revocation request in accordance with Starfield’s revocation request processing procedures.
 
 For reporting suspected private key compromise, certificate misuse, or other types of fraud, compromise, misuse, inappropriate conduct, or any other type of suspicious activity with a certificate, contact Starfield by email at [practices@starfieldtech.com.](mailto:practices@starfieldtech.com) or by phone at (480) 505-8852.
 
 ### <span id="page-43-2"></span> **4.9.4 Revocation Request Grace Period**
 
-Starfield commences authentication and validation of revocation requests within 24 hours of receipt. Authentication and processing of revocation requests and Certificate Problem Reports are performed within the applicable timeframes specified in Sections 4.9.1.1 and 4.9.5.
+Starfield validates automated revocation requests (i.e., where a shared secret is correctly provided) on receipt.  Starfield commences the validation of non-automated revocation requests within one business day of receipt.
 
 Starfield immediately processes authenticated revocation requests.  A certificate’s revoked status is reflected on a CRL and/or in an OCSP response published at intervals specified below.  Revoked certificates are listed in the CRL and in OCSP responses until the certificate expires. 
+
+*Note: As of May 30, 2021, Starfield no longer issues High Assurance Code Signing Certificates. While no longer issued, any revoked Code Signing certificates which had been issued by Starfield are retained on the CRL and in OCSP responses for 10 years after the latter of the certificate revocation or expiration.*
 
 ### <span id="page-44-0"></span> **4.9.5 Time Within Which CA Must Process the Revocation Request**
 
@@ -1711,8 +1618,6 @@ After reviewing the facts and circumstances, Starfield will work with the Subscr
 3. The number of Certificate Problem Reports received about a particular Certificate or Subscriber;
 4. The entity making the complaint (for example, a complaint from a law enforcement official that a Web site is engaged in illegal activities should carry more weight than a complaint from a consumer alleging that they didn't receive the goods they ordered); and
 5. Relevant legislation.
-
-The criteria above may inform the timing of revocation within the applicable timeframe but do not extend any mandatory revocation deadline specified in Section 4.9.1.1.
 
 ### <span id="page-44-1"></span> **4.9.6 Revocation Checking Requirement for Relying Parties**
 
@@ -1735,21 +1640,53 @@ No Stipulation.
 
 ### <span id="page-45-0"></span> **4.9.9 On-line Revocation/Status Checking Availability**
 
-Starfield provides OCSP services for Certificates that include an Authority Information Access extension with an id-ad-ocsp accessMethod.
+Relying Parties are required to check certificate status using the applicable CRL and/or OCSP before relying upon a certificate.
 
-OCSP responders operated by Starfield support the HTTP GET method as described in RFC 6960 and/or RFC 5019. Starfield does not support the Nonce extension (1.3.6.1.5.5.7.48.1.2) described in RFC 8954.
+The validity interval of an OCSP response is the difference in time between the thisUpdate and nextUpdate field, inclusive. For purposes of computing differences, a difference of 3,600 seconds shall be equal to one hour, and a difference of 86,400 seconds shall be equal to one day, ignoring leap-seconds.
 
-For Subscriber Certificates and Subordinate CA Certificates, Starfield OCSP responses have a validity interval between 24 and 96 hours. Starfield updates the information provided via OCSP at least eight hours prior to the nextUpdate time.
+A certificate serial is “assigned” if:
+- a Certificate or Precertificate with that serial number has been issued by the Issuing CA; or
+- a Precertificate with that serial number has been issued by a Precertificate Signing Certificate, as defined in [BR 7.1.2.4], associated with the Issuing CA.
 
-For Subscriber Certificates and corresponding Precertificates, an authoritative OCSP response is available no more than 15 minutes after the Certificate or Precertificate is first published or otherwise made available.
+A certificate serial is “unassigned” if it is not “assigned”.
 
-OCSP responses are signed by either the CA that issued the Certificate whose status is being checked or an OCSP Responder whose Certificate is signed by that CA. Where an authorized OCSP Responder is used, the OCSP signing Certificate contains the id-pkix-ocsp-nocheck extension.
+The following SHALL apply for communicating the status of Certificates and Precertificates which include an Authority Information Access extension with an id-ad-ocsp accessMethod.
 
-Starfield OCSP responders do not return a good status for Certificate serial numbers that have not been issued.
+OCSP responders operated by Starfield support the HTTP GET method, as described in [RFC 6960](https://www.ietf.org/rfc/rfc6960.txt) and/or [RFC 5019](https://www.ietf.org/rfc/rfc5019.txt). Additionally, Starfield may process the Nonce extension (1.3.6.1.5.5.7.48.1.2) in accordance with RFC 8954.
+
+For the status of a Subscriber Certificate or its corresponding Precertificate:
+- Effective 2025-01-15, an authoritative OCSP response MUST be available (i.e. the responder MUST NOT respond with the “unknown” status) starting no more than 15 minutes after the Certificate or Precertificate is first published or otherwise made available.
+- For OCSP responses with validity intervals less than sixteen hours, Starfield will provide an updated OCSP response prior to one-half of the validity period before the nextUpdate.
+- For OCSP responses with validity intervals greater than or equal to sixteen hours, Starfield will provide an updated OCSP response at least eight hours prior to the nextUpdate, and no later than four days after the thisUpdate.
+
+For the status of a Subordinate CA Certificate, Starfield will provide an updated OCSP response at least every twelve months, and within 24 hours after revoking the Certificate.
+
+The following SHALL apply for communicating the status of all Certificates for which an OCSP responder is willing or required to respond.
+
+OCSP responses conform to [RFC 6960](https://www.ietf.org/rfc/rfc6960.txt) and/or [RFC 5019](https://www.ietf.org/rfc/rfc5019.txt). OCSP responses either:
+1.	Are signed by the CA that issued the Certificates whose revocation status is being checked, or
+2.	Are signed by an OCSP Responder whose Certificate is signed by the CA that issued the Certificate whose revocation status is being checked.
+
+In the latter case, the OCSP signing Certificate contains an extension of type id-pkix-ocsp-nocheck, as defined by [RFC 6960](https://www.ietf.org/rfc/rfc6960.txt).
+
+OCSP responses for Subscriber Certificates MUST have a validity interval greater than or equal to eight hours and less than or equal to ten days.
+
+If the OCSP responder receives a request for the status of a certificate serial number that is “unassigned”, then the responder SHOULD NOT respond with a “good” status. If the OCSP responder is for a CA that is not Technically Constrained in line with [BR 7.1.2.3] or [BR 7.1.2.5], the responder MUST NOT respond with a “good” status for such requests.
 
 ### <span id="page-45-1"></span> **4.9.10 On-line Revocation Checking Requirements**
 
-Starfield's OCSP practices and requirements are described in Section 4.9.9.
+The following SHALL apply for communicating the status of Certificates which include an Authority Information Access extension with an id-ad-ocsp accessMethod.
+
+OCSP responders operated by Starfield support the HTTP GET method, as described in [RFC 6960](https://www.ietf.org/rfc/rfc6960.txt) and/or [RFC 5019](https://www.ietf.org/rfc/rfc5019.txt). The CA MAY process the Nonce extension (`1.3.6.1.5.5.7.48.1.2`) in accordance with RFC 8954.
+
+The validity interval of an OCSP response is the difference in time between the thisUpdate and nextUpdate field, inclusive. For purposes of computing differences, a difference of 3,600 seconds shall be equal to one hour, and a difference of 86,400 seconds shall be equal to one day, ignoring leap‐seconds.
+
+For the status of Subscriber Certificates and Subordinate CA Certificates:
+
+- Starfield OCSP responses have a validity interval between 24 and 96 hours.
+- Starfield updates the information provided via an OCSP at least eight hours prior to the nextUpdate.
+
+If the OCSP responder receives a request for status of a certificate that has not been issued, then the responder does not respond with a "good" status.
 
 ### <span id="page-45-2"></span> **4.9.11 Other Forms of Revocation Advertisements Available**
 
@@ -1765,7 +1702,7 @@ Parties may use the following methods to demonstrate private key compromise:
 - Submission of a CSR signed by the private key
 - Submission of a revoke request following the procedures defined in [Section 7.6 of RFC 8555](https://www.ietf.org/rfc/rfc8555.txt) requiring signing the revocation request with the compromised key
 
-If a key compromise is successfully proven, the certificate will be revoked within the applicable BR §4.9.1.1 timeline.
+If a key compromise is successfully proven, Starfield will revoke the certificate according to the specifications in [Section 4.9 Certificate Revocation and Suspension.](#page-39-9)
 
 In addition to the procedures specified above, if deemed necessary, Starfield uses commercially reasonable efforts to notify potential Relying Parties if Starfield discovers, or has reason to believe, that there has been a compromise of a Starfield CA private key.
 
@@ -1801,7 +1738,7 @@ Starfield's CRL and OCSP services incorporate a distributed design intended to p
 
 The Starfield PKI allows Subscribers, Relying Parties, Application Software Vendors, and other third parties to report complaints or suspected Private Key compromise, Certificate misuse, or other types of fraud, compromise, misuse, or inappropriate conduct related to Certificates via email as published in the Starfield repository.
 
-Starfield maintains a continuous 24x7 ability to respond to all Certificate Problem Reports. Certificate Problem Reports are reviewed and investigated in accordance with [Section 4.9 Certificate Revocation and Suspension](#page-39-9). Where appropriate, Starfield may also report the matter to law enforcement officials. Any such reporting is separate from, and does not replace or delay, any revocation required under Section 4.9.
+Starfield maintains a continuous 24/7 ability to respond to any high priority certificate problem reports and to revoke certificates in accordance with [Section 4.9 Certificate Revocation and Suspension](#page-39-9) and/or report the problem to law enforcement officials.
 
 ### <span id="page-47-0"></span>**4.10.3 Optional Features**
 
@@ -1823,23 +1760,38 @@ No Stipulation.
 
 # <span id="page-48-0"></span> **5 FACILITY, MANAGEMENT, AND OPERATIONAL CONTROLS**
 
-This section describes the physical, procedural, personnel, system, and operational controls maintained by Starfield to support secure and reliable CA operations. Starfield maintains controls designed to protect the confidentiality, integrity, and availability of Certificate Data and Certificate Management Processes and to detect, prevent, and respond to security threats, vulnerabilities, and incidents. These controls include physical and logical access controls, system integrity and malware prevention, network security, security monitoring, vulnerability management, risk assessment, and business continuity and disaster recovery processes.
+Starfield SHALL develop, implement, and maintain a comprehensive security program designed to:
+
+1. Protect the confidentiality, integrity, and availability of Certificate Data and Certificate Management Processes;
+2. Protect against anticipated threats or hazards to the confidentiality, integrity, and availability of the Certificate Data and Certificate Management Processes;
+3. Protect against unauthorized or unlawful access, use, disclosure, alteration, or destruction of any Certificate Data or Certificate Management Processes;
+4. Protect against accidental loss or destruction of, or damage to, any Certificate Data or Certificate Management Processes; and
+5. Comply with all other security requirements applicable to Starfield by law.
+
+The Certificate Management Process MUST include:
+
+1. physical security and environmental controls;
+2. system integrity controls, including configuration management, integrity maintenance of trusted code, and malware detection/prevention;
+3. network security and firewall management, including port restrictions and IP address filtering;
+4. user management, separate trusted-role assignments, education, awareness, and training; and
+5. logical access controls, activity logging, and inactivity time-outs to provide individual accountability.
+
+Starfield's security program MUST include an annual Risk Assessment that:
+1. Identifies foreseeable internal and external threats that could result in unauthorized access, disclosure, misuse, alteration, or destruction of any Certificate Data or Certificate Management Processes;
+2. Assesses the likelihood and potential damage of these threats, taking into consideration the sensitivity of the Certificate Data and Certificate Management Processes; and
+3. Assesses the sufficiency of the policies, procedures, information systems, technology, and other arrangements that Starfield has in place to counter such threats.
+
+Based on the Risk Assessment, Starfield SHALL develop, implement, and maintain a security plan consisting of security procedures, measures, and products designed to achieve the objectives set forth above and to manage and control the risks identified during the Risk Assessment, commensurate with the sensitivity of the Certificate Data and Certificate Management Processes. The security plan MUST include administrative, organizational, technical, and physical safeguards appropriate to the sensitivity of the Certificate Data and Certificate Management Processes. The security plan MUST also take into account then-available technology and the cost of implementing the specific measures, and SHALL implement a reasonable level of security appropriate to the harm that might result from a breach of security and the nature of the data to be protected.
 
 ## <span id="page-49-0"></span> **5.1 Physical Security Controls**
 
 ### <span id="page-49-1"></span> **5.1.1 Site Location and Construction**
 
-Starfield PKI systems are hosted and managed using secure facilities in the Phoenix, Arizona and Ashburn, Virginia metropolitan areas. The facilities are designed and constructed to provide physical protection for PKI systems, cryptographic equipment, and associated information against unauthorized access, damage, or interference.
-
-The facilities employ multiple layers of physical security designed to deter, prevent, and detect unauthorized access to Starfield PKI systems and supporting infrastructure.
+Starfield PKI systems are hosted and managed using secure facilities in the Phoenix, Arizona and Ashburn, Virginia metropolitan areas with multiple levels of physical access controls.
 
 ### <span id="page-49-2"></span> **5.1.2 Physical Access**
 
-Production Starfield PKI systems are housed in secure facilities with multiple layers of physical access controls. Access to the CA environment is restricted to authorized personnel based on job responsibilities and operational need. Physical access requires two-factor authentication, and access to physical devices within the CA environment is subject to dual control.
-
-Physical access to the CA facilities is automatically logged and video recorded on a 24x7 basis. The facilities are monitored 24x7 by onsite security personnel. Physical security controls include electronic access controls, video surveillance, intrusion detection, and physical barriers designed to prevent and detect unauthorized access to sensitive areas.
-
-Access to areas housing critical PKI systems and cryptographic equipment is further restricted to authorized personnel. Physical access permissions are reviewed on a quarterly basis to verify that access remains appropriate based on job responsibilities and operational need.
+Production Starfield PKI systems are housed in a secure facility requiring two factor authentication and dual control access to any physical device in the CA environment. Physical access to the CA facility is automatically logged and video recorded on a 24x7 basis. Physical access to the CA facility is monitored 24x7 by onsite security personnel.
 
 ### <span id="page-49-3"></span> **5.1.3 Power and Air Conditioning**
 
@@ -1889,13 +1841,7 @@ Each person performing a trusted role within the Starfield PKI must be authorize
 
 ### <span id="page-50-4"></span> **5.2.4 Roles requiring separation of duties**
 
-Starfield maintains separation of duties among Trusted Roles to prevent individuals from performing incompatible or security-sensitive functions without appropriate oversight or participation by other authorized personnel.
-
-Personnel performing RA functions do not have CA system administration privileges. Personnel with RA or EVRA roles may not act as an Applicant Representative. Approval of EV Certificate requests must be performed by a person other than the person who verified the information in the request.
-
-Deployment of software changes to the production PKI environment and activation of cryptographic modules require the participation of multiple trusted individuals. Sensitive CA key management operations, including CA key generation, activation, backup, recovery, archival, and destruction, are performed under multi-person control as applicable and are documented through controlled key ceremonies.
-
-CA system users do not have privileges that permit modification of audit logs. Audit logs are available to authorized Security or other independent personnel for review.
+Approval of EV certificate requests must be performed by a person other than the one who verified the information in the request.
 
 ## <span id="page-50-5"></span> **5.3 Personnel Controls**
 
@@ -1905,7 +1851,7 @@ The recruitment and selection practices for Starfield PKI personnel take into ac
 
 ### <span id="page-51-0"></span> **5.3.2 Background Check Procedures**
 
-Background checks are performed prior to commencement of employment with Starfield. Such checks include criminal record checks and, as applicable to the role, may include verification of identity, employment history, education, professional qualifications, and references. For employees hired into a Validation Specialist role, in-person identity verification is required prior to commencement of employment.
+Background checks are performed prior to their commencement of employment with Starfield. Such checks include criminal record and may include other items as applicable to the role.
 
 Starfield employees are required to sign a nondisclosure agreement and are required to adhere to Starfield PKI policies and procedures.
 
@@ -1941,7 +1887,7 @@ If a person in a trusted role is cited by Starfield management for unauthorized 
 
 ### <span id="page-52-0"></span>**5.3.7 Independent Contractor Requirements**
 
-Starfield PKI may employ contractors as necessary. Where contractors are used by the Starfield PKI, they are subject to qualifications and background check procedures comparable to those specified in [Section 5.3.1 Qualifications, Experience, and Clearance Requirements](#page-50-6) and [Section 5.3.2 Background Check Procedures](#page-51-0), respectively.
+Starfield PKI may employ contractors as necessary. Where contractors are used by the Starfield PKI, they are subject to qualifications and background check procedures comparable to those specified in [Section 5.3.1 Qualifications, Experience, and Clearance Requirements](#page-50-6) and [Section 5.3.2 BBackground Check Procedures](#page-51-0), respectively.
 
 ### <span id="page-52-1"></span>**5.3.8 Documentation Supplied to Personnel**
 
@@ -1974,9 +1920,9 @@ The Starfield PKI logs the following events:
    f. Signing of OCSP Responses  
    g. Multi-Perspective Issuance Corroboration attempts from each Network Perspective, minimally recording the following information:  
    I. an identifier that uniquely identifies the Network Perspective used;  
-   II. the attempted domain name; and  
+   II. the attempted domain name and/or IP address; and  
    III. the result of the attempt (e.g., “domain validation pass/fail”, “CAA permission/prohibition”).  
-   h. Multi-Perspective Issuance Corroboration quorum results for each attempted domain name represented in a Certificate request (i.e., “3/4” which should be interpreted as “Three (3) out of four (4) attempted Network Perspectives corroborated the determinations made by the Primary Network Perspective).
+   h. Multi-Perspective Issuance Corroboration quorum results for each attempted domain name or IP address represented in a Certificate request (i.e., “3/4” which should be interpreted as “Three (3) out of four (4) attempted Network Perspectives corroborated the determinations made by the Primary Network Perspective).
 
 3. Security events, including:  
    a. Successful and unsuccessful PKI system access attempts;  
@@ -2004,7 +1950,7 @@ Logging of router and firewall activities MUST at a minimum include:
 
 ### <span id="page-53-0"></span> **5.4.2 Frequency of Processing Log**
 
-Audit logs are subject to automated monitoring for security events and anomalous activity. Security detections are investigated and responded to by Starfield's 24x7 Security Operations Team. The logging infrastructure is also monitored for interruptions and deviations in log collection and processing, with alerts generated for investigation and response. Starfield performs an end-to-end health check of the logging pipeline at least every six months to verify that the logging infrastructure is operating as expected.
+Audit logs are reviewed on an as-needed basis.
 
 ### <span id="page-53-1"></span> **5.4.3 Retention Period for Audit Log**
 
@@ -2019,7 +1965,7 @@ Starfield SHALL retain, for at least two (2) years:
 3. Any security event records (as set forth in Section 5.4.1 (3)) after the event occurred
 ### <span id="page-53-2"></span> **5.4.4 Protection of Audit Log**
 
-Production and archived logical and physical audit logs are protected using physical and logical access controls. Access to centralized logging systems is restricted to authorized personnel and is periodically reviewed. Stored logs are protected against unauthorized modification and deletion.
+Production and archived logical and physical audit logs are protected using a combination of physical and logical access controls.
 
 ### <span id="page-53-3"></span> **5.4.5 Audit Log Backup Procedures**
 
@@ -2027,7 +1973,7 @@ Audit logs are backed up on a periodic basis.
 
 ### <span id="page-54-0"></span> **5.4.6 Audit Collection System (Internal vs. External)**
 
-Starfield utilizes centralized logging and archival systems to collect and retain applicable records. Logs are collected from Certificate Systems and supporting infrastructure using secure log forwarding, host-based logging agents, native operating system logging mechanisms, and other appropriate collection methods. Collected logs are maintained in centralized storage and made available to Starfield's security monitoring systems.
+Automated audit data is generated and recorded at the application, network, and operating system level. Manually generated audit data is recorded by Starfield employees.
 
 ### <span id="page-54-1"></span> **5.4.7 Notification to Event-Causing Subject**
 
@@ -2035,17 +1981,14 @@ Where an event is logged by the audit collection system, no notice is required t
 
 ### <span id="page-54-2"></span> **5.4.8 Vulnerability Assessments**
 
-Starfield performs vulnerability assessments of its PKI environment, including:
+Starfield performs periodic vulnerability assessments of its PKI environment
 
-- Internal vulnerability scans of internal PKI networks are performed on at least a weekly basis.
-- External vulnerability scans are performed on at least a bi-weekly basis and include publicly accessible applications.
-- Annually, or after a significant infrastructure or application change, a penetration test of the Starfield PKI environment is conducted, including customer-facing applications, the certificate vetting application, and critical PKI infrastructure.
+including:
+- External vulnerability scans are conducted on at least a quarterly basis.  Testing includes applications publicly available.
+- Internal vulnerability scans of internal PKI networks are performed on at least a quarterly basis.
+- Annually or after a significant infrastructure or application change, a penetration test of the entire Starfield PKI is conducted which includes tests of customer facing applications, the certificate vetting application, and critical PKI infrastructure. 
 
-Identified vulnerabilities are evaluated and assigned a rating based on risk. Vulnerability response and remediation timeframes are specified in Section 6.7 Network Security Controls.
-
-Starfield performs a risk assessment of its PKI environment at least annually. The risk assessment is performed with participation from Information Security Governance, Risk, and Compliance, PKI Development, and PKI Engineering and is reviewed and approved by appropriate leadership.
-
-The risk assessment covers systems, processes, and assets supporting Certificate Management Processes and considers applicable internal and external threats, vulnerabilities, and changes to the PKI environment. Identified risks are evaluated based on likelihood, impact, and the sufficiency of existing controls. Risk treatment activities are documented and incorporated into Starfield's security planning and risk-management processes.
+Upon completion of each assessment, critical and high vulnerabilities identified as part of the assessment are documented and tracked to completion. A Corrective Action Plan will be developed to mitigate any pertinent security issues (i.e., findings) and associated risks identified by the assessment.   Critical vulnerabilities that are discovered should be mitigated within the remediation timelines listed in Section 6.7.  In the event that the vulnerability cannot be mitigated within those timelines, justification including compensating controls and mitigating risk factors are documented formally in a security exception.
 
 ## <span id="page-54-3"></span> **5.5 Records Archival**
 
@@ -2057,7 +2000,7 @@ Starfield maintains an archive of logs that include the recorded events specifie
 
 ### <span id="page-54-5"></span> **5.5.2 Retention Period for Archive**
 
-Starfield's retention period for archived records is established in accordance with [Section 5.4.3 Retention period for audit log](#page-53-1)
+Starfield retention period for archives it is made in accordance with [Section 5.4.3 Retention period for audit log](#page-53-1)
 
 ### <span id="page-54-6"></span> **5.5.3 Protection of Archive**
 
@@ -2073,11 +2016,11 @@ Starfield PKI system clocks are synchronized with a third-party time source. Aut
 
 ### <span id="page-55-2"></span> **5.5.6 Archive Collection System (Internal or External)**
 
-Starfield's archive collection system is described in Section 5.4.6 Audit Collection System.
+No Stipulation.
 
 ### <span id="page-55-3"></span> **5.5.7 Procedures to Obtain and Verify Archive Information**
 
-Access to archived log information is restricted to authorized personnel through access-controlled logging and archival systems. Starfield protects archived logs against unauthorized modification and deletion and periodically reviews the logging infrastructure to verify that log collection, storage, and retrieval are operating as expected.
+No Stipulation.
 
 ## <span id="page-55-4"></span> **5.6 Key Changeover**
 
@@ -2087,9 +2030,7 @@ Starfield CAs will stop issuing certificates and will be re-keyed or terminated 
 
 ### <span id="page-55-6"></span> **5.7.1 Incident and Compromise Handling Procedures**
 
-Starfield maintains documented business continuity, disaster recovery, and incident response procedures designed to respond to disasters, security compromises, business failures, and other security incidents affecting the Starfield PKI. Starfield performs tests, reviews, and updates to these procedures at least annually. These procedures meet the requirements in [BR 5.7.1].
-
-In the event of a security incident requiring notification or disclosure, Starfield notifies applicable Application Software Suppliers and Root Store Operators and makes any required incident disclosures or notifications within the timelines established by applicable requirements.
+Starfield has documented business continuity and disaster recovery procedures designed to notify and reasonably protect Application Software Suppliers, Subscribers, and Relying Parties in the event of a disaster, security compromise, or business failure. Starfield performs tests, reviews, and updates to these procedures at least annually. These procedures meet the requirements in [BR 5.7.1].
 
 Starfield maintains a comprehensive and actionable plan for mass revocation events, performs annual testing of the mass revocation plan, and incorporates lessons learned into such plan in order to continually improve preparedness for mass revocation events over time.
 
@@ -2099,13 +2040,11 @@ Starfield performs regular system backups that can be utilized to recover in the
 
 ### <span id="page-55-8"></span> **5.7.3 Entity Private Key Compromise Procedures**
 
-Starfield has implemented a combination of physical, logical, and procedural controls to guard against CA key compromise. In the event of a known or suspected CA private key compromise, Starfield management assesses the nature and scope of the incident and determines the appropriate response, including containment, investigation, remediation, and other actions appropriate to the circumstances.
-
-Starfield's assessment of the appropriate response does not supersede any mandatory notification, disclosure, revocation, or other incident-response requirements. Starfield performs required notifications and disclosures to applicable Application Software Suppliers and Root Store Operators and takes required revocation or other remedial actions within the timelines established by applicable requirements.
+Starfield has implemented a combination of physical, logical and procedural controls to guard against CA key compromise. In the event of a known or suspected CA key compromise, Starfield management will assess the situation and determine the appropriate course of action.
 
 ### <span id="page-56-0"></span> **5.7.4 Business Continuity Capabilities After a Disaster**
 
-Starfield maintains a disaster recovery plan and performs testing of the plan at least annually to ensure its effectiveness in the event of a disaster.
+Starfield maintains a disaster recovery plan and performs periodic testing of the plan to ensure its effectiveness in the event of a disaster.
 
 ## <span id="page-56-1"></span> **5.8 CA or RA Termination**
 
@@ -2180,36 +2119,45 @@ The Starfield Root CA certificates may also be downloaded from the Starfield rep
 
 ### <span id="page-57-6"></span> **6.1.5 Key Sizes**
 
-Starfield currently uses the following algorithms and key sizes for CA Certificates and TLS Subscriber Certificate issuance:
+Starfield CA key pairs used to issue certificates after January 1, 2012 are 2048 bit or higher RSA keys. Subscriber key pairs in certificates issued after January 1, 2012 are 2048 bit or higher RSA keys.
 
-| Certificate Type | Digest Algorithm | Minimum RSA Modulus Size (bits) |
-|------------------|------------------|---------------------------------|
-| Root CA Certificates | SHA-256 | 2048 |
-| Subordinate CA Certificates | SHA-256 | 2048 |
-| TLS Subscriber Certificates | SHA-256 | 2048 |
+Certificates meet the following requirements for algorithm type and key size.
 
-Certificates issued under historical requirements met the algorithm and key size requirements specified below.
+#### <span id="page-58-0"></span> **6.1.5.1 Root CA Certificates**
 
-#### <span id="page-58-0"></span> **6.1.5.1 Historical Root CA Certificates**
+|                                 | Validity period beginning on or before 31 Dec 2010    | Validity period beginning after 31 Dec 2010    |
+|---------------------------------|-------------------------------------------------------|------------------------------------------------|
+| Digest algorithm                | MD5 (NOT RECOMMENDED),                                | SHA-1*, SHA-256, SHA-384 or                    |
+|                                 | SHA-1, SHA-256, SHA-384 or                            | SHA-512                                        |
+|                                 | SHA-512                                               |                                                |
+| Minimum RSA modulus size (bits) | 2048**                                                | 2048                                           |
 
-|                                 | Validity period beginning on or before 31 Dec 2010 | Validity period beginning after 31 Dec 2010 |
+
+(*) *SHA-1 algorithm is no longer used*
+
+#### <span id="page-58-1"></span> **6.1.5.2 Subordinate CA Certificates**
+
+|                                 | Validity period beginning on or before 31 Dec 2010 and ending on or before 31 Dec 2013       | Validity period beginning after 31 Dec 2010 or ending after 31 Dec 2013 |
+|---------------------------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| Digest algorithm                | SHA-1, SHA-256, SHA-384 or                                                                   | SHA-1*, SHA-256, SHA-384 or                                                   |
+|                                 | SHA-512                                                                                      | SHA-512                                                                       |
+| Minimum RSA modulus size (bits) | 1024                                                                                         | 2048                                                                          |
+
+
+(*) *SHA-1 algorithm is no longer used*
+
+
+#### <span id="page-58-2"></span> **6.1.5.3 Subscriber Certificates**
+
+|                                 | Validity period ending on or<br>before 31 Dec 2013 | Validity period ending after 31<br>Dec 2013 |
 |---------------------------------|----------------------------------------------------|---------------------------------------------|
-| Digest algorithm                | MD5 (NOT RECOMMENDED), SHA-1, SHA-256, SHA-384 or SHA-512 | SHA-1, SHA-256, SHA-384 or SHA-512 |
-| Minimum RSA modulus size (bits) | 2048 | 2048 |
+| Digest algorithm                | SHA1, SHA-256, SHA-384 or                         | SHA-1*, SHA-256, SHA-384 or                 |
+|                                 | SHA-512                                            | SHA-512                                     |
+| Minimum RSA modulus size (bits) | 1024                                               | 2048                                        |
 
-#### <span id="page-58-1"></span> **6.1.5.2 Historical Subordinate CA Certificates**
 
-|                                 | Validity period beginning on or before 31 Dec 2010 and ending on or before 31 Dec 2013 | Validity period beginning after 31 Dec 2010 or ending after 31 Dec 2013 |
-|---------------------------------|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| Digest algorithm                | SHA-1, SHA-256, SHA-384 or SHA-512 | SHA-1, SHA-256, SHA-384 or SHA-512 |
-| Minimum RSA modulus size (bits) | 1024 | 2048 |
+(*) *SHA-1 algorithm is no longer used*
 
-#### <span id="page-58-2"></span> **6.1.5.3 Historical Subscriber Certificates**
-
-|                                 | Validity period ending on or before 31 Dec 2013 | Validity period ending after 31 Dec 2013 |
-|---------------------------------|-------------------------------------------------|------------------------------------------|
-| Digest algorithm                | SHA-1, SHA-256, SHA-384 or SHA-512 | SHA-1, SHA-256, SHA-384 or SHA-512 |
-| Minimum RSA modulus size (bits) | 1024 | 2048 |
 
 # <span id="page-59-0"></span> **6.1.6 Public Key Parameters Generation and Quality Checking**
 
@@ -2247,13 +2195,15 @@ The escrow of CA and Subscriber private keys, for purposes of access by law enfo
 
 ### <span id="page-60-0"></span> **6.2.4 Private Key Backup**
 
-CA private keys are securely stored following the expiration of the associated CA Certificate. CA private keys are securely destroyed no later than two years after the expiration of the associated CA Certificate. HSMs containing the CA private key are zeroized and/or securely destroyed.
+Backup copies of CA private keys are stored in encrypted form using cryptographic modules that meet the requirements specified in [Section6.2.1 Cryptographic Module Standards and Controls.](#page-59-3)
 
-Subscriber private keys are not archived by the Starfield PKI.
+Once a CA has reached the end of its maximum usage period as defined in [Section 6.3.2 Certificate Operational Periods and Key Pair Usage Periods](#page-61-2), HSMs containing the CA private key will be zeroized and/or securely destroyed.
+
+Subscriber private keys are not backed up by the Starfield PKI.
 
 ### <span id="page-60-1"></span> **6.2.5 Private Key Archival**
 
-CA private keys are securely destroyed no later than two years after the expiration of the associated CA Certificate. HSMs containing the CA private key are zeroized and/or securely destroyed.
+Once a CA has reached the end of its maximum usage period as defined in [Section 6.3.2 Certificate Operational Periods and Key Pair Usage Periods](#page-61-2), HSMs containing the CA private key will be zeroized and/or securely destroyed.
 
 Subscriber private keys are not archived by the Starfield PKI.
 
@@ -2295,7 +2245,7 @@ For Starfield PKI CAs and Subscribers, key and certificate usage periods meet th
 |---|---|---|---|
 | Root CAs | 15 years | 20 years | 30 years |
 | Issuing CAs | 20 years | 25 years | 20 years |
-| Subscribers including:<br>- Domain Validated SSL Server Certificate<br>- Organizational Validated SSL Server Certificate Subscribers<br>- Extended Validation SSL Server Certificate Subscribers | N/A | N/A | See below |
+| Subscribers including:<br>- Basic and Medium Assurance Domain Validated SSL Server Certificate<br>- High Assurance Organizational Validated SSL Server Certificate Subscribers<br>- Extended Validation SSL Server Certificate Subscribers | N/A | N/A | See below |
 
 | **Subscriber Certificate issued on or after** | **Subscriber Certificate issued before** | **Maximum Validity Period** |
 |---|---|---|
@@ -2324,18 +2274,9 @@ No Stipulation.
 
 ### <span id="page-62-1"></span> **6.5.1 Specific Computer Security Technical Requirements**
 
-Starfield's systems maintaining CA software and data files are secured from unauthorized access. Access to production systems is limited to authorized individuals with a valid business need for such access.
+Starfield's systems maintaining CA software and data files are secure from unauthorized access. In addition, access to production servers is limited to those individuals with a valid business reason for such access.
 
-Starfield's production network is separated from other network components. This separation restricts network access to authorized application processes and services. Starfield maintains access controls designed to protect the production network from unauthorized internal and external access and to restrict access to production systems. Access controls include multifactor authentication.
-
-Starfield maintains technical and administrative controls designed to protect the confidentiality, integrity, and availability of its Certificate Systems and Certificate Management Systems. These controls include:
-
-1. **Secure configuration, software-development, and change-management controls** as described in Sections 6.6.1 and 6.6.2;
-2. **Logical and privileged-access controls, including role-based access, separation of duties, and multifactor authentication,** as described in Sections 5.2 and 6.5.1;
-3. **Production-system and network isolation controls** as described in Sections 6.5.1 and 6.7;
-4. **Security event logging and monitoring controls** as described in Section 5.4;
-5. **Vulnerability assessment, penetration testing, risk evaluation, remediation, and security-exception processes** as described in Sections 5.4.8 and 6.7; and
-6. **Malware detection and prevention and patch-management controls** as described in Section 6.7.
+Starfield's production network is separate from other components. This separation prevents network access except through specific application processes. Starfield has sophisticated access control technologies in place to protect the production network from unauthorized internal and external access and to limit network activities accessing production systems. Access controls in use include, but are not limited to, multifactor authentication.
 
 ### <span id="page-62-2"></span> **6.5.2 Computer Security Rating**
 
@@ -2345,23 +2286,11 @@ No Stipulation.
 
 ### <span id="page-62-4"></span> **6.6.1 System Development Controls**
 
-All CA software is developed in accordance with documented Software Development Life Cycle processes.
-
-Changes to the production PKI environment are managed through documented change-management processes. Changes that may affect system security, availability, or integrity are documented, assessed for risk and impact, tested, and authorized prior to implementation. Change-management processes apply to software, system configuration, infrastructure and software patching, and database changes.
-
-Production changes are documented with the scope of the change, implementation procedures, rollback procedures, and the approach used to validate the change before and after deployment. Changes are subject to review and approval based on the nature and risk of the change.
-
-Application code changes are subject to peer review and testing prior to production deployment. Developers may not approve their own code changes, and production deployment requires approval by authorized personnel independent of the developer, as applicable.
-
-Emergency changes may use expedited procedures where necessary to restore service or address an emergent production issue. Such changes require authorization by appropriate PKI management and are documented and reviewed following implementation.
-
-All code is verified, using digital signatures and hashing, before being deployed into the production CA environment.
+All CA software is developed in accordance with documented Software Development Life Cycle processes. Reviews of all changes are made during multiple points of the software development. Approval to deploy changes requires multiple individuals. All code is verified, using digital signatures and hashing, before being deployed into the production CA environment.
 
 ### <span id="page-62-5"></span> **6.6.2 Security Management Controls**
 
-Starfield maintains tools and processes to control and monitor the configurations of CA systems and to maintain approved security configurations.
-
-Configuration changes are managed in accordance with the change-management processes described in Section 6.6.1. Starfield validates the integrity of software prior to release into production and monitors system configurations for unauthorized or unintended changes. Identified configuration or integrity issues are evaluated and addressed through applicable change-management, vulnerability-management, or incident-response processes.
+Starfield has tools and processes in place to control and monitor the configurations of the CA systems. Starfield validates the integrity of all software before release into production.
 
 ### <span id="page-62-6"></span> **6.6.3 Life Cycle Security Controls**
 
@@ -2369,27 +2298,9 @@ No Stipulation.
 
 ## <span id="page-62-7"></span >**6.7 Network Security Controls**
 
-Starfield operates its Certificate Systems and Certificate Management Systems in accordance with the applicable CA/Browser Forum Network and Certificate System Security Requirements.
+The Starfield network is secured through the use of preventative (properly configured routers and firewalls) and detective controls (monitoring systems).  Starfield performs all CA and RA functions using networks secured in accordance with the Starfield Operations Guide to ensure the systems are secure.
 
-Starfield maintains preventative and detective network security controls designed to protect Certificate Systems and Certificate Management Systems from unauthorized access and security threats. Network access to production PKI systems is restricted to authorized systems, services, and personnel. Starfield monitors the PKI environment for security events and unauthorized activity and maintains controls designed to protect communications between systems supporting Certificate Management Processes.
-
-Starfield performs all CA and RA functions using networks secured in accordance with the Starfield Operations Guide.
-
-**Malware Detection and Prevention**
-
-Starfield implements malware detection and prevention controls on applicable Certificate Systems, Certificate Management Systems, and supporting systems within the PKI environment. These controls are designed to detect and prevent viruses, malicious software, and other potentially harmful code.
-
-Malware protection mechanisms are maintained and monitored as part of Starfield's security operations. Malware detections and suspected malicious activity are evaluated and addressed through Starfield's security monitoring and incident-response processes.
-
-**Patch Management**
-
-Starfield maintains a patch-management process for systems supporting the PKI environment. Infrastructure patching for PKI servers is performed on a monthly basis and is managed through the change-management processes described in Section 6.6.1. Patches are documented, authorized, implemented, and validated, and rollback procedures are maintained for applicable changes.
-
-**Vulnerability Remediation Timeline**
-
-Starfield performs vulnerability assessments, penetration testing, vulnerability remediation, and related security-exception processes as described in Section 5.4.8.
-
-Identified vulnerabilities are evaluated and assigned a rating based on risk. Remediation occurs in accordance with the timelines outlined below:
+When vulnerabilities are identified, they are evaluated and assigned a rating based on risk. Remediation occurs in accordance with the timelines outlined below:
 
 | Vulnerability Rating                                                       | Remediation Timeline                |
 |----------------------------------------------------------------------------|-------------------------------------|
@@ -2397,8 +2308,6 @@ Identified vulnerabilities are evaluated and assigned a rating based on risk. Re
 | High                                                                       | 30 days                             |
 | Medium                                                                     | 90 days                             |
 | Low                                                                        | 180 days                            |
-
-If a vulnerability cannot be remediated within the required timeframe, the justification, compensating controls, and mitigating risk are formally documented through Starfield's security exception process.
 
 ## <span id="page-62-8"></span> **6.8 Time-Stamping**
 
@@ -2418,43 +2327,70 @@ Extensions used in Starfield certificates are documented in Appendix A.
 
 ### <span id="page-63-4"></span> **7.1.3 Algorithm Object Identifiers**
 
-Starfield signs certificates with the following algorithm: **sha256RSA** 1.2.840.113549.1.1.11  
+Starfield signs certificates with the following algorithms:
 
-Starfield has historically signed some certificates with these algorithms:
-**ECDSAsha384** 1.2.840.10045.4.3.3
-**Sha1RSA** 1.2.840.113549.1.1.5
+- Sha1RSA* **1.2.840.113549.1.1.5**
+- sha256RSA **1.2.840.113549.1.1.11**
+- ECDSAsha384* **1.2.840.10045.4.3.3**
+
+(*) Starfield do not issue OCSP, or Subscriber SSL Certificates utilizing the SHA‐1  algorithm or the ECDSAsha384 algorithm.
 
 ### <span id="page-63-5"></span> **7.1.4 Name Forms**
 
 #### **7.1.4.1 Name Encoding**
 
-Starfield certificates incorporate an identifying serial number field which is unique under the Subordinate CA which issued it.  Starfield certificates support name chaining as specified in [RFC 5280, section 4.1.2.4.](https://tools.ietf.org/html/rfc5280)
+Every Starfield certificate is uniquely identified by its Subject and incorporates a unique identifying serial number. Starfield certificates support name chaining as specified in [RFC 5280, section 4.1.2.4.](https://tools.ietf.org/html/rfc5280)
 
 #### **7.1.4.2 Subject Information - Subscriber Certificates**
 
-By issuing the Certificate, Starfield represents that it followed the procedure set forth in its Certificate Policy and/or Certification Practice Statement to verify that, as of the Certificate's issuance date, all of the Subject Information was accurate. Starfield SHALL NOT include a Domain Name except as specified in [Section 3.2.2.4 Validation of Domain Authorization or Control](#page-27-0).
+By issuing the Certificate, the Starfield represents that it followed the procedure set forth in its Certificate Policy and/or Certification Practice Statement to verify that, as of the Certificate's issuance date, all of the Subject Information was accurate. Starfield SHALL NOT include a Domain Name or IP Address in a Subject attribute except as specified in [Section 3.2.2.4 Validation of Domain Authorization or Control](#page-27-0) ..
 
 Subject attributes MUST NOT contain only metadata such as '.', '-', and ' ' (i.e. space) characters, and/or any other indication that the value is absent, incomplete, or not applicable.
 
 #### <span id="page-63-6"></span> **7.1.4.2.1 Subject Alternative Name Extension**
 
+1. Subject Alternative Name Extension:
 
-See the "Subject Alternative Name" fields in the applicable subsections of 10.4 End Entity SSL Certificates for details on SAN requirements for Subscriber Certificates by Certificate profile.
+	* **Certificate Field**: extensions:subjectAltName<br>**Required/Optional**: Required<br>**Contents**: This extension MUST contain at least one entry. Each entry MUST be one of the following types:
+
+		* **dNSName:** The entry MUST contain either a Fully‐Qualified Domain Name or Wildcard Domain Name that the CA has validated in accordance with [Section 3.2.2.4 Validation of Domain Authorization or Control](#page-27-0). Wildcard Domain Names MUST be validated for consistency with [Section 3.2.2.6 Wildcard Domain Validation](#page-31-0). The entry MUST NOT contain an Internal Name. Effective 2026-03-15, the entry MUST NOT contain a Domain Name that ends in an IP Address Reverse Zone Suffix. <br><br>The Fully‐Qualified Domain Name or the FQDN portion of the Wildcard Domain Name contained in the entry MUST be composed entirely of LDH Labels joined together by a U+002E FULL STOP (".") character. The zero‐length Domain Label representing the root zone of the Internet Domain Name System MUST NOT be included (e.g. "example.com" MUST be encoded as "example.com" and MUST NOT be encoded as "example.com.").<br><br>Effective 2021‐10‐01, the Fully‐Qualified Domain Name or the FQDN portion of the Wildcard Domain Name MUST consist solely of Domain Labels that are P‐Labels or Non‐Reserved LDH Labels.
+
+		* **IPAddress:** The entry MUST contain an IPv4 or IPv6 address that the CA has validated in accordance with [Section 3.2.2.5 Authentication for an IP Address](#page-31-1). The entry MUST NOT contain a Reserved IP Address.
 
 ##### <span id="page-64-0"></span> **7.1.4.2.2 Subject Distinguished Name Fields**
 
+2. Subject Distinguished Name Fields:
 
-See the Subject Distinguished Name Fields" in the applicable subsections of 10.4 End Entity SSL Certificates for details on Subject Distinguished Name requirements for each Subscriber Certificate profile.
+	* a. **Certificate Field**: subject:commonName (OID **2.5.4.3**)<br>&ensp;&ensp;**Required/Optional: Deprecated** (Discouraged, but not prohibited)<br>&ensp;&ensp;**Contents:** If present, this field MUST contain exactly one entry that is one of the values contained in the Certificate's subjectAltName extension (see [Section 7.1.4.2.1 Subject Alternative Name Extension](#page-63-6) ). The value of the field MUST be encoded as follows:
+		* If the value is an IPv4 address, then the value MUST be encoded as an IPv4Address as specified in [RFC 3986, Section 3.2.2](https://tools.ietf.org/html/rfc3986).
+		* If the value is an IPv6 address, then the value MUST be encoded in the text representation specified in [RFC 5952, Section 4](https://tools.ietf.org/html/rfc5952).
+		* If the value is a Fully‐Qualified Domain Name or Wildcard Domain Name, then the value MUST be encoded as a character‐for‐character copy of the dNSName entry value from the subjectAltName extension. Specifically, all Domain Labels of the Fully‐Qualified Domain Name or FQDN portion of the Wildcard Domain Name must be encoded as LDH Labels, and P‐Labels MUST NOT be converted to their Unicode representation.
+	
+	* b. **Certificate Field**: subject:organizationName (OID **2.5.4.10**)<br>&ensp;&ensp;**Required/Optional: Optional.**<br>&ensp;&ensp;**Contents:** If present, the subject:organizationName field MUST contain either the Subject's name or DBA as verified under [Section 3.2.2.2 DBA/Tradename](#page-27-1). Starfield may include information in this field that differs slightly from the verified name, such as common variations or abbreviations, provided that Starfield documents the difference and any abbreviations used are locally accepted abbreviations; e.g., if the official record shows "Company Name Incorporated", Starfield MAY use "Company Name Inc." or "Company Name". Because Subject name attributes for individuals (e.g. givenName (**2.5.4.42**) and surname (**2.5.4.4**)) are not broadly supported by application software, Starfield MAY use the subject:organizationName field to convey a natural person Subject's name or DBA.
+
+	* c. **Certificate Field**: Number and street: subject:streetAddress (OID: **2.5.4.9**)<br>&ensp;&ensp;**Required/Optional: **<br>&ensp;&ensp;**Optional:** If the subject:organizationName field, subject:givenName field, or subject:surname field are present.<br>&ensp;&ensp;**Prohibited** if the subject:organizationName field, subject:givenName, and subject:surname field are absent.<br>&ensp;&ensp;**Contents**: If present, the subject:streetAddress field MUST contain the Subject's street address information as verified under [Section 3.2.2.1](#page-26-3) Identity.
+
+	* d. **Certificate Field**: subject:localityName (OID: **2.5.4.7**)<br>&ensp;&ensp;**Required/Optional**:<br>&ensp;&ensp;**Required** if the subject:organizationName field, subject:givenName field, or subject:surname field are present and the subject:stateOrProvinceName field is absent.<br>&ensp;&ensp;**Optional** if the subject:stateOrProvinceName field and the subject:organizationName field, subject:givenName field, or subject:surname field are present.<br>&ensp;&ensp;**Prohibited** if the subject:organizationName field, subject:givenName, and subject:surname field are absent.<br>&ensp;&ensp;**Contents**: If present, the subject:localityName field MUST contain the Subject's locality information as verified under Section 3.2.2.1 Identity. If the subject:countryName field specifies the ISO 3166-1 user-assigned code of XX in accordance with [Section 7.1.4.2.2](#page-64-0)  (g) [Subject Distinguished Name Fields: postalCode](#page-64-0), the localityName field MAY contain the Subject's locality and/or state or province information as verified under Section 3.2.2.1 Identity.
+
+	* e. **Certificate Field**: subject:stateOrProvinceName (OID: **2.5.4.8**)<br>&ensp;&ensp;**Required/Optional**:<br>&ensp;&ensp;**Required** if the subject:organizationName field, subject:givenName field, or subject:surname field are present and subject:localityName field is absent. **Optional** if the subject:localityName field and the subject:organizationName field, the subject:givenName field, or the subject:surname field are present.<br>&ensp;&ensp;**Prohibited** if the subject:organizationName field, the subject:givenName field, or subject:surname field are absent.<br>&ensp;&ensp;**Contents**: If present, the subject:stateOrProvinceName field MUST contain the Subject's state or province information as verified under Section 3.2.2.1 Identity. If the subject:countryName field specifies the ISO 3166-1 user-assigned code of XX in accordance with Section 7.1.4.2.2 (g) Subject Distinguished Name Fields: postalCode, the subject:stateOrProvinceName field MAY contain the full name of the Subject's country information as verified under Section 3.2.2.1 Identity.
+
+	* f. **Certificate Field**: subject:postalCode (OID: **2.5.4.17**)<br>&ensp;&ensp;**Required/Optional**:<br>&ensp;&ensp;**Optional** if the subject:organizationName, subject:givenName field, or subject:surname fields are present.<br>&ensp;&ensp;**Prohibited** if the subject:organizationName field, subject:givenName field, or subject:surname field are absent.<br>&ensp;&ensp;**Contents**: If present, the subject:postalCode field MUST contain the Subject's zip or postal information as verified under Section 3.2.2.1 Identity.
+	
+	* g. **Certificate Field**: subject:countryName (OID: **2.5.4.6**)<br>&ensp;&ensp;**Required/Optional**: <br>&ensp;&ensp;**Required** if the subject:organizationName field, subject:givenName, or subject:surname field are present. <br>&ensp;&ensp;**Optional** if the subject:organizationName field, subject:givenName field, and subject:surname field are absent. <br>&ensp;&ensp;**Contents**: If the subject:organizationName field is present, the subject:countryName MUST contain the two-letter ISO 3166-1 country code associated with the location of the Subject verified under Section 3.2.2.1 Identity. If the subject:organizationName field is absent, the subject:countryName field MAY contain the two-letter ISO 3166-1 country code associated with the Subject as verified in accordance with [Section 3.2.2.3 Verification of Country](#page-27-2). If a Country is not represented by an official ISO 3166-1 country code, Starfield MAY specify the ISO 3166-1 user-assigned code of XX indicating that an official ISO 3166-1 alpha-2 code has not been assigned.
+
+	* h. **Other Subject Attributes**
+	Other attributes MAY be present within the subject field. If present, other attributes MUST contain information that has been verified by Starfield.
 
 #### **7.1.4.3 Subject Information - Root Certificates and Subordinate CA Certificates**
 
-For Root Certificates, Starfield establishes the Subject Distinguished Name as part of the Root CA creation process. Starfield verifies the Subject Information prior to issuance in accordance with this CP/CPS 3.2.2.2. The Subject Distinguished Name contains the naming information for the applicable Root CA or Subordinate CA.
+By issuing a Subordinate CA Certificate, Starfield represents that it followed the procedure set forth in its Certificate Policy and/or Certification Practice Statement to verify that, as of the Certificate's issuance date, all of the Subject Information was accurate.
 
 ##### **7.1.4.3.1 Subject Distinguished Name Fields**
 
-See the "Subject Distinguished Name Fields" in the applicable subsections of 10.1 Root CA Certificates for details on Subject Distinguished Name requirements for each Root Certificate profile. 
-
-See the "Subject Distinguished Name Fields" in the applicable subsections of 10.2 Issuing CAs for details on Subject Distinguished Name requirements for each Issuing CA Certificate profile.
+1. Subject Distinguished Name Fields:
+	* a. **Certificate Field**: subject:commonName (OID **2.5.4.3**)<br>&ensp;&ensp;**Required/Optional: Required**<br>&ensp;&ensp;**Contents:** This field MUST be present and the contents SHOULD be an identifier for the certificate such that the certificate's Name is unique across all certificates issued by the issuing certificate.
+	* b. **Certificate Field**: subject:organizationName (OID **2.5.4.10**)<br>&ensp;&ensp;**Required/Optional**: **Required**<br>&ensp;&ensp;**Contents**: This field MUST be present and the contents MUST contain either the Subject CA's name or DBA as verified under [Section 3.2.2.2 DBA/Tradename.](#page-27-1) Starfield may include information in this field that differs slightly from the verified name, such as common variations or abbreviations, provided that Starfield documents the difference and any abbreviations used are locally accepted abbreviations; e.g., if the official record shows "Company Name Incorporated", Starfield MAY use "Company Name Inc." or "Company Name".
+	* c. **Certificate Field**: subject:countryName (OID: **2.5.4.6**)<br>&ensp;&ensp;**Required/Optional**: **Required**<br>&ensp;&ensp;**Contents**: This field MUST contain the two‐letter ISO 3166‐1 country code for the country in which the CA's place of business is located.
 
 ### <span id="page-67-0"></span> **7.1.5 Name Constraints**
 
@@ -2462,15 +2398,11 @@ Starfield does not perform name constraints.
 
 ### <span id="page-67-1"></span> **7.1.6 Certificate Policy Object Identifier**
 
-Starfield uses the following CA/Browser Forum reserved policy OIDs and Starfield-specific policy OIDs in TLS Subscriber Certificates, as applicable:
+Starfield uses the following certificate policy oids in end-entity certificates:
 
-| Certificate Type | CA/Browser Forum Policy OID | CA Specific Policy OID  (GoDaddy / Starfield) |
-|------------------|------------------------------|-------------------------------|
-| Domain Validated (DV) | 2.23.140.1.2.1 | 2.16.840.1.114413.1.7.23.1 / 2.16.840.1.114414.1.7.23.1 |
-| Organization Validated (OV) | 2.23.140.1.2.2 | 2.16.840.1.114413.1.7.23.2 / 2.16.840.1.114414.1.7.23.2 |
-| Extended Validation (EV) | 2.23.140.1.1 | 2.16.840.1.114413.1.7.23.3 / 2.16.840.1.114414.1.7.23.3 |
-
-Certificate policy OIDs are further specified in the applicable Certificate profiles in Section 10.
+- Medium Assurance certificates **2.16.840.1.114413.1.7.23.1** and **2.16.840.1.114414.1.7.23.1**
+- High Assurance Server certificates **2.16.840.1.114413.1.7.23.2** and **2.16.840.1.114414.1.7.23.2**
+- Extended Validation certificates **- 2.16.840.1.114413.1.7.23.3** and **2.16.840.1.114414.1.7.23.3**
 
 ### <span id="page-67-2"></span> **7.1.7 Usage of Policy Constraints Extension**
 
@@ -2478,7 +2410,7 @@ No Stipulation.
 
 ### <span id="page-68-0"></span> **7.1.8 Policy Qualifier Syntax and Semantics**
 
-Starfield TLS Certificates include a CPS URI policy qualifier that links to the Starfield repository containing the applicable Certificate Policy and Certification Practice Statement.
+Starfield certificates include a link to our repository where this CPS and other applicable agreements may be viewed.
 
 ### <span id="page-68-1"></span> **7.1.9 Processing Semantics for the Critical Certificate Policies Extension**
 
@@ -2496,7 +2428,7 @@ Starfield issues version 2 CRLs.
 
 If present, this extension MUST NOT be marked critical.
 
-If a CRL entry is for a Certificate capable of causing issuance (e.g., a Subordinate CA Certificate or Cross-Signed Certificate), then the CRL entry extension MUST be present and MUST contain an explicit Revocation Reason Code.
+If a CRL entry is for a Root CA or Subordinate CA Certificate, including Cross Certificates, this CRL entry extension MUST be present. If a CRL entry is for a Certificate not technically capable of causing issuance, this CRL entry extension SHOULD be present, but MAY be omitted, subject to the following requirements.
 
 The CRLReason indicated MUST NOT be unspecified (0). If the reason for revocation is unspecified, Starfield MUST omit reasonCode entry extension, if allowed by the previous requirements. If a CRL entry is for a Certificate not subject to these Requirements and was either issued on-or-after 2020-09-30 or has a notBefore on-or-after 2020-09-30, the CRLReason MUST NOT be certificateHold (6). If a CRL entry is for a Certificate subject to these Requirements, the CRLReason MUST NOT be certificateHold (6).
 
@@ -2512,26 +2444,30 @@ The following CRL profile is used for root certificates in the Starfield PKI.
 
 | **Field** | **Description** |
 | --- | --- |
-| Version | v2 |
-| Signature | SHA-256 |
+| Signature | SHA-1* or SHA-256 |
 | Issuer | Subject of the corresponding root certificate |
 | This Update (Effective Date) | Date and time of CRL issuance in UTC format |
 | Next Update | 365 or less days after This Update. |
-| CRL extensions |  |
+| CRL extensions | V2 |
 | CRL Number | Unique value for each CRL issued by the corresponding root certificate. |
 | Authority Key Identifier | Identical to the Subject Key Identifier of signing certificate  |
 | Revoked Certificates | List of information regarding revoked certificates. CRL entries include: |
 |  | Serial Number, identifying the revoked certificate |
 |  | Revocation Date, including the date and time of certificate revocation |
-| CRL Entry Extensions |  |
-| CRL Reason Code |For any certificate technically capable of issuance use one of the following reason codes: |
+| CRL Entry Extensions | V2 (optional for any given CRL entry) |
+| CRL Reason Code | One of the following bold reason codes: |
+|  | unspecified (0) |
 |  | keyCompromise (1) |
+|  | cACompromise (2) |
 |  | affiliationChanged (3) |
 |  | superseded (4) |
 |  | cessationOfOperation (5) |
+|  | removeFromCRL (8) |
 |  | privilegeWithdrawn (9) |
+|  | aACompromise (10) |
 | Invalidity Date | A GeneralizedTime denoting the effective time when the given serial number is to be considered invalid. |
 
+(*) *SHA-1 algorithm is no longer used*
 
 #### <span id="page-69-1"></span> **7.2.2.2 Issuing CAs**
 
@@ -2539,24 +2475,19 @@ The following CRL profile is used for Starfield Issuing CAs.
 
 | Field                                                                   | Description                                                                                                                                                                                                                                                                |
 |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Version | v2 |
-| Signature                                                               | SHA-256                                                                                                                                                                                                                                                           |
+| Signature                                                               | SHA-1* or SHA-256                                                                                                                                                                                                                                                           |
 | Issuer                                                                  | Subject of the corresponding Issuing CA certificate                                                                                                                                                                                                                        |
 | This Update (Effective Date)                                            | Date and time of CRL issuance in UTC format.                                                                                                                                                                                                                                             |
 | Next Update                                                             | 10 or less days after<br>This Update.                                                                                                                                                                                                                                      |
-| CRL extensions |  |                                                                                                                                                                                                                                                                          |
+| CRL extensions | V2 |                                                                                                                                                                                                                                                                          |
 | CRL Number                                                              | Unique value for each CRL issued by the corresponding Issuing CA<br>certificate.                                                                                                                                                                                           |
 | Authority Key Identifier                                                | Identical to the Subject Key Identifier of signing certificate                                                                                                                                                                                                |
-| Revoked Certificates                                                    | List of information regarding revoked certificates. CRL entries<br>include:<br>•Serial Number, identifying the revoked certificate<br>•Revocation Date, including the date and time of certificate<br>revocation                                                   |
-| CRL Entry Extensions | Optional for any given CRL entry |                                                                                                                                                                                                                                                                            |
-| CRL Reason Code | Absent  implies unspecified (0).  If present, one of the following reason codes: |
-|  | keyCompromise (1) |
-|  | affiliationChanged (3) |
-|  | superseded (4) |
-|  | cessationOfOperation (5) |
-|  | privilegeWithdrawn (9) |
+| Revoked Certificates                                                    | List of information regarding revoked certificates. CRL entries<br>include:<br>•<br>Serial Number, identifying the revoked certificate<br>•<br>Revocation Date, including the date and time of certificate<br>revocation                                                   |
+| CRL Entry Extensions V2 and<br>optional for any given CRL entry) |                                                                                                                                                                                                                                                                            |
+| CRL Reason Code                                                         | One of the following bold reason codes:<br>unspecified<br>(0)<br>keyCompromise<br>(1)<br>cACompromise<br>(2)<br>affiliationChanged<br>(3)<br>superseded<br>(4)<br>cessationOfOperation<br>(5)<br>removeFromCRL<br>(8)<br>privilegeWithdrawn<br>(9)<br>aACompromise<br>(10) |
 | Invalidity Date                                                         | A GeneralizedTime denoting the effective time when the given<br>serial number is to be considered invalid.                                                                                                                                                                 |
 
+(*) *SHA-1 algorithm is no longer used*
 
 ## <span id="page-70-0"></span> **7.3 OCSP Profile**
 
@@ -2574,33 +2505,36 @@ The **singleExtensions** of an OCSP response MUST NOT contain the **reasonCode**
 
 ## <span id="page-71-1"></span> **8.1 Frequency or Circumstances of Assessment**
 
-An annual audit is performed by an independent external auditor to assess Starfield’s compliance with the applicable WebTrust principles and criteria. The audit period does not exceed one year in duration. Supplemental audits are performed, when required, to maintain an unbroken sequence of audit periods.<br><br>Effective July 1, 2027, for each annual audit period beginning on or after that date, Starfield will obtain a Detailed Controls Report (DCR) in accordance with the applicable practitioner guidance issued by CPA Canada and Root Store Operator policies.
+The Starfield PKI is subject to  annual WebTrust audit assessments as follows:
+
+- WebTrust Principles and Criteria for Certification Authorities
+- WebTrust Principles and Criteria for Certification Authorities – Extended Validation SSL
+- WebTrust Principles and Criteria for Certification Authorities – SSL Baseline
+- WebTrust Principles and Criteria for Certification Authorities – Network Security
 
 ## <span id="page-71-2"></span> **8.2 Identity/Qualifications of Assessor**
 
-Starfield’s WebTrust audits are performed by an independent external audit firm that is an enrolled WebTrust practitioner with CPA Canada. The auditor is independent of Starfield and qualified to perform examinations against the applicable WebTrust criteria. The audit team has extensive experience auditing information technology environments, including commercial Public Key Infrastructure (PKI) environments and WebTrust examinations. Audit personnel maintain relevant industry certifications and possess proficiency in PKI technology, information security tools and techniques, information technology and security auditing, and third-party attestation. The auditor is subject to applicable professional standards and codes of ethics. The auditor maintains professional liability/errors and omissions insurance with policy limits of at least 1 million US dollars.
+Auditors demonstrating proficiency in public key infrastructure technology, information security tools and techniques, security auditing, and the third-party attestation function shall perform the annual WebTrust for CAs and WebTrust for EV examinations. The audit firm must be currently licensed to perform WebTrust for CA audits and WebTrust EV Program audits, be a member of the American Institute of Certified Public Accountants (AICPA), and maintain professional liability/errors & omissions insurance with policy limits of at least one million United States Dollars (\$1,000,000.00) in coverage.
 
 ## <span id="page-71-3"></span> **8.3 Assessor's Relationship to Assessed Entity**
 
-Starfield’s WebTrust auditor is independent of Starfield and has no financial interest in, or other relationship with, Starfield that could impair the auditor’s independence or result in bias for or against Starfield.
+The entity that performs the annual audit shall be organizationally independent of Starfield.
 
 ## <span id="page-71-4"></span> **8.4 Topics Covered by Assessment**
 
-As per current version of WebTrust Principles and Criteria which can be found at https://www.cpacanada.ca/en/business-and-accounting-resources/audit-and-assurance/overview-of-webtrust-services/principles-and-criteria<br><br>
-Starfield’s publicly trusted TLS CA hierarchies are included within the scope of applicable WebTrust examinations. The annual audit assesses Starfield’s compliance with the WebTrust Principles and Criteria for Certification Authorities (WTCA), WebTrust Principles and Criteria for Certification Authorities – TLS Baseline (WTBR), WebTrust Principles and Criteria for Certification Authorities – Network Security (WTNSR), and WebTrust Principles and Criteria for Certification Authorities – Extended Validation TLS (WTEV).<br><br>
-The audit includes, but is not limited to, an assessment of Starfield’s business practices and disclosures, CA and certificate lifecycle management, CA key management, subscriber validation and certificate issuance, revocation services, logical and physical access controls.
+The scope of the annual audit shall include the requirements of this CP/CPS, CA environmental controls, CA key management, and certificate life cycle management.
+
+The audit shall be performed in accordance with the most current applicable versions of the in scope WebTrust criteria. See [Section 8.1.1 Frequency or Circumstances of Assessment](#page-71-1) for the WebTrust Assessment scope.
 
 ## <span id="page-71-5"></span>**8.5 Actions Taken as a Result of Deficiency**
 
-Deficiencies identified during a compliance audit will be documented and communicated to Starfield by the auditor. Starfield will evaluate the nature and significance of identified deficiencies and determine the appropriate corrective actions. Starfield is responsible for ensuring that corrective action plans are promptly developed and implemented within a period of time commensurate with the significance of the matters identified. Corrective actions may include changes to applicable policies, procedures, practices, systems, or controls. Where necessary, remediation will be subject to subsequent verification to confirm that the identified deficiency has been addressed.
+Significant deficiencies identified during the compliance audit will result in a determination of actions to be taken. The Starfield Governance and Policy Committee makes this determination with input from the auditor. Starfield Management is responsible for ensuring that corrective action plans are promptly developed and corrective action is taken within a period of time commensurate with the significance of such matters identified.
 
-Starfield will address identified deficiencies in accordance with all applicable requirements, including mandatory remediation, incident reporting, disclosure, certificate revocation, and Root Store Operator policies. Where an applicable policy, standard, or requirement mandates a specific action or timeframe, Starfield will take the required action within the prescribed timeframe.
-
-Should a severe deficiency be identified that might compromise the integrity of the Starfield PKI or a particular CA, Starfield will assess, with input from the auditor, whether suspension of the affected PKI or CA operations is warranted. Such assessment will not supersede or delay any action required by applicable policies, standards, or Root Store Operator policies.
+Should a severe deficiency be identified that might compromise the integrity of the Starfield PKI, Starfield Management will consider, with input from the auditor, whether suspension of Starfield PKI operations is warranted. Should a severe deficiency be identified that might compromise the integrity of a particular CA, Starfield PKI Management will assess whether suspension of the particular CA's operations is warranted.
 
 ## <span id="page-71-6"></span> **8.6 Communication of Results**
 
-Compliance audit results are communicated to Starfield Management and others deemed appropriate by Starfield Management. Starfield makes letters showing compliance with annual external audit reports publicly available in the [Starfield repository](https://certs.starfieldtech.com/repository). Starfield ensures that audit results are publicly available no later than three months after the end of the audit period.
+Compliance audit results are communicated to Starfield Management and others deemed appropriate by Starfield Management. Starfield makes letters showing compliance with annual external audit reports publicly available in the [Starfield repository](https://certs.starfieldtech.com/repository). Starfield ensures that audit results are publicly available no later that three months after the end of the audit period.
 
 ## <span id="page-72-0"></span> **8.7 Self–Audits**
 
@@ -2610,15 +2544,15 @@ On at least a quarterly basis, Starfield performs regular internal audits agains
 
 ### <span id="page-72-2"></span> **8.8.1 Specification Change Procedures**
 
-Modifications to this CP/CPS are reviewed and approved by the Starfield Governance and Policy Committee. Approved modifications are incorporated into a new version of the CP/CPS and published in the Starfield repository.
+Modifications to this CP/CPS are approved by the Starfield Governance and Policy Committee and become effective upon publication in the Starfield repository.
 
 ### <span id="page-72-3"></span> **8.8.2 Publication and Notification Policies**
 
-This CP/CPS and subsequent revisions are published in the Starfield repository in accordance with Section 2 Publication and Repository Responsibilities. Updated versions of the CP/CPS are published prior to the corresponding policy changes being put into practice and are submitted to the CCADB within the timeframes required by the CCADB Policy.
+This CP/CPS and subsequent revisions are published in the Starfield repository in accordance with [Section 2 Publication and Repository Responsibilities](#page-23-1) Starfield may change this document at any time without prior notice.
 
 ## <span id="page-72-4"></span> **8.9 CPS Approval Procedures**
 
-Modifications to this CP/CPS are subject to review and approval by the Starfield Governance and Policy Committee in accordance with Section 8.8.1 Specification Change Procedures.
+See [Section 8.8.1 Specification Change Procedures.](#page-72-2)
 
 # <span id="page-73-0"></span> **9 OTHER BUSINESS AND LEGAL MATTERS**
 
@@ -2634,7 +2568,7 @@ Starfield reserves the right to charge a fee for making a Certificate available 
 
 ### <span id="page-73-4"></span> **9.1.3 Revocation or Status Information Access Fees**
 
-Starfield does not charge a fee as a condition of making the CRLs required in a repository or otherwise available to Relying Parties. Starfield reserves the right to charge a fee for providing customized CRLs, OCSP services, or other value-added revocation and status information services. 
+Starfield does not charge a fee as a condition of making the CRLs required in a repository or otherwise available to Relying Parties. Starfield reserves the right to charge a fee for providing customized CRLs, OCSP services, or other value-added revocation and status information services. Starfield does not permit access to revocation information, Certificate status information, or time stamping in its repository by third parties that provide products or services that utilize such Certificate status information without Starfield's prior express written consent.
 
 ### <span id="page-73-5"></span> **9.1.4 Fees for Other Services**
 
@@ -2673,7 +2607,7 @@ Sensitive Starfield PKI information must remain confidential to Starfield. The f
 	- Certificate information collected as part of the registration records, beyond that which is required to be included in Subscriber certificates
 - Audit trail records
 - Any private key within the Starfield PKI hierarchy
-- Compliance audit results that are not required to be publicly disclosed
+- Compliance audit results except for WebTrust for CAs audit reports which may be published at the discretion of Starfield Management
 
 ### <span id="page-74-5"></span> **9.3.2 Information not Within the Scope of Confidential Information**
 
@@ -2788,8 +2722,9 @@ Subscribers are obligated by Starfield's Subscriber Agreements to warrant that, 
 - All representations in the Certificate Application by the Subscriber are true,
 - The information from the Subscriber in the Certificate is true,
 - Any usage of the Certificate is for authorized and lawful reasons only, consistent with this CPS,
-- The Subscriber is not a CA but is an end-user Subscriber and is not using the private key corresponding to any public key listed in the Certificate for purposes of digitally signing any Certificate (or any other format of certified public key) or CRL, as a CA or otherwise, and
+- The Subscriber is not a CA but is an end-user Subscriber and is not using the private key corresponding to any public key listed in the Certificate for purposes of digitally signing any Certificate (or any other format of certified public key) or CRL, as a CA or otherwise (with the exception of signing code with a Code Signing Certificate), and
 - The Subscriber is not using the Certificate Service in any way that infringes upon the rights of third parties.
+- The Subscriber is not using their Code Signing Certificate to digitally sign hostile code, including spyware or other malicious software (malware) downloaded without user consent.
 
 These requirements shall be in other Subscriber Agreements.
 
@@ -2823,7 +2758,7 @@ Starfield is not the agent, fiduciary, trustee, or other representative of Subsc
 
 STARFIELD SHALL NOT BE LIABLE FOR ANY LOSS OF CERTIFICATE SERVICES UNLESS DUE TO A FAILURE OR BREACH OF THE CERTIFICATE ENCRYPTION.
 
-THE TOTAL CUMULATIVE LIABILITY OF STARFIELD, ANY INDEPENDENT THIRD-PARTY RA OPERATING UNDER A STARFIELD CA, ANY RESELLERS, OR CO-MARKETERS, OR ANY SUBCONTRACTORS, DISTRIBUTORS, AGENTS, SUPPLIERS, EMPLOYEES, OR DIRECTORS OF ANY OF THE FOREGOING TO ANY APPLICANT, SUBSCRIBER, RELYING PARTY OR ANY OTHER PERSON, ENTITY, OR ORGANIZATION ARISING OUT OF OR RELATING TO ANY STARFIELD CERTIFICATE OR ANY SERVICES PROVIDED IN RESPECT TO STARFIELD CERTIFICATES, INCLUDING ANY USE OR RELIANCE ON ANY STARFIELD CERTIFICATE, SHALL NOT EXCEED (A) \$10,000.00 USD FOR EACH DV CERTIFICATE ("DV CUMULATIVE DAMAGE LIMIT"); (B) \$25,000.00 USD FOR EACH OV CERTIFICATE ("OV CUMULATIVE DAMAGE LIMIT"); OR (C) \$50,000.00 USD FOR EACH EXTENDED VALIDATION CERTIFICATE ("EXTENDED VALIDATION CUMULATIVE DAMAGE LIMIT") (COLLECTIVELY, "CUMULATIVE DAMAGE LIMITS"). THESE CUMULATIVE DAMAGE LIMITS SHALL APPLY PER STARFIELD CERTIFICATE REGARDLESS OF THE NUMBER OF TRANSACTIONS OR CAUSES OF ACTION ARISING OUT OF OR RELATED TO SUCH STARFIELD CERTIFICATE OR ANY SERVICES PROVIDED IN RESPECT TO SUCH STARFIELD CERTIFICATE. THE FOREGOING LIMITATIONS SHALL APPLY TO ANY LIABILITY WHETHER BASED IN CONTRACT (INCLUDING FUNDAMENTAL BREACH), TORT (INCLUDING NEGLIGENCE), LEGISLATION OR ANY OTHER THEORY OF LIABILITY, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, STATUTORY, PUNITIVE, EXEMPLARY, CONSEQUENTIAL, RELIANCE, OR INCIDENTAL DAMAGES.
+THE TOTAL CUMULATIVE LIABILITY OF STARFIELD, ANY INDEPENDENT THIRD-PARTY RA OPERATING UNDER A STARFIELD CA, ANY RESELLERS, OR CO-MARKETERS, OR ANY SUBCONTRACTORS, DISTRIBUTORS, AGENTS, SUPPLIERS, EMPLOYEES, OR DIRECTORS OF ANY OF THE FOREGOING TO ANY APPLICANT, SUBSCRIBER, RELYING PARTY OR ANY OTHER PERSON, ENTITY, OR ORGANIZATION ARISING OUT OF OR RELATING TO ANY STARFIELD CERTIFICATE OR ANY SERVICES PROVIDED IN RESPECT TO STARFIELD CERTIFICATES, INCLUDING ANY USE OR RELIANCE ON ANY STARFIELD CERTIFICATE, SHALL NOT EXCEED (A) \$0.00 USD FOR EACH BASIC ASSURANCE CERTIFICATE ("BASIC ASSURANCE CUMULATIVE DAMAGE LIMIT"); (B) \$10,000.00 USD FOR EACH MEDIUM ASSURANCE CERTIFICATE ("MEDIUM ASSURANCE CUMULATIVE DAMAGE LIMIT"); (C) \$25,000.00 USD FOR EACH HIGH ASSURANCE CERTIFICATE ("HIGH ASSURANCE CUMULATIVE DAMAGE LIMIT"); OR (D) \$50,000.00 USD FOR EACH EXTENDED VALIDATION CERTIFICATE ("EXTENDED VALIDATION CUMULATIVE DAMAGE LIMIT") (COLLECTIVELY, "CUMULATIVE DAMAGE LIMITS"). THESE CUMULATIVE DAMAGE LIMITS SHALL APPLY PER STARFIELD CERTIFICATE REGARDLESS OF THE NUMBER OF TRANSACTIONS OR CAUSES OF ACTION ARISING OUT OF OR RELATED TO SUCH STARFIELD CERTIFICATE OR ANY SERVICES PROVIDED IN RESPECT TO SUCH STARFIELD CERTIFICATE. THE FOREGOING LIMITATIONS SHALL APPLY TO ANY LIABILITY WHETHER BASED IN CONTRACT (INCLUDING FUNDAMENTAL BREACH), TORT (INCLUDING NEGLIGENCE), LEGISLATION OR ANY OTHER THEORY OF LIABILITY, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, STATUTORY, PUNITIVE, EXEMPLARY, CONSEQUENTIAL, RELIANCE, OR INCIDENTAL DAMAGES.
 
 STARFIELD, ANY INDEPENDENT THIRD-PARTY RA OPERATING UNDER A STARFIELD CA, OR DIRECTORS OF ANY OF THE FOREGOING SHALL NOT BE LIABLE TO ANY SUBSCRIBER, RELYING PARTY, OR ANY OTHER PERSON, ENTITY, OR ORGANIZATION FOR ANY LOSSES, COSTS, EXPENSES, LIABILITIES, DAMAGES, CLAIMS OR SETTLEMENT AMOUNTS ARISING OUT OF OR RELATING TO ANY PROCEEDING OR ALLEGATION THAT A STARFIELD CERTIFICATE OR ANY INFORMATION CONTAINED IN A STARFIELD CERTIFICATE INFRINGES, MISAPPROPRIATES, DILUTES, UNFAIRLY COMPETES WITH, OR OTHERWISE VIOLATES ANY PATENT, TRADEMARK, COPYRIGHT, TRADE SECRET, OR ANY INTELLECTUAL PROPERTY RIGHT OR OTHER RIGHT OF ANY PERSON, ENTITY, OR ORGANIZATION IN ANY JURISDICTION.
 
@@ -2931,33 +2866,25 @@ Any applicable national, state, local and foreign laws, rules, regulations, ordi
 
 ## <span id="page-85-0"></span> **9.15 Compliance with Applicable Law**
 
-Starfield complies with applicable laws and regulations governing its operations and the issuance and management of Certificates under this CP/CPS.
-
-Where applicable law conflicts with the Baseline Requirements, Starfield follows the procedures specified in Section 9.16.3.
+No Stipulation.
 
 ## <span id="page-85-1"></span> **9.16 Miscellaneous Provisions**
 
 ### <span id="page-85-2"></span> **9.16.1 Entire Agreement**
 
-The applicable Subscriber Agreement, Relying Party Agreement, this CP/CPS, and any other applicable agreements govern the rights and obligations of participants in the Starfield PKI.
+No Stipulation.
 
 ### <span id="page-85-3"></span> **9.16.2 Assignment**
 
-The rights and obligations of participants under applicable agreements may be assigned only in accordance with the terms of those agreements and applicable law.
+No Stipulation.
 
 ### <span id="page-85-4"></span> **9.16.3 Severability**
 
-In the event of a conflict between the Baseline Requirements and a law, regulation, or government order ("Law") of a jurisdiction in which Starfield operates or issues Certificates, Starfield MAY modify the conflicting requirement only to the minimum extent necessary to make the requirement valid and legal in that jurisdiction. Any such modification applies only to operations or Certificate issuances subject to that Law.
-
-Prior to issuing a Certificate under a modified requirement, Starfield SHALL update this Section 9.16.3 to include a detailed reference to the applicable Law and the specific modification to the Baseline Requirements implemented by Starfield.
-
-Prior to issuing a Certificate under the modified requirement, Starfield SHALL also notify the CA/Browser Forum of the information added to this Section by sending a message to questions@cabforum.org and receiving confirmation that the information has been posted to the Public Mailing List and indexed in the Public Mail Archives.
-
-Starfield SHALL discontinue any modification made under this Section if the applicable Law no longer applies or if the Baseline Requirements are modified such that Starfield can comply with both the applicable Law and the Baseline Requirements. Starfield SHALL make the appropriate change in practice, update this CP/CPS, and provide the required notice to the CA/Browser Forum within 90 days.
+No Stipulation.
 
 ### <span id="page-85-5"></span> **9.16.4 Enforcement**
 
-Failure by Starfield to enforce any provision of this CP/CPS does not constitute a waiver of Starfield's right to enforce that provision or any other provision in the future.
+No Stipulation.
 
 ### <span id="page-85-6"></span> **9.16.5 Force Majeure**
 
@@ -3079,7 +3006,7 @@ The following certificate profile is used for the Starfield Services Root Certif
 | Authority Key Identifier     | b4 c6 7f 1a 43 cc 9b 75 5d 2f c4 4b f2 8b 98 10 e9 f1 51 10                                         |
 | Subject Key Identifier       | b4 c6 7f 1a 43 cc 9b 75 5d 2f c4 4b f2 8b 98 10 e9 f1 51 10                                         |
 
-### <span id="page-89-1"></span> **10.1.6 GoDaddy Root Certificate Authority - G5 (Historical)**
+### <span id="page-89-1"></span> **10.1.6 GoDaddy Root Certificate Authority - G5.**
 
 The following certificate profile is used for the GoDaddy Root Certificate Authority - G5.
 
@@ -3101,7 +3028,7 @@ The following certificate profile is used for the GoDaddy Root Certificate Autho
 | Authority Key Identifier     | CF:CF:BB:19:B2:9F:F8:CB:F5:C2:9E:63:84:B1:7B:E6:17:07:31:58                                         |
 | Subject Key Identifier       | CF:CF:BB:19:B2:9F:F8:CB:F5:C2:9E:63:84:B1:7B:E6:17:07:31:58                                         |   
 
-### <span id="page-90-0"></span> **10.1.7 Starfield Root Certificate Authority - G5 (Historical)**
+### <span id="page-90-0"></span> **10.1.7 Starfield Root Certificate Authority - G5**
 
 The following certificate profile is used for the Starfield Root Certificate Authority - G5.
 
@@ -3123,7 +3050,7 @@ The following certificate profile is used for the Starfield Root Certificate Aut
 | Authority Key Identifier     | E3:11:A7:2D:79:1E:3D:11:54:C3:69:2D:6B:07:A9:F8:05:03:D9:30                                         |
 | Subject Key Identifier       | E3:11:A7:2D:79:1E:3D:11:54:C3:69:2D:6B:07:A9:F8:05:03:D9:30                                         |  
 
-### <span id="page-90-1"></span> **10.1.8 GoDaddy Root Certificate Authority – G6 (Historical)**
+### <span id="page-90-1"></span> **10.1.8 GoDaddy Root Certificate Authority – G6**
 
 The following certificate profile is used for the GoDaddy Root Certificate Authority – G6.
 
@@ -3145,7 +3072,7 @@ The following certificate profile is used for the GoDaddy Root Certificate Autho
 | Authority Key Identifier     | 59:C1:AE:05:B3:82:9E:CB:31:C3:F5:9B:E3:18:BC:DD:C6:23:A9:BF                                         |
 | Subject Key Identifier       | 59:C1:AE:05:B3:82:9E:CB:31:C3:F5:9B:E3:18:BC:DD:C6:23:A9:BF                                         | 
 
-### <span id="page-91-0"></span> **10.1.9 Starfield Root Certificate Authority - G6 (Historical)**
+### <span id="page-91-0"></span> **10.1.9 Starfield Root Certificate Authority - G6**
 
 The following certificate profile is used for the Starfield Root Certificate Authority - G6.
 
@@ -3217,265 +3144,35 @@ Starfield will rotate the Starfield TLS Root CA - R1 every 5 years.
 
 ## <span id="page-92-0"></span> **10.2 Issuing CAs**
 
-### <span id="page-92-1"></span> **10.2.1 Starfield Issuing CA - G1 (Historical)**
+All intermediate certificates issued by any Starfield root certificate are available in the Repository at [https://certs.starfieldtech.com/repository.](https://certs.starfieldtech.com/repository)
 
-The following certificate profile was used for the Starfield Issuing CA - G1.
+### <span id="page-92-1"></span> **10.2.1 Starfield Issuing (subordinate) CAs**
 
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | 02:01                                                                                                          |
-| Signature Algorithm Identifier | sha1RSA (OID: 1.2.840.113549.1.1.5)                                                           |
-| Issuer            | OU=Starfield Class 2 Certification Authority<br>O=Starfield Technologies, Inc.<br>C=US                        |
-| Valid From        | November 16, 2006 01:15:40 GMT                                                                                 |
-| Valid To          | November 16, 2026 01:15:40 GMT                                                                                 |
-| Revoked          | September 17, 2026 17:58:59 GMT                                                                                 |
-| Subject           | CN=Starfield Secure Certification Authority<br>serialNumber=10688435<br>OU=http://certificates.starfieldtech.com/repository<br>O=Starfield Technologies, Inc.<br>L=Scottsdale<br>ST=Arizona<br>C=US |
-| Subject Public Key Information | RSA (2048 bits)                                                                                   |
-
-| Extensions:                  | Values                                                                                              |
-|------------------------------|-----------------------------------------------------------------------------------                  |
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=0                                                         |
-| Key Usage (critical)         | Certificate Sign, CRL Sign                                                                          |
-| Certificate Policies         | Policy: Any Policy (2.5.29.32.0)<br>CPS: http://certificates.starfieldtech.com/repository          |
-| CRL Distribution Points      | http://certificates.starfieldtech.com/repository/sfroot.crl                                        |
-| Authority Information Access | OCSP: http://ocsp.starfieldtech.com                                                                 |
-| Authority Key Identifier     | BF:5F:B7:D1:CE:DD:1F:86:F4:5B:55:AC:DC:D7:10:C2:0E:A9:88:E7                                       |
-| Subject Key Identifier       | 49:4B:52:27:D1:1B:BC:F2:A1:21:6A:62:7B:51:42:7A:8A:D7:D5:56                                       |
-
-### <span id="page-92-2"></span> **10.2.2 Starfield Issuing CA - G2**
-
-The following certificate profile is used for the Starfield Issuing CA - G2. While still in use for the purposes of CRL and OCSP, no new certificates are being issued under this Certificate.
+The following certificate profile is used for Starfield Issuing (subordinate) CAs.
 
  Field              | Description                                                                                                    |
 |-------------------|----------------------------------------------------------------------------------------------------------------|
 | Version           | V3                                                                                                             |
-| Serial Number     | 07                                                                                                             |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                        |
-| Issuer            | CN=Starfield Root Certificate Authority - G2<br>O=Starfield Technologies, Inc.<br>L=Scottsdale<br>ST=Arizona<br>C=US |
-| Valid From        | May 3, 2011 07:00:00 GMT                                                                                       |
-| Valid To          | May 3, 2031 07:00:00 GMT                                                                                       |
-| Subject           | CN=Starfield Secure Certificate Authority - G2<br>OU=http://certs.starfieldtech.com/repository/<br>O=Starfield Technologies, Inc.<br>L=Scottsdale<br>ST=Arizona<br>C=US |
-| Subject Public Key Information | RSA (2048 bits)                                                                                   |
+| Serial Number     | Identifying number unique within the Starfield PKI                                                             |
+| Signature Algorithm Identifier | SHA-1*, SHA-256, or SHA-384                                                                        |
+| Issuer            | Unique name matching the corresponding root certificate's Subject                                              |
+| Valid From        | Not specified                                                                                                  |
+| Valid To          | Up to 20 years after Valid From date                                                                           |
+| Subject           | Unique name for each Issuing CA                                                                                |
+| Subject Public Key Information | RSA (1024 bits) *, RSA (2048 bits), RSA (4096 bits) or ECC (384 bits) *                           |
 
 | Extensions:                  | Values                                                                                              |
 |------------------------------|-----------------------------------------------------------------------------------                  |
 | Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=None                                                      |
-| Key Usage (critical)         | Certificate Sign, CRL Sign                                                                          |
-| Certificate Policies         | Policy: Any Policy (2.5.29.32.0)<br>CPS: https://certs.starfieldtech.com/repository/               |
-| CRL Distribution Points      | http://crl.starfieldtech.com/sfroot-g2.crl                                                         |
-| Authority Information Access | OCSP: http://ocsp.starfieldtech.com/                                                                |
-| Authority Key Identifier     | 7C:0C:32:1F:A7:D9:30:7F:C4:7D:68:A3:62:A8:A1:CE:AB:07:5B:27                                       |
-| Subject Key Identifier       | 25:45:81:68:50:26:38:3D:3B:2D:2C:BE:CD:6A:D9:B6:3D:B3:66:63                                       |
+| Key Usage (critical)         | Digital Signature, Certificate Signing, CRL Signing                                                 |
+| Extended Key Usage           | Optional: When intended to sign SSL/TLS certificates: Server Authentication, Client Authentication or Server Authentication only |
+| CRL Distribution Points      | Contains the URL of the corresponding root CRL                                                      |
+| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=Any Policy or a Policy Restricted Policy Identifier <br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>URI pointing to Starfield Repository |
+| Authority Information Access | URL of the appropriate OCSP responder if OCSP revocation checking is supported                      |
+| Authority Key Identifier     | The Subject Key Identifier of the Issuing CA                                            |
+| Subject Key Identifier       | SHA-1 hash of the public key contained within this certificate or the leftmost 160-bits of the SHA-256 hash of the SubjectPublicKey                                 |
 
-### <span id="page-92-3"></span> **10.2.3 Starfield TLS Issuing CA DV - R1v1**
-
-The following certificate profile is used for the Starfield TLS Issuing CA DV - R1v1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | c5:e2:25:a1:0d:f6:78:04:ec:53:05:dc:f3:8e:52:34                                                               |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                        |
-| Issuer            | CN=Starfield TLS Root CA - R1<br>O=Starfield Technologies<br>C=US                                             |
-| Valid From        | August 27, 2025 12:00:00 GMT                                                                                   |
-| Valid To          | August 23, 2040 11:59:59 GMT                                                                                   |
-| Subject           | CN=Starfield TLS Intermediate CA DV - R1v1<br>O=Starfield Technologies<br>C=US                                |
-| Subject Public Key Information | RSA (4096 bits)                                                                                   |
-
-| Extensions:                  | Values                                                                                              |
-|------------------------------|-----------------------------------------------------------------------------------                  |
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=0                                                         |
-| Key Usage (critical)         | Digital Signature, Certificate Sign, CRL Sign                                                       |
-| Extended Key Usage           | TLS Web Server Authentication                                                                       |
-| Certificate Policies         | Policy: 2.23.140.1.2.1 (CA/Browser Forum Domain Validated)                                         |
-| CRL Distribution Points      | http://crl.starfieldtech.com/sf_tls_root-r1.crl                                                    |
-| Authority Information Access | CA Issuers: http://certificates.starfieldtech.com/repository/sf_tls_root-r1.crt                    |
-| Authority Key Identifier     | 65:79:A6:5B:CD:9B:07:16:A5:40:86:B7:49:8E:22:47:C6:0B:DE:4B                                       |
-| Subject Key Identifier       | 99:B4:6D:DD:8D:0C:6D:FA:2D:A0:9F:22:21:E8:73:C2:18:BC:85:D9                                       |
-
-### <span id="page-92-4"></span> **10.2.4 Starfield TLS Issuing CA OV - R1v1**
-
-The following certificate profile is used for the Starfield TLS Issuing CA OV - R1v1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | 6b:0d:59:be:8a:8e:58:45:e0:56:e1:16:8b:0c:43:36                                                               |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                        |
-| Issuer            | CN=Starfield TLS Root CA - R1<br>O=Starfield Technologies<br>C=US                                             |
-| Valid From        | August 27, 2025 12:00:00 GMT                                                                                   |
-| Valid To          | August 23, 2040 11:59:59 GMT                                                                                   |
-| Subject           | CN=Starfield TLS Intermediate CA OV - R1v1<br>O=Starfield Technologies<br>C=US                                |
-| Subject Public Key Information | RSA (4096 bits)                                                                                   |
-
-| Extensions:                  | Values                                                                                              |
-|------------------------------|-----------------------------------------------------------------------------------                  |
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=0                                                         |
-| Key Usage (critical)         | Digital Signature, Certificate Sign, CRL Sign                                                       |
-| Extended Key Usage           | TLS Web Server Authentication                                                                       |
-| Certificate Policies         | Policy: 2.23.140.1.2.2 (CA/Browser Forum Organization Validated)                                   |
-| CRL Distribution Points      | http://crl.starfieldtech.com/sf_tls_root-r1.crl                                                    |
-| Authority Information Access | CA Issuers: http://certificates.starfieldtech.com/repository/sf_tls_root-r1.crt                    |
-| Authority Key Identifier     | 65:79:A6:5B:CD:9B:07:16:A5:40:86:B7:49:8E:22:47:C6:0B:DE:4B                                       |
-| Subject Key Identifier       | 37:16:27:88:47:9E:A4:61:2A:3C:E5:3C:26:74:84:A9:50:AA:54:88                                       |
-
-### <span id="page-92-5"></span> **10.2.5 Starfield TLS Issuing CA EV - R1v1**
-
-The following certificate profile is used for the Starfield TLS Issuing CA EV - R1v1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | 71:71:28:19:f1:78:61:1b:06:0c:dd:bc:09:7f:78:e5                                                               |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                        |
-| Issuer            | CN=Starfield TLS Root CA - R1<br>O=Starfield Technologies<br>C=US                                             |
-| Valid From        | August 27, 2025 12:00:00 GMT                                                                                   |
-| Valid To          | August 23, 2040 11:59:59 GMT                                                                                   |
-| Subject           | CN=Starfield TLS Intermediate CA EV - R1v1<br>O=Starfield Technologies<br>C=US                                |
-| Subject Public Key Information | RSA (4096 bits)                                                                                   |
-
-| Extensions:                  | Values                                                                                              |
-|------------------------------|-----------------------------------------------------------------------------------                  |
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=0                                                         |
-| Key Usage (critical)         | Digital Signature, Certificate Sign, CRL Sign                                                       |
-| Extended Key Usage           | TLS Web Server Authentication                                                                       |
-| Certificate Policies         | Policy: 2.23.140.1.1 (CA/Browser Forum Extended Validation)                                        |
-| CRL Distribution Points      | http://crl.starfieldtech.com/sf_tls_root-r1.crl                                                    |
-| Authority Information Access | CA Issuers: http://certificates.starfieldtech.com/repository/sf_tls_root-r1.crt                    |
-| Authority Key Identifier     | 65:79:A6:5B:CD:9B:07:16:A5:40:86:B7:49:8E:22:47:C6:0B:DE:4B                                       |
-| Subject Key Identifier       | 80:E5:60:C4:34:B4:67:A8:C3:37:15:86:FD:E4:F2:0A:3F:E0:85:37                                       |
-
-### <span id="page-92-6"></span> **10.2.6 GoDaddy Issuing CA - G1 (Historical)**
-
-The following certificate profile was used for the GoDaddy Issuing CA - G1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | 03:01                                                                                                          |
-| Signature Algorithm Identifier | sha1RSA (OID: 1.2.840.113549.1.1.5)                                                           |
-| Issuer            | OU=Go Daddy Class 2 Certification Authority<br>O=The Go Daddy Group, Inc.<br>C=US                             |
-| Valid From        | November 16, 2006 01:54:37 GMT                                                                                 |
-| Valid To          | November 16, 2026 01:54:37 GMT                                                                                 |
-| Revoked          | September 17, 2026 17:58:59 GMT                                                                                 |
-| Subject           | CN=Go Daddy Secure Certification Authority<br>serialNumber=07969287<br>OU=http://certificates.godaddy.com/repository<br>O=GoDaddy.com, Inc.<br>L=Scottsdale<br>ST=Arizona<br>C=US |
-| Subject Public Key Information | RSA (2048 bits)                                                                                   |
-
-| Extensions:                  | Values                                                                                              |
-|------------------------------|-----------------------------------------------------------------------------------                  |
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=0                                                         |
-| Key Usage (critical)         | Certificate Sign, CRL Sign                                                                          |
-| Certificate Policies         | Policy: Any Policy (2.5.29.32.0)<br>CPS: http://certificates.godaddy.com/repository                |
-| CRL Distribution Points      | http://certificates.godaddy.com/repository/gdroot.crl                                              |
-| Authority Information Access | OCSP: http://ocsp.godaddy.com                                                                       |
-| Authority Key Identifier     | D2:C4:B0:D2:91:D4:4C:11:71:B3:61:CB:3D:A1:FE:DD:A8:6A:D4:E3                                       |
-| Subject Key Identifier       | FD:AC:61:32:93:6C:45:D6:E2:EE:85:5F:9A:BA:E7:76:99:68:CC:E7                                       |
-
-### <span id="page-92-7"></span> **10.2.7 GoDaddy Issuing CA - G2**
-
-The following certificate profile is used for the GoDaddy Issuing CA - G2.  While still in use for the purposes of CRL and OCSP, no new certificates are being issued under this Certificate.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | 07                                                                                                             |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                        |
-| Issuer            | CN=Go Daddy Root Certificate Authority - G2<br>O=GoDaddy.com, Inc.<br>L=Scottsdale<br>ST=Arizona<br>C=US      |
-| Valid From        | May 3, 2011 07:00:00 GMT                                                                                       |
-| Valid To          | May 3, 2031 07:00:00 GMT                                                                                       |
-| Subject           | CN=Go Daddy Secure Certificate Authority - G2<br>OU=http://certs.godaddy.com/repository/<br>O=GoDaddy.com, Inc.<br>L=Scottsdale<br>ST=Arizona<br>C=US |
-| Subject Public Key Information | RSA (2048 bits)                                                                                   |
-
-| Extensions:                  | Values                                                                                              |
-|------------------------------|-----------------------------------------------------------------------------------                  |
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=None                                                      |
-| Key Usage (critical)         | Certificate Sign, CRL Sign                                                                          |
-| Certificate Policies         | Policy: Any Policy (2.5.29.32.0)<br>CPS: https://certs.godaddy.com/repository/                     |
-| CRL Distribution Points      | http://crl.godaddy.com/gdroot-g2.crl                                                               |
-| Authority Information Access | OCSP: http://ocsp.godaddy.com/                                                                      |
-| Authority Key Identifier     | 3A:9A:85:07:10:67:28:B6:EF:F6:BD:05:41:6E:20:C1:94:DA:0F:DE                                       |
-| Subject Key Identifier       | 40:C2:BD:27:8E:CC:34:83:30:A2:33:D7:FB:6C:B3:F0:B4:2C:80:CE                                       |
-
-### <span id="page-92-8"></span> **10.2.8 GoDaddy TLS Issuing CA DV - R1v1**
-
-The following certificate profile is used for the GoDaddy TLS Issuing CA DV - R1v1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | 8a:aa:80:51:5c:0b:c6:88:c7:95:5d:70:f2:77:58:ac                                                               |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                        |
-| Issuer            | CN=GoDaddy TLS Root CA - R1<br>O=GoDaddy.com<br>C=US                                                          |
-| Valid From        | August 28, 2025 12:00:00 GMT                                                                                   |
-| Valid To          | August 24, 2040 11:59:59 GMT                                                                                   |
-| Subject           | CN=GoDaddy TLS Intermediate CA DV - R1v1<br>O=GoDaddy.com<br>C=US                                             |
-| Subject Public Key Information | RSA (4096 bits)                                                                                   |
-
-| Extensions:                  | Values                                                                                              |
-|------------------------------|-----------------------------------------------------------------------------------                  |
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=0                                                         |
-| Key Usage (critical)         | Digital Signature, Certificate Sign, CRL Sign                                                       |
-| Extended Key Usage           | TLS Web Server Authentication                                                                       |
-| Certificate Policies         | Policy: 2.23.140.1.2.1 (CA/Browser Forum Domain Validated)                                         |
-| CRL Distribution Points      | http://crl.godaddy.com/gd_tls_root-r1.crl                                                          |
-| Authority Information Access | CA Issuers: http://certificates.godaddy.com/repository/gd_tls_root-r1.crt                          |
-| Authority Key Identifier     | EC:52:11:95:70:73:19:C8:DE:CA:48:43:97:4B:1C:35:24:22:43:50                                        |
-| Subject Key Identifier       | 89:EB:E7:1D:79:C3:BE:DB:3F:DC:8E:20:B0:FB:E4:1E:7C:39:F6:2B                                       |
-
-### <span id="page-92-9"></span> **10.2.9 GoDaddy TLS Issuing CA OV - R1v1**
-
-The following certificate profile is used for the GoDaddy TLS Issuing CA OV - R1v1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | fd:61:42:d5:58:ad:39:6c:14:bb:97:0c:ae:a7:10:5b                                                               |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                        |
-| Issuer            | CN=GoDaddy TLS Root CA - R1<br>O=GoDaddy.com<br>C=US                                                          |
-| Valid From        | August 28, 2025 12:00:00 GMT                                                                                   |
-| Valid To          | August 24, 2040 11:59:59 GMT                                                                                   |
-| Subject           | CN=GoDaddy TLS Intermediate CA OV - R1v1<br>O=GoDaddy.com<br>C=US                                             |
-| Subject Public Key Information | RSA (4096 bits)                                                                                   |
-
-| Extensions:                  | Values                                                                                              |
-|------------------------------|-----------------------------------------------------------------------------------                  |
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=0                                                         |
-| Key Usage (critical)         | Digital Signature, Certificate Sign, CRL Sign                                                       |
-| Extended Key Usage           | TLS Web Server Authentication                                                                       |
-| Certificate Policies         | Policy: 2.23.140.1.2.2 (CA/Browser Forum Organization Validated)                                   |
-| CRL Distribution Points      | http://crl.godaddy.com/gd_tls_root-r1.crl                                                          |
-| Authority Information Access | CA Issuers: http://certificates.godaddy.com/repository/gd_tls_root-r1.crt                          |
-| Authority Key Identifier     | EC:52:11:95:70:73:19:C8:DE:CA:48:43:97:4B:1C:35:24:22:43:50                                        |
-| Subject Key Identifier       | 52:6B:9B:67:56:5C:86:69:19:D0:61:CA:2B:68:CC:B8:34:09:81:C2                                       |
-
-### <span id="page-92-10"></span> **10.2.10 GoDaddy TLS Issuing CA EV - R1v1**
-
-The following certificate profile is used for the GoDaddy TLS Issuing CA EV - R1v1.
-
- Field              | Description                                                                                                    |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| Version           | V3                                                                                                             |
-| Serial Number     | 88:6c:12:37:be:29:f4:34:a9:04:96:44:64:e5:b8:17                                                               |
-| Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                        |
-| Issuer            | CN=GoDaddy TLS Root CA - R1<br>O=GoDaddy.com<br>C=US                                                          |
-| Valid From        | August 28, 2025 12:00:00 GMT                                                                                   |
-| Valid To          | August 24, 2040 11:59:59 GMT                                                                                   |
-| Subject           | CN=GoDaddy TLS Intermediate CA EV - R1v1<br>O=GoDaddy.com<br>C=US                                             |
-| Subject Public Key Information | RSA (4096 bits)                                                                                   |
-
-| Extensions:                  | Values                                                                                              |
-|------------------------------|-----------------------------------------------------------------------------------                  |
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=0                                                         |
-| Key Usage (critical)         | Digital Signature, Certificate Sign, CRL Sign                                                       |
-| Extended Key Usage           | TLS Web Server Authentication                                                                       |
-| Certificate Policies         | Policy: 2.23.140.1.1 (CA/Browser Forum Extended Validation)                                        |
-| CRL Distribution Points      | http://crl.godaddy.com/gd_tls_root-r1.crl                                                          |
-| Authority Information Access | CA Issuers: http://certificates.godaddy.com/repository/gd_tls_root-r1.crt                          |
-| Authority Key Identifier     | EC:52:11:95:70:73:19:C8:DE:CA:48:43:97:4B:1C:35:24:22:43:50                                        |
-| Subject Key Identifier       | 93:86:30:25:E7:2E:08:89:00:FA:42:9F:3C:2B:63:65:43:C3:43:2C                                       |
-
-
+(*)Starfield no longer uses SHA-1 signature algorithms and RSA (1024 bits) or ECC (384 bits) subject public key information
 
 ## <span id="page-93-0"></span> **10.3 Cross CA Certificates**
 
@@ -3695,7 +3392,7 @@ The following certificate profile is used for the certificate which cross certif
 
 ## <span id="page-100-0"></span> **10.4 End Entity SSL Certificates**
 
-### <span id="page-100-1"></span> **10.4.1 Go Daddy Issuing CA: Subscriber Certificates (Historical)**
+### <span id="page-100-1"></span> **10.4.1 Go Daddy Issuing CA: Subscriber Certificates**
 
 The following certificate profile is used for Go Daddy branded Subscriber Certificates issued from the Go Daddy Issuing CA. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280.](https://tools.ietf.org/html/rfc5280)
 
@@ -3707,8 +3404,8 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Issuer            | serialNumber = 07969287<br>CN = Go Daddy Secure Certification Authority<br>OU = http://certificates.godaddy.com/repository<br>O = GoDaddy.com, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
 | Valid From        | Date and time of Certificate issuance                                                                          |
 | Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject <br>(DV Certificates) | CN = domain name of Subscriber's web site<br>OU = "Domain Control Verified" or similar text indicating the assurance level of the certificate (on certificates issued prior to July 15, 2021). |
-| Subject <br>(OV Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's organization<br>L = City/town<br>S = State<br>C = Country |
+| Subject <br>(Medium Assurance Certificates) | CN = domain name of Subscriber's web site<br>OU = "Domain Control Verified" or similar text indicating the assurance level of the certificate (on certificates issued prior to July 15, 2021). |
+| Subject <br>(High Assurance Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's organization or individual name<br>L = City/town<br>S = State<br>C = Country |
 | Subject <br>(Extended Validation Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's full legal organization name. An assumed name or DBA may also be included<br>L = City/town of place of business<br>S = State of place of business<br>C = Country of place of business<br><br>serialNumber= Registration number assigned by incorporating authority or date of<br>incorporation or registration businessCategory=vetting category used to issue<br>certificate as defined in the CA/Browser Forum Guidelines for the<br>Issuance and Management of Extended Validation Certificates<br><br>jurisdictionLocalityName= City/town of incorporation or registration (if applicable)<br>jurisdictionStateOrProvinceName= State of incorporation or registration (if applicable)<br>jurisdictionCountryName= Country of incorporation or registration |
 | Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
 
@@ -3718,16 +3415,16 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1), Client Authentication (1.3.6.1.5.5.7.3.2)  |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
-| Certificate Policies<br>(OV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
+| Certificate Policies<br>(Medium Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
+| Certificate Policies<br>(High Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
 | Certificate Policies<br>(Extended Validation Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
 | Authority Information Access | <br> [1]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.godaddy.com<br>[2]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gd_intermediate.crt | 
 | Authority Key Identifier     | fd ac 61 32 93 6c 45 d6 e2 ee 85 5f 9a ba e7 76 99 68 cc e7                                           |
-| Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
+| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
 | Subject Key Identifier       | SHA-1 hash of the public key contained within this certificate                                      |
 | Extended Validation Certificates<br>(OID: 1.3.6.1.4.1.11129.2.4.2) | One or more RFC 6962 Signed Certificate Timestamps |
 
-### <span id="page-102-0"></span> **10.4.2 Starfield Issuing CA: Subscriber Certificates (Historical)**
+### <span id="page-102-0"></span> **10.4.2 Starfield Issuing CA: Subscriber Certificates**
 
 The following certificate profile is used for Starfield branded Subscriber Certificates issued from the Starfield Issuing CA. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280.](https://tools.ietf.org/html/rfc5280)
 
@@ -3739,8 +3436,8 @@ The following certificate profile is used for Starfield branded Subscriber Certi
 | Issuer            | serialNumber = 10688435<br>CN = Starfield Secure Certification Authority<br>OU = http://certificates.starfieldtech.com/repository <br>O = Starfield Technologies, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
 | Valid From        | Date and time of Certificate issuance                                                                          |
 | Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject <br>(DV Certificates) | CN = domain name of Subscriber's web site<br>OU = "Domain Control Verified" or similar text indicating the assurance level of the certificate (on certificates issued prior to July 15, 2021). |
-| Subject <br>(OV Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's organization or individual name<br>L = City/town<br>S = State<br>C = Country |
+| Subject <br>(Medium Assurance Certificates) | CN = domain name of Subscriber's web site<br>OU = "Domain Control Verified" or similar text indicating the assurance level of the certificate (on certificates issued prior to July 15, 2021). |
+| Subject <br>(High Assurance Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's organization or individual name<br>L = City/town<br>S = State<br>C = Country |
 | Subject <br>(Extended Validation Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's full legal organization name. An assumed name or DBA may also be included<br>L = City/town of place of business<br>S = State of place of business<br>C = Country of place of business<br><br>serialNumber= Registration number assigned by incorporating authority or date of<br>incorporation or registration businessCategory=vetting category used to issue<br>certificate as defined in the CA/Browser Forum Guidelines for the<br>Issuance and Management of Extended Validation Certificates<br><br>jurisdictionLocalityName= City/town of incorporation or registration (if applicable)<br>jurisdictionStateOrProvinceName= State of incorporation or registration (if applicable)<br>jurisdictionCountryName= Country of incorporation or registration |
 | Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
 
@@ -3750,16 +3447,16 @@ The following certificate profile is used for Starfield branded Subscriber Certi
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1), Client Authentication (1.3.6.1.5.5.7.3.2)  |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/ |
-| Certificate Policies<br>(OV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/ |
+| Certificate Policies<br>(Medium Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/ |
+| Certificate Policies<br>(High Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/ |
 | Certificate Policies<br>(Extended Validation Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/ |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br>[2]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.starfieldtech.com/repository/sf_intermediate.crt | 
 | Authority Key Identifier     | 49 4b 52 27 d1 1b bc f2 a1 21 6a 62 7b 51 42 7a 8a d7 d5 56                                          |
-| Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
+| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
 | Extended Validation Certificates<br>(OID: 1.3.6.1.4.1.11129.2.4.2) | One or more RFC 6962 Signed Certificate Timestamps |
 
-### <span id="page-104-0"></span> **10.4.3 Go Daddy Issuing CA – G2: Subscriber Certificates (Historical)**
+### <span id="page-104-0"></span> **10.4.3 Go Daddy Issuing CA – G2: Subscriber Certificates**
 
 The following certificate profile is used for Go Daddy branded Subscriber Certificates issued from the Go Daddy Issuing CA – G2. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280.](https://tools.ietf.org/html/rfc5280)
 
@@ -3768,11 +3465,11 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Version           | V3                                                                                                             |
 | Serial Number     | Unique value with 64-bits of entropy for each certificate issued by the Issuing CA                             |
 | Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
-| Issuer            | CN = Go Daddy Secure Certificate Authority - G2<br>OU=http://certs.godaddy.com/repository/<br>O = GoDaddy.com, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
+| Issuer            | CN = Go Daddy Secure Certificate Authority - G2<br>OU = OU=http://certs.godaddy.com/repository/<br>O = GoDaddy.com, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
 | Valid From        | Date and time of Certificate issuance                                                                          |
 | Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject <br>(DV Certificates) | CN = domain name of Subscriber's web site<br>OU = "Domain Control Verified" or similar text indicating the assurance level of the certificate (on certificates issued prior to July 15, 2021). |
-| Subject <br>(OV Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's organization or individual name<br>L = City/town<br>S = State<br>C = Country |
+| Subject <br>(Medium Assurance Certificates) | CN = domain name of Subscriber's web site<br>OU = "Domain Control Verified" or similar text indicating the assurance level of the certificate (on certificates issued prior to July 15, 2021). |
+| Subject <br>(High Assurance Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's organization or individual name<br>L = City/town<br>S = State<br>C = Country |
 | Subject <br>(Extended Validation Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's full legal organization name. An assumed name or DBA may also be included<br>L = City/town of place of business<br>S = State of place of business<br>C = Country of place of business<br><br>serialNumber= Registration number assigned by incorporating authority or date of<br>incorporation or registration businessCategory=vetting category used to issue<br>certificate as defined in the CA/Browser Forum Guidelines for the<br>Issuance and Management of Extended Validation Certificates<br><br>jurisdictionLocalityName= City/town of incorporation or registration (if applicable)<br>jurisdictionStateOrProvinceName= State of incorporation or registration (if applicable)<br>jurisdictionCountryName= Country of incorporation or registration |
 | Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
 
@@ -3782,16 +3479,16 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1), Client Authentication (1.3.6.1.5.5.7.3.2)  |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 |
-| Certificate Policies<br>(OV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) or 2.23.140.1.2.3 (IV) |
+| Certificate Policies<br>(Medium Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 |
+| Certificate Policies<br>(High Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) or 2.23.140.1.2.3 (IV) |
 | Certificate Policies<br>(Extended Validation Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gdig2.crt <br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.godaddy.com | 
 | Authority Key Identifier     | 40 c2 bd 27 8e cc 34 83 30 a2 33 d7 fb 6c b3 f0 b4 2c 80 ce                                          |
-| Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
+| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
 | Extended Validation Certificates<br>(OID: 1.3.6.1.4.1.11129.2.4.2) | One or more RFC 6962 Signed Certificate Timestamps | 
 
-### <span id="page-106-0"></span> **10.4.4 Starfield Issuing CA – G2: Subscriber Certificates (Historical)**
+### <span id="page-106-0"></span> **10.4.4 Starfield Issuing CA – G2: Subscriber Certificates**
 
 The following certificate profile is used for Starfield branded Subscriber Certificates issued from the Starfield Issuing CA – G2. At a minimum, the following fields will be populated as described, in accordance with IETF [RFC 5280](https://tools.ietf.org/html/rfc5280).
 
@@ -3800,11 +3497,11 @@ The following certificate profile is used for Starfield branded Subscriber Certi
 | Version           | V3                                                                                                             |
 | Serial Number     | Unique value with 64-bits of entropy for each certificate issued by the Issuing CA                             |
 | Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
-| Issuer            | CN = Starfield Secure Certificate Authority - G2<br>OU=http://certs.starfield.com/repository/<br>O = Starfield Technologies, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
+| Issuer            | CN = Starfield Secure Certificate Authority - G2<br>OU = OU=http://certs.starfield.com/repository/<br>O = Starfield Technologies, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
 | Valid From        | Date and time of Certificate issuance                                                                          |
 | Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
-| Subject <br>(DV Certificates) | CN = domain name of Subscriber's web site<br>OU = "Domain Control Verified" or similar text indicating the assurance level of the certificate (on certificates issued prior to July 15, 2021). |
-| Subject <br>(OV Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's organization or individual name<br>L = City/town<br>S = State<br>C = Country |
+| Subject <br>(Medium Assurance Certificates) | CN = domain name of Subscriber's web site<br>OU = "Domain Control Verified" or similar text indicating the assurance level of the certificate (on certificates issued prior to July 15, 2021). |
+| Subject <br>(High Assurance Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's organization or individual name<br>L = City/town<br>S = State<br>C = Country |
 | Subject <br>(Extended Validation Certificates) | CN = domain name of Subscriber's web site<br>O = Subscriber's full legal organization name. An assumed name or DBA may also be included<br>L = City/town of place of business<br>S = State of place of business<br>C = Country of place of business<br><br>serialNumber= Registration number assigned by incorporating authority or date of incorporation or registration<br>businessCategory=vetting category used to issue certificate as defined in the CA/Browser Forum Guidelines for the<br>Issuance and Management of Extended Validation Certificates<br><br>jurisdictionLocalityName= City/town of incorporation or registration (if applicable)<br>jurisdictionStateOrProvinceName= State of incorporation or registration (if applicable)<br>jurisdictionCountryName= Country of incorporation or registration |
 | Subject Public Key Information | RSA (2048 bits or greater)                                                                        |
 
@@ -3814,12 +3511,12 @@ The following certificate profile is used for Starfield branded Subscriber Certi
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)<br>Client Authentication (1.3.6.1.5.5.7.3.2)  |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 |
-| Certificate Policies<br>(OV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) or 2.23.140.1.2.3 (IV) |
+| Certificate Policies<br>(Medium Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 |
+| Certificate Policies<br>(High Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) or 2.23.140.1.2.3 (IV) |
 | Certificate Policies<br>(Extended Validation Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sfig2.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfield.com | 
 | Authority Key Identifier     | 25 45 81 68 50 26 38 3d 3b 2d 2c be cd 6a d9 b6 3d b3 66 63                                         |
-| Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
+| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
 | Extended Validation Certificates<br>(OID: 1.3.6.1.4.1.11129.2.4.2) | One or more RFC 6962 Signed Certificate Timestamps | 
 
@@ -3844,10 +3541,10 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 (DV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
+| Certificate Policies<br>(Medium Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 (DV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gd_tls_issuing_dv-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.godaddy.com<br> | 
 | Authority Key Identifier     | 89:EB:E7:1D:79:C3:BE:DB:3F:DC:8E:20:B0:FB:E4:1E:7C:39:F6:2B                                          |
-| Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
+| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
 
 
@@ -3875,7 +3572,7 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gd_tls_issuing_ov-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.godaddy.com<br> | 
 | Authority Key Identifier     | 52:6B:9B:67:56:5C:86:69:19:D0:61:CA:2B:68:CC:B8:34:09:81:C2                                          |
-| Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
+| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
 
 ### <span id="page-107-0"></span> **10.4.7 GoDaddy TLS Intermediate CA EV - R1v1: Subscriber Certificates**
@@ -3927,10 +3624,10 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 (DV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
+| Certificate Policies<br>(Medium Assurance Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 (DV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sf_tls_issuing_dv-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com | 
 | Authority Key Identifier     | 99:B4:6D:DD:8D:0C:6D:FA:2D:A0:9F:22:21:E8:73:C2:18:BC:85:D9                                          |
-| Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
+| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
 
 
@@ -3958,7 +3655,7 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sf_tls_issuing_ov-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br> | 
 | Authority Key Identifier     | 37:16:27:88:47:9E:A4:61:2A:3C:E5:3C:26:74:84:A9:50:AA:54:88                                          |
-| Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
+| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
 
 ### <span id="page-108-0"></span> **10.4.10 Starfield TLS Intermediate CA EV - R1v1: Subscriber Certificates**
@@ -3985,7 +3682,7 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 (EV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sf_tls_issuing_ev-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br> | 
 | Authority Key Identifier     | 80:E5:60:C4:34:B4:67:A8:C3:37:15:86:FD:E4:F2:0A:3F:E0:85:37                                          |
-| Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
+| Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate   
 
 # <span id="page-116-0"></span> **11 APPENDIX B: TEST SITES**
