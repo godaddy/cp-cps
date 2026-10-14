@@ -6,8 +6,8 @@ Public TLS<br>
 Certificate Policy and<br>
 Certification Practice Statement (CP/CPS)</h1>
 
-**Version 6.0**  
-**Date: October 7, 2026**
+**Version 6.1**  
+**Date: October 13, 2026**
 </div>
 
 ## Table of Contents
@@ -484,6 +484,7 @@ The OID-arcs associated with this document are **2.16.840.1.114413** and **2.16.
 |         |                    | • Updated section 4.2.1 EV data-reuse table to include "certificate requester" |
 |         |                    | • Added definition of "Verified Method of Communication" |
 |         |                    | • Updated the following sections: 1.3.2, 2.2, 3.1.1, 3.1.2, 3.1.3, 3.2, 3.2.2.4, 3.2.2.4.7, 3.2.2.4.12, 3.2.2.4.20, 3.2.2.4.21, 3.2.2.6, 3.2.2.8, 4.2.1, 4.2.2.1, 3.2.2.9, 3.2.3, 4.3.1.2, 4.6.3, 4.7.1, 4.7.3, 4.8.3, 4.9.1.1, 4.9.2, 4.9.3, 4.9.4, 4.9.5, 4.9.9, 4.9.10, 4.9.12, 4.10.2, 5, 5.2, 5.3.2, 5.4.2, 5.4.4, 5.5.6, 5.5.7, 5.7, 6.1.1.1, 6.1.5, 6.2.4, 6.2.5, 6.3.2, 6.5.1, 6.7, 7.1.4, 7.1.4.1, 7.1.4.2, 7.1.4.2.1, 7.1.4.3, 7.1.6, 7.1.8, 7.2.2, 8.1, 8.2, 8.3, 8.4, 8.5, 8.8, 8.9, 9.1.3, 9.3.1, 9, 10.2.1, 10.4 |
+| 6.1	  | October 13, 2026  | • Updates the following sections: 10.4.6, 10.4.7, 10.4.8, 10.4.9, 10.4.10 |
 ## <span id="page-11-0"></span> **1.3 PKI Participants**
 
 This CP/CPS is applicable to all certificates issued by Starfield CAs within the Starfield PKI. This document defines the specific communities for which a specific class or type of certificate is applicable, specific Starfield PKI practices and requirements for the issuance and management of such certificates, and the intended purposes and uses of such certificates.
@@ -3419,7 +3420,7 @@ The following certificate profile is used for the GoDaddy TLS Issuing CA DV - R1
 | Extended Key Usage           | TLS Web Server Authentication                                                                       |
 | Certificate Policies         | Policy: 2.23.140.1.2.1 (CA/Browser Forum Domain Validated)                                         |
 | CRL Distribution Points      | http://crl.godaddy.com/gd_tls_root-r1.crl                                                          |
-| Authority Information Access | CA Issuers: http://certificates.godaddy.com/repository/gd_tls_root-r1.crt                          |
+| Authority Information Access | CA Issuers: http://certificates.godaddy.com/repository/gd_tls_root-r1.crt           |
 | Authority Key Identifier     | EC:52:11:95:70:73:19:C8:DE:CA:48:43:97:4B:1C:35:24:22:43:50                                        |
 | Subject Key Identifier       | 89:EB:E7:1D:79:C3:BE:DB:3F:DC:8E:20:B0:FB:E4:1E:7C:39:F6:2B                                       |
 
@@ -3471,7 +3472,7 @@ The following certificate profile is used for the GoDaddy TLS Issuing CA EV - R1
 | Extended Key Usage           | TLS Web Server Authentication                                                                       |
 | Certificate Policies         | Policy: 2.23.140.1.1 (CA/Browser Forum Extended Validation)                                        |
 | CRL Distribution Points      | http://crl.godaddy.com/gd_tls_root-r1.crl                                                          |
-| Authority Information Access | CA Issuers: http://certificates.godaddy.com/repository/gd_tls_root-r1.crt                          |
+| Authority Information Access | CA Issuers: http://certificates.godaddy.com/repository/gd_tls_root-r1.crt                           |
 | Authority Key Identifier     | EC:52:11:95:70:73:19:C8:DE:CA:48:43:97:4B:1C:35:24:22:43:50                                        |
 | Subject Key Identifier       | 93:86:30:25:E7:2E:08:89:00:FA:42:9F:3C:2B:63:65:43:C3:43:2C                                       |
 
@@ -3872,7 +3873,7 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
+| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/<br> |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gd_tls_issuing_ov-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.godaddy.com<br> | 
 | Authority Key Identifier     | 52:6B:9B:67:56:5C:86:69:19:D0:61:CA:2B:68:CC:B8:34:09:81:C2                                          |
 | Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
@@ -3899,7 +3900,7 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 (EV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
+| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 (EV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/<br> |
 | Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/gd_tls_issuing_ev-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.godaddy.com<br> | 
 | Authority Key Identifier     | 93:86:30:25:E7:2E:08:89:00:FA:42:9F:3C:2B:63:65:43:C3:43:2C                                          |
 | Subject Alternative Name     | Required, set to:<br>1. NS=Fully-Qualified Domain Name of the Subscriber's site,<br> domain name remaining after removing "www." from the left hand portion of the Fully-Qualified Domain Name. <br>And/or:<br>2. DNS=domain name of Subscriber's site, domain name of additional sites<br>which have undergone the following verification step as part of the authentication<br>process: the individual requesting the certificate has access to the domain<br>name(s) that are specified<br>in the certificate application (per 3.2.12) |
@@ -3927,8 +3928,8 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 (DV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sf_tls_issuing_dv-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com | 
+| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 (DV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114414.1.7.23.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/ |
+| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.starfieldtech.com/repository/sf_tls_issuing_dv-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com | 
 | Authority Key Identifier     | 99:B4:6D:DD:8D:0C:6D:FA:2D:A0:9F:22:21:E8:73:C2:18:BC:85:D9                                          |
 | Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
@@ -3955,8 +3956,8 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sf_tls_issuing_ov-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br> | 
+| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114414.1.7.23.2<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/<br> |
+| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.starfieldtech.com/repository/sf_tls_issuing_ov-r1v1.crt <br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br> | 
 | Authority Key Identifier     | 37:16:27:88:47:9E:A4:61:2A:3C:E5:3C:26:74:84:A9:50:AA:54:88                                          |
 | Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
@@ -3982,8 +3983,8 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)                                             |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 (EV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br> |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sf_tls_issuing_ev-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br> | 
+| Certificate Policies         | [1]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 (EV) <br> [2]Certificate Policy:<br>Policy Identifier=2.16.840.1.114414.1.7.23.3<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/<br> |
+| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.starfieldtech.com/repository/sf_tls_issuing_ev-r1v1.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com<br> | 
 | Authority Key Identifier     | 80:E5:60:C4:34:B4:67:A8:C3:37:15:86:FD:E4:F2:0A:3F:E0:85:37                                          |
 | Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate   
