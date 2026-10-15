@@ -6,8 +6,8 @@ Public TLS<br>
 Certificate Policy and<br>
 Certification Practice Statement (CP/CPS)</h1>
 
-**Version 6.1**  
-**Date: October 13, 2026**
+**Version 6.2**  
+**Date: October 14, 2026**
 </div>
 
 ## Table of Contents
@@ -484,7 +484,8 @@ The OID-arcs associated with this document are **2.16.840.1.114413** and **2.16.
 |         |                    | • Updated section 4.2.1 EV data-reuse table to include "certificate requester" |
 |         |                    | • Added definition of "Verified Method of Communication" |
 |         |                    | • Updated the following sections: 1.3.2, 2.2, 3.1.1, 3.1.2, 3.1.3, 3.2, 3.2.2.4, 3.2.2.4.7, 3.2.2.4.12, 3.2.2.4.20, 3.2.2.4.21, 3.2.2.6, 3.2.2.8, 4.2.1, 4.2.2.1, 3.2.2.9, 3.2.3, 4.3.1.2, 4.6.3, 4.7.1, 4.7.3, 4.8.3, 4.9.1.1, 4.9.2, 4.9.3, 4.9.4, 4.9.5, 4.9.9, 4.9.10, 4.9.12, 4.10.2, 5, 5.2, 5.3.2, 5.4.2, 5.4.4, 5.5.6, 5.5.7, 5.7, 6.1.1.1, 6.1.5, 6.2.4, 6.2.5, 6.3.2, 6.5.1, 6.7, 7.1.4, 7.1.4.1, 7.1.4.2, 7.1.4.2.1, 7.1.4.3, 7.1.6, 7.1.8, 7.2.2, 8.1, 8.2, 8.3, 8.4, 8.5, 8.8, 8.9, 9.1.3, 9.3.1, 9, 10.2.1, 10.4 |
-| 6.1	  | October 13, 2026  | • Updates the following sections: 10.4.6, 10.4.7, 10.4.8, 10.4.9, 10.4.10 |
+| 6.1	  | October 13, 2026  | • Updated the following sections: 10.4.6, 10.4.7, 10.4.8, 10.4.9, 10.4.10 |
+| 6.2	  | October 14, 2026  | • Updated the following sections: 10.4.4 |
 ## <span id="page-11-0"></span> **1.3 PKI Participants**
 
 This CP/CPS is applicable to all certificates issued by Starfield CAs within the Starfield PKI. This document defines the specific communities for which a specific class or type of certificate is applicable, specific Starfield PKI practices and requirements for the issuance and management of such certificates, and the intended purposes and uses of such certificates.
@@ -3801,7 +3802,7 @@ The following certificate profile is used for Starfield branded Subscriber Certi
 | Version           | V3                                                                                                             |
 | Serial Number     | Unique value with 64-bits of entropy for each certificate issued by the Issuing CA                             |
 | Signature Algorithm Identifier | sha256RSA (OID: 1.2.840.113549.1.1.11)                                                            |
-| Issuer            | CN = Starfield Secure Certificate Authority - G2<br>OU=http://certs.starfield.com/repository/<br>O = Starfield Technologies, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
+| Issuer            | CN = Starfield Secure Certificate Authority - G2<br>OU=http://certs.starfieldtech.com/repository/<br>O = Starfield Technologies, Inc.<br>L=Scottsdale<br>S=Arizona<br>C=US |
 | Valid From        | Date and time of Certificate issuance                                                                          |
 | Valid To          | A date up to the maximum permitted validity period at the time of issuance after Certificate issuance (depending on SSL certificate type). |
 | Subject <br>(DV Certificates) | CN = domain name of Subscriber's web site<br>OU = "Domain Control Verified" or similar text indicating the assurance level of the certificate (on certificates issued prior to July 15, 2021). |
@@ -3815,10 +3816,10 @@ The following certificate profile is used for Starfield branded Subscriber Certi
 | Key Usage (critical)         | Digital Signature, Key Encipherment                                                   |
 | Extended Key Usage           | Server Authentication (1.3.6.1.5.5.7.3.1)<br>Client Authentication (1.3.6.1.5.5.7.3.2)  |
 | CRL Distribution Points      | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL = <current crl="" uri=""></current> <br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 |
-| Certificate Policies<br>(OV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) or 2.23.140.1.2.3 (IV) |
-| Certificate Policies<br>(Extended Validation Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.3<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 |
-| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.godaddy.com/repository/sfig2.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfield.com | 
+| Certificate Policies<br>(DV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114414.1.7.23.1<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.1 |
+| Certificate Policies<br>(OV Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114414.1.7.23.2<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.2.2 (OV) or 2.23.140.1.2.3 (IV) |
+| Certificate Policies<br>(Extended Validation Certificates) | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114414.1.7.23.3<br>[1,1]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfieldtech.com/repository/<br>[2]Certificate Policy:<br>Policy Identifier=2.23.140.1.1 |
+| Authority Information Access | [1]Authority Info Access<br>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)<br>Alternative Name:<br>URL=http://certificates.starfieldtech.com/repository/sfig2.crt<br>*URL of the appropriate OCSP responder if OCSP revocation checking is supported* <br> [2]Authority Info Access<br>Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)<br>Alternative Name:<br>URL=http://ocsp.starfieldtech.com | 
 | Authority Key Identifier     | 25 45 81 68 50 26 38 3d 3b 2d 2c be cd 6a d9 b6 3d b3 66 63                                         |
 | Subject Alternative Name     | Contains dNSName entries corresponding to Fully-Qualified Domain Names or Wildcard Domain Names validated in accordance with Section 3.2.2.4. Wildcard Domain Names are additionally validated in accordance with Section 3.2.2.6. Internal Names and Domain Names ending in an IP Address Reverse Zone Suffix are not permitted. Each Domain Name is encoded using P-Labels or Non-Reserved LDH Labels, as applicable, separated by the U+002E FULL STOP (".") character. The zero-length Domain Label representing the DNS root zone is not included. |
 | Subject Key Identifier       | 160-bit SHA1 hash of the public key contained within this certificate                                      |
