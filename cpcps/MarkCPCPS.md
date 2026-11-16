@@ -6,8 +6,8 @@ Mark Certificate<br>
 Certificate Policy and<br>
 Certification Practice Statement (CP/CPS)</h1>
 
-**Version 1.2**  
-**Date: August 26, 2026**
+**Version 1.3**  
+**Date: November 11, 2026**
 </div>
 
 ## Table of Contents
@@ -342,6 +342,7 @@ The OID-arcs associated with this document is **2.16.840.1.114413.1.7.23.4**.
 | 1.0 | 2026-04-28 | Initial Draft |
 | 1.1 | 2026-07-31 | Updated the following sections: 3.2.2.7.1.2, 9  |
 | 1.2 | 2026-08-26 | Updated the Definitions, Acronyms, and References section to include definitions for BIMI and Mark Certificate Guidelines  |
+| 1.3 | 2026-11-11 | Updated the following sections: 10.1.1, 10.2.1, 10.3.1   |
 
 ### 1.3 PKI Participants
 
@@ -2803,7 +2804,6 @@ The following certificate profile is used for the GoDaddy Verified Mark Root CA 
 |---|---|
 | Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=None |
 | Key Usage (critical) | Digital Signature, Certificate Signing, CRL Signing |
-| Authority Key Identifier | 84:DD:B0:E9:71:D0:38:26:BC:0F:64:40:D5:50:F3:E0:FF:6C:6D:F3 |
 | Subject Key Identifier | 84:DD:B0:E9:71:D0:38:26:BC:0F:64:40:D5:50:F3:E0:FF:6C:6D:F3 |
 
 ### 10.2 Issuing CAs
@@ -2827,14 +2827,14 @@ The following certificate profile is used for GoDaddy Verified Mark Intermediate
 
 | **Extensions:** | **Values** |
 |---|---|
-| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=None |
+| Basic Constraints (critical) | Subject Type=CA<br>Path Length Constraint=0 |
 | Key Usage (critical) | Digital Signature, Certificate Signing, CRL Signing |
 | Extended Key Usage | Brand Indicator for Message Identification |
 | CRL Distribution Points | Full Name:<BR> URI: http://crl.godaddy.com/gd_vmark_root_ca-vmcr1.crl |
 | Certificate Policies | Policy: 2.16.840.1.114413.1.7.23.4<br>CPS:http://certificates.godaddy.com/repository/<br>Policy: 1.3.6.1.4.1.53087.1.1 |
 | Authority Information Access | CA Issuers - URI:http://certificates.godaddy.com/repository/gd_vmark_root_ca-vmcr1.crt |
 | Authority Key Identifier | The Subject Key Identifier of the Issuing CA |
-| Subject Key Identifier | SHA-1 hash of the public key contained within this certificate or the leftmost 160-bits of the SHA-256 hash of the SubjectPublicKey |
+| Subject Key Identifier | Contains the key identifier associated with the Subordinate CA public key. |
 
 ### 10.3 End Entity Mark Certificates
 
@@ -2859,7 +2859,7 @@ The following certificate profile is used for Go Daddy branded Subscriber Certif
 | Key Usage (Optional) | Digital Signature, Key Encipherment |
 | Extended Key Usage | id-kpBrandIndicatorforMessageIdentification (OID: 1.3.6.1.5.5.7.3.31) |
 | CRL Distribution Points | CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL =<br>The specific URI will vary depending on certificate type and CRL scope. |
-| Certificate Policies | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.4<br>[2]Certificate Policy:<br>Policy Identifier=1.3.6.1.4.1.53087.1.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.starfield.com/repository/ |
+| Certificate Policies | [1]Certificate Policy:<br>Policy Identifier=2.16.840.1.114413.1.7.23.4<br>[2]Certificate Policy:<br>Policy Identifier=1.3.6.1.4.1.53087.1.1<br>[2,2]Policy Qualifier Info:<br>Policy Qualifier Id=CPS<br>Qualifier:<br>http://certificates.godaddy.com/repository/ |
 | Authority Information Access | URL of the appropriate OCSP responder if OCSP revocation checking is supported |
 | Authority Key Identifier | The Subject Key Identifier of the Issuing CA |
 | Subject Alternative Name | Required, This extension MUST contain at least one entry. Each entry MUST be a dNSName containing the Fully-Qualified Domain Name. Starfield MUST confirm that the Applicant controls the Fully-Qualified Domain Name or has been granted the right to use it by the Domain Name Registrant, as appropriate. <br>Starfield SHALL NOT issue certificates with a subjectAlternativeName extension containing an Internal Name. Entries in the dNSName MUST be in the "preferred name syntax", as specified in RFC 5280, and thus MUST NOT contain underscore characters ("_"). |
